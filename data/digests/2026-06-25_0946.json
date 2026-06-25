@@ -1,0 +1,12 @@
+{
+  "generated_at": "2026-06-25T09:46:54.195349+00:00",
+  "window_hours": 168,
+  "global_search": false,
+  "counts": {
+    "fetched": 2066,
+    "filtered": 496,
+    "fresh": 0,
+    "delivered": 0
+  },
+  "jobs": []
+}

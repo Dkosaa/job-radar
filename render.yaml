@@ -1,0 +1,28 @@
+# render.yaml — Render.com auto-deploy
+# Docs: https://render.com/docs/yaml-spec
+services:
+  - type: web
+    name: job-radar
+    env: python
+    region: frankfurt  # closest to DE
+    plan: free
+    buildCommand: |
+      pip install -r requirements.txt
+      python3 -m playwright install chromium
+    startCommand: bash start.sh
+    healthCheckPath: /healthz
+    envVars:
+      - key: TELEGRAM_BOT_TOKEN
+        sync: false
+      - key: TELEGRAM_CHAT_ID
+        sync: false
+      - key: DASHBOARD_PASSWORD
+        sync: false
+      - key: ADZUNA_APP_ID
+        sync: false
+      - key: ADZUNA_APP_KEY
+        sync: false
+      - key: FLASK_SECRET
+        generateValue: true
+      - key: PYTHONUNBUFFERED
+        value: "1"

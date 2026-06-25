@@ -1,0 +1,9 @@
+requests
+beautifulsoup4
+lxml
+python-telegram-bot[ext]>=20
+apscheduler
+flask
+python-dotenv
+pytz
+playwright

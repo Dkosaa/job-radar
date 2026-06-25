@@ -1,0 +1,361 @@
+{
+  "generated_at": "2026-06-25T09:47:10.602750+00:00",
+  "window_hours": 168,
+  "global_search": false,
+  "counts": {
+    "fetched": 2089,
+    "filtered": 501,
+    "fresh": 469,
+    "delivered": 8
+  },
+  "jobs": [
+    {
+      "id": "arbeitnow-product-owner-digital-products-ai-hamburg-84864",
+      "source": "arbeitnow",
+      "title": "Product Owner (m/f/d) Digital Products & AI",
+      "company": "Boardwise GmbH",
+      "location": "Hamburg",
+      "country": "Germany",
+      "remote_ok": true,
+      "url": "https://www.arbeitnow.com/jobs/companies/boardwise-gmbh/product-owner-digital-products-ai-hamburg-84864",
+      "description": "<h2>Deine Aufgaben</h2>\n<p><strong>Together, we set the standard for modern board decisions.</strong></p>\n<p>Werde Teil unserer Mission, die Governance-Infrastruktur von Vorstandsbüros weltweit neu zu definieren und entscheidend voranzutreiben – und setze Maßstäbe, die Organisationen nachhaltig prägen.</p>\n<p>Als Product Owner (m/w/d) verantwortest Du die operative Steuerung und kontinuierliche Weiterentwicklung unseres Softwareproduktes Boardwise im agilen Umfeld. Du fungierst als zentrale Schnittstelle zwischen Business, Stakeholdern und Entwicklungsteams und stellst sicher, dass aus Anforderungen konkrete, umsetzbare und wertschöpfende Produktinkremente entstehen.</p>\n<p>Dabei treibst Du aktiv unter anderem die Integration von AI-Technologien – insbesondere im Microsoft-Umfeld – voran und übersetzt strategische Ziele in priorisierte Backlog-Items und greifbare Ergebnisse.</p>\n<ul>\n<li>Verantwortungfür das Product Backlog (Pflege,Priorisierung, Refinement)</li>\n<li>Übersetzung von Anforderungen aus Fachbereichen und Stakeholdern in klare User Stories und Akzeptanzkriterien</li>\n<li>Sicherstellung eines kontinuierlichen Wertflusses im Kanban-bzw. agilen Arbeitsumfeld</li>\n<li>Enge Zusammenarbeit mit Entwicklungsteams, insbesondere im Microsoft-Ökosystem (z. B. M365, Azure)</li>\n<li>Aktive Steuerung und Moderation von Stakeholdern auf verschiedenen Unternehmensebenen</li>\n<li>Unterstützung beider Definition und Weiterentwicklung der Produktvision und Roadmap</li>\n<li>Integration und Weiterentwicklung von AI-basierten Funktionen im Produkt (z. B. Copilot, LLM-basierteFeatures)</li>\n<li>Zusammenarbeit mit UX,Data und Engineering zur kontinuierlichen Verbesserung der Nutzer-erfahrung</li>\n<li>Sicherstellung von Qualität, Usability und Business Impact der umgesetzten Features</li>\n</ul>\n<h2>Dein Profil</h2>\n<ul>\n<li>Standortin Deutschland</li>\n<li>Mehrjährige Erfahrung als Product Owner, Product Manager oder in einer vergleichbaren Rolle im Softwareumfeld</li>\n<li>Arbeiten im agilen Umfeld (Scrum, Kanban oder vergleichbar) ist für Dich selbstverständlich</li>\n<li>Erfahrung in der Steuerung und Priorisierung von Backlogs</li>\n<li>Know-how im Microsoft-Umfeld (M365, Azure, Microsoft-basierteAnwendungsentwicklung)</li>\n<li>Fähigkeit, fachliche Anforderungen in klare, technisch umsetzbare Arbeitspakete zu übersetzen</li>\n<li>Erfahrung im Stakeholder-Management, inkl. souveränem Auftreten auf Management-bzw.Vorstandsebene</li>\n<li>Sehr gute Kommunikationsfähigkeiten und Stakeholder Management in Deutsch(C2) und Englisch</li>\n</ul>\n<h2>Warum wir?</h2>\n<ul>\n<li><strong>100 % Remote</strong>: Arbeite von überall in Europa, mit Vertrauen, Flexibilität und Ownership.</li>\n<li><strong>Wachstumschancen</strong>: Entwickle dich weiter, ob in strategischen Rollen oder als Führungskraft.</li>\n<li>Enge Zusammenarbeit mit dem Management</li>\n<li><strong>Teamspirit trotz Remote</strong>: Wir treffen uns mindestens 2x im Jahr, zum Beispiel in Lissabon, Berlin oder Kopenhagen.</li>\n</ul>\n<p>Find more <a href=\"https://www.arbeitnow.com/english-speaking-jobs\">English Speaking Jobs in Germany</a> on Arbeitnow</a>",
+      "tags": [
+        "Remote",
+        "Project Management"
+      ],
+      "salary_eur": null,
+      "posted_at": 1782307849,
+      "score": 61,
+      "reasons": [
+        "+12 title match (Product Manager, Product Owner)",
+        "+8 skills (4 matched)",
+        "+3 EN + DE OK",
+        "+0 certs (none)",
+        "+8 location — remote (anywhere in DE)",
+        "+0 salary — salary not listed"
+      ],
+      "matched_skills": [
+        "Governance",
+        "LLM",
+        "Scrum",
+        "Stakeholder Management"
+      ],
+      "matched_titles": [
+        "Product Manager",
+        "Product Owner"
+      ],
+      "matched_certs": [],
+      "ats_keywords_to_add": [
+        "UiPath",
+        "Orchestrator",
+        "Blue Prism",
+        "Power Automate",
+        "Power BI",
+        "RPA",
+        "Robotic Process Automation",
+        "n8n"
+      ],
+      "_age_hours": 20
+    },
+    {
+      "id": "greenhouse-celonis-7686194003",
+      "source": "greenhouse",
+      "company": "Celonis",
+      "title": "Lead Consultant - Public Sector",
+      "location": "Remote, US, Washington DC",
+      "country": "Germany",
+      "remote_ok": true,
+      "url": "https://job-boards.greenhouse.io/celonis/jobs/7686194003?gh_jid=7686194003",
+      "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Celonis is the global leader in Process Intelligence and the pioneer of Process Mining technology. As one of the world’s fastest-growing enterprise SaaS companies, we are changemakers pushing the boundaries of what’s possible. We invest heavily in advanced AI capabilities—specifically our Process Intelligence Graph—to turn data insights into immediate business action. We believe there is a massive opportunity to unlock global productivity and sustainability by placing intelligence at the core of every business process. Join our mission to make processes work for people, companies, and the planet.&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;The Team:&lt;/strong&gt;&lt;/p&gt; &lt;p&gt;Celonis Services is a strategic services organization that focuses on the technical aspects of our customers&#39; journeys, which includes Consulting Services, Academy and Customer Support. We are thought leaders with deep product, technical and domain expertise and focus on delivering Celonis implementations and driving product adoption for our customers. We achieve this by bringing together our best practices, delivery experience, award-winning enablement, and support expertise.&lt;/p&gt; &lt;p&gt;&lt;strong&gt;The Role:&lt;/strong&gt;&lt;/p&gt; &lt;p&gt;As a Lead Consultant, you lead our agile project teams to accelerate our customers’ digital transformation and drive Celonis’ international expansion. You identify our customers’ strategic priorities and lead your project team towards developing data-driven process insights using SQL and creating complex data models to ensure that customers receive maximum value. You will become an expert in all kinds of company processes such as Finance, Order Management, Procurement, Warehouse Management, Customer Service, Production, e-Commerce, Opportunity Management, Supply Chain Management. You always leverage the newest features and functionalities of the Celonis software, such as Process Analytics, Process Automation, Task Mining and Machine Learning.&amp;nbsp;&lt;/p&gt; &lt;p&gt;&lt;strong&gt;The work you’ll do:&lt;/strong&gt;&lt;/p&gt; &lt;ul&gt; &lt;li&gt;Lead and drive the implementation process while delivering exceptionally high levels of service to ensure the optimal solution for our customers with our Celonis technology&amp;nbsp;&lt;/li&gt; &lt;li&gt;Transform the customer’s data using SQL to create the data model for your process analysis&lt;/li&gt; &lt;li&gt;Design and implement innovative analyses and execution apps and enrich them with Machine Learning algorithms or Task Mining to make the customer’s processes transparent and automated&amp;nbsp;&lt;/li&gt; &lt;li&gt;Analyze the data to identify process inefficiencies and understand the root causes to jointly suggest approaches to overcome them&lt;/li&gt; &lt;li&gt;Quantify the business and financial potential and present the most relevant KPIs to the management&amp;nbsp;&lt;/li&gt; &lt;li&gt;Translate business requirements into technical specifications&lt;/li&gt; &lt;li&gt;Conduct value creation workshops and align measures to improve process inefficiencies&amp;nbsp;&lt;/li&gt; &lt;li&gt;Set the foundation of the path to value to make the long-term customer success journey happen&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;strong&gt;The qualifications you need:&lt;/strong&gt;&lt;/p&gt; &lt;ul&gt; &lt;li&gt;Must be located in Washington DC, New York City or Raleigh.&lt;/li&gt; &lt;li&gt;7+ years working experience in IT-Consulting, Management Consulting, Process Improvement or a similar area&amp;nbsp;&lt;/li&gt; &lt;li&gt;Must have relevant experience in Public Sector vertical&lt;/li&gt; &lt;li&gt;Requires Active Security Clearance (that will remain active for at least 18+ months upon hire)&lt;/li&gt; &lt;li&gt;Proficiency with SQL or other programming languages (Python, R, Matlab...) and a strong interest in Big Data, Data Mining, and Process Mining&lt;/li&gt; &lt;li&gt;Strong communication skills in English and enjoy interacting with various customers to understand and interpret business processes&lt;/li&gt; &lt;li&gt;You are very dedicated and visionary and want to actively drive the Celonis Process Mining technology forward&amp;nbsp;&lt;/li&gt; &lt;li&gt;Excellent analytical skills, well organized and known for being a quick learner&lt;/li&gt; &lt;li&gt;Successfully completed your studies in Business Informatics, Computer Science, Information-oriented Business Administration/ Economics, Mathematics or a comparable degree program&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;Visa sponsorship is not offered for this role&lt;/p&gt;&lt;div class=&quot;content-pay-transparency&quot;&gt;&lt;div class=&quot;pay-input&quot;&gt;&lt;div class=&quot;description&quot;&gt;&lt;p&gt;&lt;span data-sheets-value=&quot;{&amp;quot;1&amp;quot;:2,&amp;quot;2&amp;quot;:&amp;quot;For positions in New York City only: We offer a base salary range of xxx – xxx, based on a Full Time Schedule. \\n\\nTotal compensation package will include base salary + bonus/commission + equity + benefits (health, dental, life, 401k, and paid time off). Please note that the base salary range is a guideline, and that the actual total compensation offer will be determined based on various factors, including, but not limited to, applicant&#39;s qualifications, skills, experiences, and location. &amp;quot;}&quot; data-sheets-userformat=&quot;{&amp;quot;2&amp;quot;:4480,&amp;quot;10&amp;quot;:0,&amp;quot;11&amp;quot;:4,&amp;quot;15&amp;quot;:&amp;quot;Arial&amp;quot;}&quot;&gt;The base salary range below is for the role in the specified location, based on a Full Time Schedule. &lt;br&gt;&lt;br&gt;Total compensation package will include base salary + bonus/commission + equity + benefits (health, dental, life, 401k, and paid time off). Please note that the base salary range is a guideline, and that the actual total compensation offer will be determined based on various factors, including, but not limited to, applicant&#39;s qualifications, skills, experiences, and location.&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;title&quot;&gt;The base salary range below is for the role in Washington, D.C. based on a Full Time Schedule. &lt;/div&gt;&lt;div class=&quot;pay-range&quot;&gt;&lt;span&gt;$162,000&lt;/span&gt;&lt;span class=&quot;divider&quot;&gt;&amp;mdash;&lt;/span&gt;&lt;span&gt;$191,000 USD&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;content-conclusion&quot;&gt;&lt;p&gt;&lt;strong&gt;What Celonis can offer you:&lt;/strong&gt;&lt;/p&gt; &lt;ul class=&quot;p-rich_text_list p-rich_text_list__bullet p-rich_text_list--nested&quot; data-stringify-type=&quot;unordered-list&quot; data-list-tree=&quot;true&quot; data-indent=&quot;0&quot; data-border=&quot;0&quot;&gt; &lt;li&gt;&lt;span style=&quot;text-decoration: underline;&quot;&gt;Pioneer Innovation:&lt;/span&gt; Work with the global leader in Process Mining and the Process Intelligence Graph to shape the future of AI-driven business operations.&lt;/li&gt; &lt;li&gt;&lt;span style=&quot;text-decoration: underline;&quot;&gt;Ownership from Day 1:&lt;/span&gt; Every full-time &quot;Celonaut&quot; is an owner, receiving Restricted Stock Units (RSUs) and merit-based refresh grants.&lt;/li&gt; &lt;li&gt;&lt;span style=&quot;text-decoration: underline;&quot;&gt;Unrivaled Family Support:&lt;/span&gt; Benefit from our inclusive parental leave policy—24 weeks of fully paid leave for primary carers and 12 weeks for supporting carers, available from your first day of employment.&lt;/li&gt; &lt;li&gt;&lt;span style=&quot;text-decoration: underline;&quot;&gt;Work-Life Integration:&lt;/span&gt; Enjoy Unlimited PTO (in applicable regions) and generous PTO globally, as well as a flexible hybrid work model that balances remote focus with vibrant office collaboration.&lt;/li&gt; &lt;li&gt;&lt;span style=&quot;text-decoration: underline;&quot;&gt;Continuous Growth:&lt;/span&gt; Elevate your skills through our 70-20-10 learning",
+      "tags": [],
+      "salary_eur": null,
+      "posted_at": "2026-06-24T14:56:22-04:00",
+      "score": 60,
+      "reasons": [
+        "+12 title match (Digital Transformation, Process Automation)",
+        "+8 skills (4 matched)",
+        "+2 English OK",
+        "+0 certs (none)",
+        "+8 location — remote (anywhere in DE)",
+        "+0 salary — salary not listed"
+      ],
+      "matched_skills": [
+        "Agile",
+        "Make",
+        "Python",
+        "SQL"
+      ],
+      "matched_titles": [
+        "Digital Transformation",
+        "Process Automation"
+      ],
+      "matched_certs": [],
+      "ats_keywords_to_add": [
+        "UiPath",
+        "Orchestrator",
+        "Blue Prism",
+        "Power Automate",
+        "Power BI",
+        "RPA",
+        "Robotic Process Automation",
+        "n8n"
+      ],
+      "_age_hours": 14
+    },
+    {
+      "id": "greenhouse-celonis-7627719003",
+      "source": "greenhouse",
+      "company": "Celonis",
+      "title": "Associate Technology Consultant - Galaxy Graduate Program",
+      "location": "Munich, Germany",
+      "country": "Germany",
+      "remote_ok": false,
+      "url": "https://job-boards.greenhouse.io/celonis/jobs/7627719003?gh_jid=7627719003",
+      "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Celonis is the global leader in Process Intelligence and the pioneer of Process Mining technology. As one of the world’s fastest-growing enterprise SaaS companies, we are changemakers pushing the boundaries of what’s possible. We invest heavily in advanced AI capabilities—specifically our Process Intelligence Graph—to turn data insights into immediate business action. We believe there is a massive opportunity to unlock global productivity and sustainability by placing intelligence at the core of every business process. Join our mission to make processes work for people, companies, and the planet.&lt;/p&gt;&lt;/div&gt;&lt;h2&gt;The Team&amp;nbsp;&lt;/h2&gt; &lt;p&gt;You will be joining the Celonis Services team. Our team’s mission is to drive product success along three core principles: simplicity, focus, and execution.&amp;nbsp;&lt;/p&gt; &lt;p&gt;As a team, we enjoy working in a fast-paced environment and share a sense of belonging to a community that wants to learn and grow together. The team culture is based on diversity, trust, continuous development, and improvement with people from across the globe.&amp;nbsp;&lt;/p&gt; &lt;p&gt;The Galaxy program unites Celonauts across different locations into one dedicated onboarding program which develops recent graduates into well rounded, skilled Services professionals in 12 months.&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;p&gt;&amp;nbsp;&lt;/p&gt; &lt;h2&gt;The Role&lt;/h2&gt; &lt;p&gt;In this role you have the chance to launch your career in the enterprise software world by joining the Galaxy Graduate Program as an Associate Technology Consultant. The Galaxy Program will provide you with a structured approach to kick start your career within Celonis, learning and delivering value to our customers, over a period of 12 months.&lt;/p&gt; &lt;p&gt;In particular, Galaxy’s cohort structure nature will develop your expertise across the Celonis value journey with a focus on learning the technology, implementation cycle, approaches to innovation and automation, enablement, support, and customer engagement best practices.&amp;nbsp;&lt;/p&gt; &lt;h3&gt;The work you’ll do:&lt;/h3&gt; &lt;p&gt;As an Associate Services Consultant (within the Galaxy Program), you will be an integral part of our teams, preparing yourself for a career with Celonis. The program will combine learning and hands-on experience, making sure all aspects of the post-sale customer experience are represented.&lt;/p&gt; &lt;p&gt;The following activities are part of the program:&amp;nbsp;&lt;/p&gt; &lt;ul&gt; &lt;li&gt;Practical assignments across our customer projects. Accelerate our customers’ digital transformation and drive Celonis’ expansion within the market.&amp;nbsp;&lt;/li&gt; &lt;ul&gt; &lt;li&gt;Deploy high-value use cases&lt;/li&gt; &lt;li&gt;Perform complex data transformations to optimize data for analysis&lt;/li&gt; &lt;li&gt;Collaborate with consultants to develop analyses&amp;nbsp;&lt;/li&gt; &lt;li&gt;Conduct precise calculations of KPIs integrated in customer solutions&lt;/li&gt; &lt;li&gt;Support the configuration of Process Intelligence implementations for customers&lt;/li&gt; &lt;li&gt;Assist in troubleshooting and resolving technical issues for customers&lt;/li&gt; &lt;li&gt;Develop individual Python scripts utilizing Machine Learning Workbench (MLWB) to efficiently consume and transmit data to Process Intelligence Platform&lt;/li&gt; &lt;li&gt;Collaborate with the Celonis Academy team to create custom enablement plans and train customer&#39;s analysts and business users on the analysis, KPIs and other Celonis solutions you developed&lt;/li&gt; &lt;/ul&gt; &lt;li&gt;Rotate between the various teams within the Celonis Services organization.&lt;/li&gt; &lt;ul&gt; &lt;li&gt;Customer-facing implementation consulting&lt;/li&gt; &lt;li&gt;Technical onboarding,&amp;nbsp;&lt;/li&gt; &lt;li&gt;Celonis support,&lt;/li&gt; &lt;li&gt;Academy and global programs.&amp;nbsp;&lt;/li&gt; &lt;/ul&gt; &lt;/ul&gt; &lt;h3&gt;The qualifications you need:&lt;/h3&gt; &lt;p&gt;We are looking for people who enjoy solving problems, thinking outside the box, and are not afraid to make and learn from mistakes.&amp;nbsp;&lt;/p&gt; &lt;p&gt;You have a degree level in the field of Business Informatics, Computer Science, Information-oriented Business Administration/Economics, Mathematics or a comparable degree program and gained first working experience in (IT-) Consulting or a similar area in the form of an internship.&amp;nbsp;&lt;/p&gt; &lt;p&gt;You have a strong interest in Big Data, Data Mining, AI and Process Mining and you seek continuous improvement of your know-how.&lt;/p&gt; &lt;p&gt;Any exposure to process mining principles and completion of Celonis &quot;Rising Star&quot; modules would be a welcome indicator of your eagerness to develop in this field.&lt;/p&gt; &lt;p&gt;&lt;strong&gt;You are available to start working full time from September 15, 2026 onwards, with the rest of our global cohort.&lt;/strong&gt;&lt;/p&gt; &lt;p&gt;&amp;nbsp;&lt;/p&gt; &lt;h2&gt;You are successful as an Associate Galaxy Celonaut if you:&lt;/h2&gt; &lt;ul&gt; &lt;li&gt;Enjoy interacting with various customers&amp;nbsp;&lt;/li&gt; &lt;li&gt;Understand and are able to interpret business processes&lt;/li&gt; &lt;li&gt;Are a person with analytical skills, and have a basic knowledge of SQL, Python or other programming languages (R, Matlab...)&lt;/li&gt; &lt;li&gt;Search for a job with a steep learning curve in order to think outside the box and to continuously broaden your knowledge&lt;/li&gt; &lt;li style=&quot;font-weight: bold;&quot;&gt;&lt;strong&gt;Have native/proficient German skills and are fluent in English.&lt;/strong&gt;&lt;/li&gt; &lt;/ul&gt;&lt;div class=&quot;content-conclusion&quot;&gt;&lt;p&gt;&lt;strong&gt;What Celonis can offer you:&lt;/strong&gt;&lt;/p&gt; &lt;ul class=&quot;p-rich_text_list p-rich_text_list__bullet p-rich_text_list--nested&quot; data-stringify-type=&quot;unordered-list&quot; data-list-tree=&quot;true&quot; data-indent=&quot;0&quot; data-border=&quot;0&quot;&gt; &lt;li&gt;&lt;span style=&quot;text-decoration: underline;&quot;&gt;Pioneer Innovation:&lt;/span&gt; Work with the global leader in Process Mining and the Process Intelligence Graph to shape the future of AI-driven business operations.&lt;/li&gt; &lt;li&gt;&lt;span style=&quot;text-decoration: underline;&quot;&gt;Ownership from Day 1:&lt;/span&gt; Every full-time &quot;Celonaut&quot; is an owner, receiving Restricted Stock Units (RSUs) and merit-based refresh grants.&lt;/li&gt; &lt;li&gt;&lt;span style=&quot;text-decoration: underline;&quot;&gt;Unrivaled Family Support:&lt;/span&gt; Benefit from our inclusive parental leave policy—24 weeks of fully paid leave for primary carers and 12 weeks for supporting carers, available from your first day of employment.&lt;/li&gt; &lt;li&gt;&lt;span style=&quot;text-decoration: underline;&quot;&gt;Work-Life Integration:&lt;/span&gt; Enjoy Unlimited PTO (in applicable regions) and generous PTO globally, as well as a flexible hybrid work model that balances remote focus with vibrant office collaboration.&lt;/li&gt; &lt;li&gt;&lt;span style=&quot;text-decoration: underline;&quot;&gt;Continuous Growth:&lt;/span&gt; Elevate your skills through our 70-20-10 learning framework, mentorship programs, and access to a dedicated learning platform.&lt;/li&gt; &lt;li&gt;&lt;span style=&quot;text-decoration: underline;&quot;&gt;Holistic Well-being:&lt;/span&gt; Prioritize your health with subsidized Wellhub memberships, mental health counseling, and dedicated &quot;Wellness Weeks&quot; that prioritize work/life balance.&lt;/li&gt; &lt;li&gt;&lt;span style=&quot;text-decoration: underline;&quot;&gt;Drive Sustainability:&lt;/span&gt; Participate in annual Impact Days, where you receive paid time off to volunteer for community and environmental causes with your local office, or virtually.&lt;/li&gt; &lt;li&gt;&lt;s",
+      "tags": [],
+      "salary_eur": null,
+      "posted_at": "2026-06-17T09:57:15-04:00",
+      "score": 55,
+      "reasons": [
+        "+6 title match (Digital Transformation)",
+        "+6 skills (3 matched)",
+        "+3 EN + DE OK",
+        "+0 certs (none)",
+        "+10 location — hybrid (munich, ~120km from Regensburg)",
+        "+0 salary — salary not listed"
+      ],
+      "matched_skills": [
+        "Make",
+        "Python",
+        "SQL"
+      ],
+      "matched_titles": [
+        "Digital Transformation"
+      ],
+      "matched_certs": [],
+      "ats_keywords_to_add": [
+        "UiPath",
+        "Orchestrator",
+        "Blue Prism",
+        "Power Automate",
+        "Power BI",
+        "RPA",
+        "Robotic Process Automation",
+        "n8n"
+      ],
+      "_age_hours": 187
+    },
+    {
+      "id": "greenhouse-raisin-4871004101",
+      "source": "greenhouse",
+      "company": "Raisin",
+      "title": "(Junior) Third Party Control & Process Manager (m/f/d)",
+      "location": "Berlin, Berlin, Germany; Frankfurt a. M.; Munich",
+      "country": "Germany",
+      "remote_ok": false,
+      "url": "https://job-boards.eu.greenhouse.io/raisin/jobs/4871004101",
+      "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p class=&quot;sc-gEkIjz cjtSrT MuiTypography-root MuiTypography-body1 sc-hoLEA&quot;&gt;Raisin is the world’s leading platform for savings and investment products. Founded in 2012, the&amp;nbsp;&lt;strong&gt;FinTech&lt;/strong&gt; connects consumers with banks in the EU, the UK and the US. This gives consumers &lt;strong&gt;better interest rates&lt;/strong&gt; and banks a &lt;strong&gt;diversified form of refinancing&lt;/strong&gt;. Our vision is to offer savings and investments without barriers and thus open up the global 160 trillion euro market.&lt;/p&gt; &lt;p class=&quot;sc-gEkIjz cjtSrT MuiTypography-root MuiTypography-body1 sc-hoLEA&quot;&gt;Raisin currently employs more than 800 people from over 75 countries worldwide. Today, the platform holds over 80 billion euros in assets from&amp;nbsp;&lt;strong&gt;more than one million investors&lt;/strong&gt; which have accrued over 5 billion euros in returns.&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;&lt;strong&gt;Team&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt; &lt;p&gt;The Raisin Platform Solutions team is at the vital center of our service bank. Composed of talented professionals driven by a passion for efficiency, innovation, and seamless financial transactions, this team is at the forefront of shaping the future of modern banking services.&amp;nbsp;&lt;br&gt;Our mission is to revolutionize the landscape of banking through the strategic application of technology, data-driven insights, and a commitment to delivering unparalleled service. We stand at the intersection of finance and technology, where every member plays a crucial role in driving operational excellence.&amp;nbsp;&lt;/p&gt; &lt;p&gt;&lt;br&gt;&lt;strong&gt;Your Responsibilities&lt;/strong&gt;&lt;/p&gt; &lt;p&gt;We are looking for a strategic and process-driven Business Development Manager to support our Third-Party Management function. In this role, you will own the end-to-end operational lifecycle of our critical vendors, external partners, and outsourced service providers.&lt;/p&gt; &lt;p&gt;A critical component of this role is ensuring our third-party ecosystem is highly resilient and fully compliant with the Digital Operational Resilience Act (DORA). You will be responsible for ensuring that external partners operate seamlessly, adhere to strict Service Level Agreements (SLAs), and meet rigorous ICT (Information and Communication Technology) risk management standards to continuously deliver value to our core business operations safely.&lt;/p&gt; &lt;p&gt;&lt;strong&gt;Vendor Lifecycle &amp;amp; Operational Relationship Management&lt;/strong&gt;&lt;/p&gt; &lt;ul&gt; &lt;li&gt;Own the end-to-end third-party operational lifecycle, from initial onboarding and technical integration to continuous monitoring and eventual offboarding.&lt;/li&gt; &lt;li&gt;Build and maintain strong, strategic relationships with key external partners, acting as the primary point of escalation for operational bottlenecks and service disruptions.&lt;/li&gt; &lt;li&gt;Collaborate closely with Compliance, Procurement and Legal teams to ensure operational readiness and compliance requirements are met during the vendor selection and renewal phases.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;strong&gt;Digital Operational Resilience &amp;amp; DORA Compliance&lt;/strong&gt;&lt;/p&gt; &lt;ul&gt; &lt;li&gt;Lead the implementation and ongoing management of ICT third-party risk management controls in strict alignment with DORA requirements.&lt;/li&gt; &lt;li&gt;Maintain an accurate and up-to-date Register of Information detailing all ICT third-party service dependencies.&lt;/li&gt; &lt;li&gt;Partner with InfoSec, Compliance, and Risk teams to conduct regular vendor risk assessments, evaluate concentration risks, and ensure third parties participate in required operational resilience testing (e.g., TLPT).&lt;/li&gt; &lt;li&gt;Develop and maintain joint business continuity plans, robust vendor escalation matrices, and incident management protocols, ensuring alignment with DORA’s incident reporting mandates.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;strong&gt;Performance &amp;amp; SLA Monitoring&lt;/strong&gt;&lt;/p&gt; &lt;ul&gt; &lt;li&gt;Define, implement, and track rigorous KPIs and SLAs for all third-party providers.&lt;/li&gt; &lt;li&gt;Conduct regular Quarterly Business Reviews (QBRs) and performance audits with key vendors to ensure continuous improvement and strict adherence to service availability targets.&lt;/li&gt; &lt;li&gt;Design and maintain operational dashboards (e.g., via Looker) to monitor vendor performance, dependency health, and risk metrics in real-time.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;strong&gt;Process Optimization &amp;amp; Integration&lt;/strong&gt;&lt;/p&gt; &lt;ul&gt; &lt;li&gt;Design seamless operational workflows that integrate third-party services into our internal value chain without friction.&lt;/li&gt; &lt;li&gt;Transition reactive, detective vendor controls into automated, preventive systems to build stronger system-based safeguarding mechanisms.&lt;/li&gt; &lt;li&gt;Map and document product setups and process dependencies, ensuring the exact impact of third-party outages on customer orders is clearly understood and mitigated.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;strong&gt;Your Profile&lt;/strong&gt;&lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;strong&gt;Experience:&lt;/strong&gt; 1-2 years of experience in Operations, Vendor Management, or Third-Party Risk Management (TPRM), specifically within a regulated financial, FinTech, or SaaS environment.&lt;/li&gt; &lt;li&gt;&lt;strong&gt;Regulatory knowledge (DORA):&lt;/strong&gt; particularly its pillars relating to ICT third-party risk management, incident reporting, and resilience testing.&lt;/li&gt; &lt;li&gt;&lt;strong&gt;Risk &amp;amp; Controls:&lt;/strong&gt; Deep understanding of vendor due diligence, SLA formulation, and transitioning operational controls from detective to preventive models.&lt;/li&gt; &lt;li&gt;&lt;strong&gt;Analytical Skills:&lt;/strong&gt; Highly data-driven with the ability to build performance metrics and utilize data visualization tools e.g., Looker, Snowflake, Excel/Google Sheets to monitor vendor health.&lt;/li&gt; &lt;li&gt;&lt;strong&gt;Stakeholder Management:&lt;/strong&gt; Exceptional communication skills with the ability to collaborate effectively with technical teams, compliance officers, C-level executives, and external partners.&lt;/li&gt; &lt;li&gt;&lt;strong&gt;Language:&lt;/strong&gt; Fluent in English and German (B2).&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;strong&gt;Join our mission, join our team – and grow with us!&lt;/strong&gt;&lt;/p&gt; &lt;p&gt;At Raisin, we care about each other and it is one of our top priorities to foster an open and caring environment in which everyone feels welcome and comfortable. Our culture is strongly driven by our ambitious team, which connects more than 75 different nationalities.&lt;/p&gt; &lt;p&gt;As part of our team, you will benefit from:&lt;/p&gt; &lt;ul&gt; &lt;li&gt;Employee Development Budget of €2,000 and four full training days per year.&lt;/li&gt; &lt;li&gt;Flexible working hours, home office and 30 vacation days.&lt;/li&gt; &lt;li&gt;A company pension scheme (Betriebliche Altersvorsorge), which we support with 20%.&lt;/li&gt; &lt;li&gt;Enjoy more than 50+ different sports with Urban Sports Club: We subsidize your membership with more than €20 per month.&amp;nbsp;&lt;/li&gt; &lt;li&gt;Do you miss being in the office? The Deutschland Ticket gets you there, which we subsidize with €25 per month.&lt;/li&gt; &lt;li&gt;Love cycling? With JobRad, lease the bike of your choice and enjoy tax savings, plus Raisin covers your monthly insurance costs.&lt;/li&gt; &lt;li&gt;Hungry all the time? Snacks, daily fresh fruit as well as drinks provided at the office.&lt;/li&gt; &lt;li&gt;You are moving from another country or city to join us? We may support your reloc",
+      "tags": [],
+      "salary_eur": null,
+      "posted_at": "2026-06-23T05:14:47-04:00",
+      "score": 53,
+      "reasons": [
+        "+6 title match (Process Manager)",
+        "+4 skills (2 matched)",
+        "+3 EN + DE OK",
+        "+0 certs (none)",
+        "+10 location — hybrid (munich, ~120km from Regensburg)",
+        "+0 salary — salary not listed"
+      ],
+      "matched_skills": [
+        "Process Optimization",
+        "Stakeholder Management"
+      ],
+      "matched_titles": [
+        "Process Manager"
+      ],
+      "matched_certs": [],
+      "ats_keywords_to_add": [
+        "UiPath",
+        "Orchestrator",
+        "Blue Prism",
+        "Power Automate",
+        "Power BI",
+        "RPA",
+        "Robotic Process Automation",
+        "n8n"
+      ],
+      "_age_hours": 48
+    },
+    {
+      "id": "greenhouse-celonis-5928673003",
+      "source": "greenhouse",
+      "company": "Celonis",
+      "title": "Product Lead - Front Office - (CX, Sales, Service Marketing, Commerce)",
+      "location": "Munich, Germany",
+      "country": "Germany",
+      "remote_ok": false,
+      "url": "https://job-boards.greenhouse.io/celonis/jobs/5928673003?gh_jid=5928673003",
+      "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Celonis is the global leader in Process Intelligence and the pioneer of Process Mining technology. As one of the world’s fastest-growing enterprise SaaS companies, we are changemakers pushing the boundaries of what’s possible. We invest heavily in advanced AI capabilities—specifically our Process Intelligence Graph—to turn data insights into immediate business action. We believe there is a massive opportunity to unlock global productivity and sustainability by placing intelligence at the core of every business process. Join our mission to make processes work for people, companies, and the planet.&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;The Team&lt;/strong&gt;&lt;/p&gt; &lt;p&gt;In this role, you will be leading a product team in Business Apps that focuses on developing best-in class solutions in the domain of the Front Office spanning Customer Service, Marketing, Sales and Commerce. Business Apps are purpose-built solutions created for a specific line of business, addressing most impactful pain points. The apps are best practice examples of how Celonis is used in new, innovative ways that push the boundaries of our platform. The team has a great balance of technical skills to build solutions paired with a customer focus and product management mindset to create meaningful products widely adopted across our customer base.&lt;/p&gt; &lt;p&gt;&lt;strong&gt;The Role:&lt;/strong&gt;&lt;/p&gt; &lt;p&gt;You will build and lead a team of product managers that work directly with both customers, account teams and their counterparts in Product and Engineering on using Celonis to seize opportunities in the Front Office Domain. Your focus will be on productizing valuable and scalable use cases and thereby impact and shape the future of Process Intelligence in the Front Office. Take this chance to rethink the way companies run their customer facing processes and help our customers to accelerate their value realization with Celonis.&lt;/p&gt; &lt;p&gt;&lt;strong&gt;The work you’ll do:&lt;/strong&gt;&lt;/p&gt; &lt;ul&gt; &lt;li&gt;Lead a team of product managers, defining the product strategy and roadmap for the Front Office domain, within the broader context of our Business Apps strategy&lt;/li&gt; &lt;li&gt;Work closely with customers to understand their pain points with a focus on Procurement (both direct and indirect) and adjacent areas&lt;/li&gt; &lt;li&gt;Be involved in all steps within the product development lifecycle from ideation to product development to scaling solutions across all Celonis customers&lt;/li&gt; &lt;li&gt;Use the Celonis Process Intelligence Platform to develop new, innovative solutions in the area of the Front Office&lt;/li&gt; &lt;li&gt;Collaborate with platform product managers and engineers to guide and influence feature development of the platform&lt;/li&gt; &lt;li&gt;Work together with our UX team to define the user experience for our products&lt;/li&gt; &lt;li&gt;Create alignment across key parts of the Celonis organization, including Product, Engineering, Product Marketing, Value Engineering and Sales.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;If you are passionate about Service, Sales, Marketing and Commerce processes and the Celonis technology, and what it can do for our customers, here&#39;s your chance to directly contribute to taking our Celonis Process Intelligence Platform to the next level.&lt;/p&gt; &lt;p&gt;&lt;strong&gt;The qualifications you need:&lt;/strong&gt;&lt;/p&gt; &lt;ul&gt; &lt;li&gt;8+ years of experience in operational Front Office functions (Sales, Service Marketing, Commerce), Solution Engineering, Enterprise CX Software, CX Analyst or comparable roles&lt;/li&gt; &lt;li&gt;Deep understanding of Front Office Solutions such as Customer Relationship Management (CRM), Sales and Service Automation Software, Marketing and Commerce Platforms, Communication Software Systems or Customer Experience Platforms&lt;/li&gt; &lt;li&gt;Comprehensive knowledge of CX market and industry trends&lt;/li&gt; &lt;li&gt;Strong expertise in product development and go-to-market strategies with a track record in developing and launching successful products&lt;/li&gt; &lt;li&gt;Demonstrated experience in product marketing, messaging, and positioning&lt;/li&gt; &lt;li&gt;Proven ability to lead and manage high-performing teams&lt;/li&gt; &lt;li&gt;Outstanding stakeholder management skills across organizational functions&lt;/li&gt; &lt;li&gt;Excellent verbal and written communication abilities&lt;/li&gt; &lt;li&gt;Fluent in English (German language is a plus)&lt;/li&gt; &lt;/ul&gt;&lt;div class=&quot;content-conclusion&quot;&gt;&lt;p&gt;&lt;strong&gt;What Celonis can offer you:&lt;/strong&gt;&lt;/p&gt; &lt;ul class=&quot;p-rich_text_list p-rich_text_list__bullet p-rich_text_list--nested&quot; data-stringify-type=&quot;unordered-list&quot; data-list-tree=&quot;true&quot; data-indent=&quot;0&quot; data-border=&quot;0&quot;&gt; &lt;li&gt;&lt;span style=&quot;text-decoration: underline;&quot;&gt;Pioneer Innovation:&lt;/span&gt; Work with the global leader in Process Mining and the Process Intelligence Graph to shape the future of AI-driven business operations.&lt;/li&gt; &lt;li&gt;&lt;span style=&quot;text-decoration: underline;&quot;&gt;Ownership from Day 1:&lt;/span&gt; Every full-time &quot;Celonaut&quot; is an owner, receiving Restricted Stock Units (RSUs) and merit-based refresh grants.&lt;/li&gt; &lt;li&gt;&lt;span style=&quot;text-decoration: underline;&quot;&gt;Unrivaled Family Support:&lt;/span&gt; Benefit from our inclusive parental leave policy—24 weeks of fully paid leave for primary carers and 12 weeks for supporting carers, available from your first day of employment.&lt;/li&gt; &lt;li&gt;&lt;span style=&quot;text-decoration: underline;&quot;&gt;Work-Life Integration:&lt;/span&gt; Enjoy Unlimited PTO (in applicable regions) and generous PTO globally, as well as a flexible hybrid work model that balances remote focus with vibrant office collaboration.&lt;/li&gt; &lt;li&gt;&lt;span style=&quot;text-decoration: underline;&quot;&gt;Continuous Growth:&lt;/span&gt; Elevate your skills through our 70-20-10 learning framework, mentorship programs, and access to a dedicated learning platform.&lt;/li&gt; &lt;li&gt;&lt;span style=&quot;text-decoration: underline;&quot;&gt;Holistic Well-being:&lt;/span&gt; Prioritize your health with subsidized Wellhub memberships, mental health counseling, and dedicated &quot;Wellness Weeks&quot; that prioritize work/life balance.&lt;/li&gt; &lt;li&gt;&lt;span style=&quot;text-decoration: underline;&quot;&gt;Drive Sustainability:&lt;/span&gt; Participate in annual Impact Days, where you receive paid time off to volunteer for community and environmental causes with your local office, or virtually.&lt;/li&gt; &lt;li&gt;&lt;span style=&quot;text-decoration: underline;&quot;&gt;Global Inclusion &amp;amp; Belonging:&lt;/span&gt; Find community through our Inclusion Think Tank and participate in our annual Inclusion Days, ensuring every voice is heard and valued.&lt;/li&gt; &lt;li&gt;&lt;span style=&quot;text-decoration: underline;&quot;&gt;Value-Driven Impact:&lt;/span&gt; Join a mission-led organization where our core values—Live for Customer Value, The Best Team Wins, We Own It, and Earth Is Our Future—drive every decision.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;strong&gt;About Us:&lt;/strong&gt;&lt;/p&gt; &lt;p&gt;Celonis makes processes work — for people, companies, and the planet. Powered by process mining and AI, the Celonis Process Intelligence Platform integrates process data and business context to create a living digital twin of business operations. We enable thousands of companies worldwide to understand how their business actually runs and, together with their partners, build intelligent solutions that transform and continuously improve the way they operate — unlocking billions in value. Celonis is headquartered in Munich, Germany, and New York City, USA, ",
+      "tags": [],
+      "salary_eur": null,
+      "posted_at": "2026-06-09T10:18:37-04:00",
+      "score": 53,
+      "reasons": [
+        "+6 title match (Product Manager)",
+        "+4 skills (2 matched)",
+        "+3 EN + DE OK",
+        "+0 certs (none)",
+        "+10 location — hybrid (munich, ~120km from Regensburg)",
+        "+0 salary — salary not listed"
+      ],
+      "matched_skills": [
+        "Make",
+        "Stakeholder Management"
+      ],
+      "matched_titles": [
+        "Product Manager"
+      ],
+      "matched_certs": [],
+      "ats_keywords_to_add": [
+        "UiPath",
+        "Orchestrator",
+        "Blue Prism",
+        "Power Automate",
+        "Power BI",
+        "RPA",
+        "Robotic Process Automation",
+        "n8n"
+      ],
+      "_age_hours": 379
+    },
+    {
+      "id": "greenhouse-celonis-7749202003",
+      "source": "greenhouse",
+      "company": "Celonis",
+      "title": "Principal Client Value Partner - Retail",
+      "location": "Munich, Germany",
+      "country": "Germany",
+      "remote_ok": false,
+      "url": "https://job-boards.greenhouse.io/celonis/jobs/7749202003?gh_jid=7749202003",
+      "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Celonis is the global leader in Process Intelligence and the pioneer of Process Mining technology. As one of the world’s fastest-growing enterprise SaaS companies, we are changemakers pushing the boundaries of what’s possible. We invest heavily in advanced AI capabilities—specifically our Process Intelligence Graph—to turn data insights into immediate business action. We believe there is a massive opportunity to unlock global productivity and sustainability by placing intelligence at the core of every business process. Join our mission to make processes work for people, companies, and the planet.&lt;/p&gt;&lt;/div&gt;&lt;h3&gt;&lt;strong&gt;The Opportunity&lt;/strong&gt;&lt;/h3&gt; &lt;p&gt;Are you a business outcome-driven transformation leader with 15+ years of experience designing and operationalizing large-scale cloud, edge, and AI platforms? We are looking for a Client Value Partner to bridge the gap between business and technology for top-tier retail, CPG, and logistics enterprise accounts.&lt;/p&gt; &lt;p&gt;You will act as a senior technical advisor to C-suite executives, guiding teams from prototype to production at a global scale. By combining Process Intelligence software (Celonis) with cutting-edge Edge AI and cloud technologies, you will map strategic goals to a long-term vision, deploy Process Mining Centers of Excellence, and architect large-scale transformational programs at Fortune 500 clients.&lt;/p&gt; &lt;h3&gt;&lt;strong&gt;The Work:&lt;/strong&gt;&lt;/h3&gt; &lt;h3&gt;&lt;strong&gt;Identify &amp;amp; Frame Value&lt;/strong&gt;&lt;/h3&gt; &lt;ul&gt; &lt;li&gt;&lt;strong&gt;Translate Strategy to Operations:&lt;/strong&gt;&amp;nbsp;Analyze the client&#39;s strategic goals and map them to a long-term vision utilizing Process Intelligence software.&lt;/li&gt; &lt;li&gt;&lt;strong&gt;Target High-Impact Areas:&lt;/strong&gt;&amp;nbsp;Architect the C-suite agenda by optimizing entire value chains, specifically targeting areas like procurement operations and inventory management. Integrate store-level anti-shrink detection, robotics, and automation enabling new retail concepts.&lt;/li&gt; &lt;li&gt;&lt;strong&gt;Build the Business Case:&lt;/strong&gt;&amp;nbsp;Develop robust Business Cases and AI roadmaps in support of organizations. Identify opportunities for general automation, Edge compute, and AI/ML pipelines across hybrid infrastructures.&lt;/li&gt; &lt;li&gt;&lt;strong&gt;Undertake Value Assessments:&lt;/strong&gt;&amp;nbsp;Leverage deep product knowledge as a certified Celonis Value Assessment Expert to communicate value opportunities and strategic roadmaps.&lt;/li&gt; &lt;/ul&gt; &lt;h3&gt;&lt;strong&gt;Realize &amp;amp; Orchestrate Value&lt;/strong&gt;&lt;/h3&gt; &lt;ul&gt; &lt;li&gt;&lt;strong&gt;Drive Engagement Success:&lt;/strong&gt;&amp;nbsp;Head several Process Improvement workstreams for transformational programs at Fortune 500 clients.&lt;/li&gt; &lt;li&gt;&lt;strong&gt;Orchestrate the Ecosystem:&lt;/strong&gt;&amp;nbsp;Deploy Process Mining Centers of Excellence to support the deployment and operationalization of Celonis. Coordinate technical teams to deliver architecture reviews, executive workshops, demos, and technical execution.&lt;/li&gt; &lt;li&gt;&lt;strong&gt;Solve Systemic Challenges:&lt;/strong&gt;&amp;nbsp;Develop custom data models, data dashboards, and automations to identify and correct errors, and execute requirements gathering to prevent mismatches of invoices, goods receipts, and purchase orders.&lt;/li&gt; &lt;li&gt;&lt;strong&gt;Facilitate Workshops:&lt;/strong&gt;&amp;nbsp;Facilitate process mapping workshops to identify and qualify opportunities for process enhancement in Supply Chain and Finance functions. Accelerate Proof of Concepts to drive business and technology decisions.&lt;/li&gt; &lt;li&gt;&lt;strong&gt;Deliver Measurable Impact:&lt;/strong&gt;&amp;nbsp;Drive significant P&amp;amp;L and Working Capital savings while automating workflows to save thousands of hours of manual effort for clients. Target shaping technical strategy with an estimated&amp;nbsp;&lt;strong&gt;$100M+&lt;/strong&gt;&amp;nbsp;in customer ROI.&lt;/li&gt; &lt;li&gt;&lt;strong&gt;Manage Architectural Risk:&lt;/strong&gt;&amp;nbsp;Perform architectural risk reviews to validate system direction early and minimize vulnerability exposure. Partner with infosec and legal teams to define strict guardrails for AI data collection, training, privacy, and Responsible AI.&lt;/li&gt; &lt;/ul&gt; &lt;h3&gt;&lt;strong&gt;Scale &amp;amp; Innovate&lt;/strong&gt;&lt;/h3&gt; &lt;ul&gt; &lt;li&gt;&lt;strong&gt;Codify Best Practices:&lt;/strong&gt;&amp;nbsp;Develop standards to analyze, automate, and improve business processes in a product-agnostic manner. Streamline deployments utilizing CI/CD and infrastructure automation concepts.&lt;/li&gt; &lt;li&gt;&lt;strong&gt;Build Strategic Partnerships:&lt;/strong&gt;&amp;nbsp;Develop meaningful partnerships with various process-oriented firms to support clients across data preparation, system migration, data warehousing, and process mining use case needs.&lt;/li&gt; &lt;li&gt;&lt;strong&gt;Innovate &amp;amp; Enable:&lt;/strong&gt;&amp;nbsp;Publish internally developed applications to enable customers to identify appropriate levels of inventory and take corrective action. Drive innovation utilizing IoT, computer vision, and experimental GPUs.&lt;/li&gt; &lt;li&gt;&lt;strong&gt;Expand Global Footprint:&lt;/strong&gt;&amp;nbsp;Manage multi-year regional deployments supporting multiple countries and languages for multi-national clients.&lt;/li&gt; &lt;/ul&gt; &lt;h3&gt;&lt;strong&gt;The Qualifications You Need&lt;/strong&gt;&lt;/h3&gt; &lt;ul&gt; &lt;li&gt;&lt;strong&gt;Deep Industry Experience:&lt;/strong&gt; 15+ years of relevant experience designing and operationalizing large-scale platforms, ideally combining time at a global Retail, Logistics, or Supply Chain-intensive firm with Strategy Consulting. You possess a proven track record delivering solutions for major enterprises.&lt;/li&gt; &lt;li&gt;&lt;strong&gt;Consulting Leadership:&lt;/strong&gt; Proven progression in consulting, with experience serving as a Consultant, Senior Consultant, Manager, Director or Vice President.&lt;/li&gt; &lt;li&gt;&lt;strong&gt;Value Realization Skills:&lt;/strong&gt;&amp;nbsp;You have a track record of driving large-scale transformation programs. You understand how to impact the P&amp;amp;L through inventory optimization, logistics efficiency, and cash flow improvement.&lt;/li&gt; &lt;li&gt;&lt;strong&gt;Domain Expertise:&lt;/strong&gt;&amp;nbsp;Demonstrated experience managing multi-year deployments for multi-national CPG clients, coupled with a deep understanding of accounts payable and procurement operations.&lt;/li&gt; &lt;li&gt;&lt;strong&gt;Technical Fluency:&lt;/strong&gt;&amp;nbsp;You understand the modern supply chain stack (SAP S/4HANA, Oracle, TMS/WMS systems) and how to translate Celonis use cases into the customer&#39;s specific business landscape.&lt;/li&gt; &lt;li&gt;&lt;strong&gt;Stakeholder Management:&lt;/strong&gt;&amp;nbsp;Exceptional stakeholder management skills, with proven experience working closely with application owners, server owners, managed service providers, and business leadership.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;div class=&quot;content-conclusion&quot;&gt;&lt;p&gt;&lt;strong&gt;What Celonis can offer you:&lt;/strong&gt;&lt;/p&gt; &lt;ul class=&quot;p-rich_text_list p-rich_text_list__bullet p-rich_text_list--nested&quot; data-stringify-type=&quot;unordered-list&quot; data-list-tree=&quot;true&quot; data-indent=&quot;0&quot; data-border=&quot;0&quot;&gt; &lt;li&gt;&lt;span style=&quot;text-decoration: underline;&quot;&gt;Pioneer Innovation:&lt;/span&gt; Work with the global leader in Process Mining and the Process Intelligence Graph to shape the future of AI-driven business operations.&lt;/li&gt; &lt;li&gt",
+      "tags": [],
+      "salary_eur": null,
+      "posted_at": "2026-05-27T04:19:13-04:00",
+      "score": 53,
+      "reasons": [
+        "+6 title match (Transformation Lead)",
+        "+6 skills (3 matched)",
+        "+1 German mentioned",
+        "+0 certs (none)",
+        "+10 location — hybrid (munich, ~120km from Regensburg)",
+        "+0 salary — salary not listed"
+      ],
+      "matched_skills": [
+        "CI/CD",
+        "Make",
+        "Stakeholder Management"
+      ],
+      "matched_titles": [
+        "Transformation Lead"
+      ],
+      "matched_certs": [],
+      "ats_keywords_to_add": [
+        "UiPath",
+        "Orchestrator",
+        "Blue Prism",
+        "Power Automate",
+        "Power BI",
+        "RPA",
+        "Robotic Process Automation",
+        "n8n"
+      ],
+      "_age_hours": 697
+    },
+    {
+      "id": "arbeitnow-senior-data-analyst-crm-munich-337424",
+      "source": "arbeitnow",
+      "title": "Senior Data Analyst - CRM (m/f/d)",
+      "company": "Flix",
+      "location": "Munich, Bavaria, Germany",
+      "country": "Germany",
+      "remote_ok": false,
+      "url": "https://www.arbeitnow.com/jobs/companies/flix/senior-data-analyst-crm-munich-337424",
+      "description": "<p style=\"line-height: 1.4;\"><span style=\"font-size: 12pt;\">At Flix, we offer a dynamic work environment with competitive pay, strong growth opportunities, and a tech-driven approach to making travel more accessible, sustainable, and affordable. &nbsp;</span></p>\n<p style=\"line-height: 1.4;\"><span style=\"font-size: 12pt;\">As a<strong data-renderer-mark=\"true\"> Senior Data Analyst (m/f/d),</strong> you will join our global CRM team. This is an important role for CRM at Flix as we expand our capabilities, redefine our communication strategy and constantly optimize for maximum growth, as well as scalability and efficiency. We support global market growth with our marketing activities to increase repeated purchases and prevent churn. We always aim for cutting-edge technologies and a high level of innovation. By joining our team, you will be a crucial part of driving the team forward, developing our brands and customer communication throughout the globe.</span></p>\n<p><span style=\"font-size: 24pt;\"><strong data-renderer-mark=\"true\">About the Role</strong></span></p>\n<div>\n<ul>\n<li style=\"font-size: 12pt;\"><span style=\"font-size: 12pt;\">Own CRM analytics and reporting across 45+ markets, delivering clear visibility into performance, customer behavior, and commercial impact</span></li>\n<li style=\"font-size: 12pt;\"><span style=\"font-size: 12pt;\">Build and maintain Power BI dashboards providing real-time tracking of CRM performance, targets, and business trends</span></li>\n<li style=\"font-size: 12pt;\"><span style=\"font-size: 12pt;\">Deliver actionable insights on campaign performance, drivers of customer behavior, value-generating segments, and cross-market differences</span></li>\n<li style=\"font-size: 12pt;\"><span style=\"font-size: 12pt;\">Develop scalable, automated reporting solutions alongside deep-dive analyses and ad hoc business investigations</span></li>\n<li style=\"font-size: 12pt;\"><span style=\"font-size: 12pt;\">Monitor and optimize key CRM KPIs (engagement, conversion, retention, reactivation, communication effectiveness) and customer lifecycle performance</span></li>\n<li style=\"font-size: 12pt;\"><span style=\"font-size: 12pt;\">Partner with CRM, data, and product teams to improve segmentation, personalization, experimentation, tracking quality, and data reliability</span></li>\n<li style=\"font-size: 12pt;\"><span style=\"font-size: 12pt;\">Evaluate A/B tests and proactively identify trends, anomalies, risks, and opportunities, presenting clear recommendations to senior stakeholders</span></li>\n</ul>\n</div>\n<p><span style=\"font-size: 24pt;\"><strong>About You</strong></span></p>\n<div>\n<ul>\n<li style=\"font-size: 12pt;\"><span style=\"font-size: 12pt;\">5+ years of experience in data analytics or BI, ideally within CRM, marketing, or e-commerce environments</span></li>\n<li style=\"font-size: 12pt;\"><span style=\"font-size: 12pt;\">Proven track record of building dashboards and automated reporting solutions for non-technical stakeholders</span></li>\n<li style=\"font-size: 12pt;\"><span style=\"font-size: 12pt;\">Strong SQL expertise (CTEs, window functions, multi-table joins) in a modern cloud data warehouse, preferably Snowflake</span></li>\n<li style=\"font-size: 12pt;\"><span style=\"font-size: 12pt;\">Advanced Power BI skills including data modeling, DAX, and best-practice dashboard design and visualization</span></li>\n<li style=\"font-size: 12pt;\"><span style=\"font-size: 12pt;\">Solid understanding of marketing and CRM KPIs (conversion, engagement, attribution, customer lifetime value)</span></li>\n<li style=\"font-size: 12pt;\"><span style=\"font-size: 12pt;\">Experience working cross-functionally with product, engineering, and marketing/CRM teams; familiarity with marketing automation tools (e.g., Braze is a plus)</span></li>\n<li style=\"font-size: 12pt;\"><span style=\"font-size: 12pt;\">Strong data storytelling, statistical literacy (e.g., significance testing), and a structured, detail-oriented, and autonomous working style</span></li>\n<li style=\"font-size: 12pt;\"><span style=\"font-size: 12pt;\">Proficiency in English</span></li>\n</ul>\n</div>\n<p style=\"line-height: 1.4;\"><span style=\"font-size: 12pt;\">We recognize that everyone carries a unique set of valuable skills and experiences. If you think you could have an impact even though you don't meet 100% of the requirements, we still encourage you to apply. We want to hear from you! &nbsp;</span></p>\n<p><span style=\"font-size: 24pt;\"><strong>What We Offer</strong></span></p>\n<ul>\n<li data-renderer-start-pos=\"11445\"><span style=\"font-size: 12pt;\"><strong data-renderer-mark=\"true\">Travel perks</strong>: 12 free Flix vouchers + 12 discount vouchers for friends &amp; family.&nbsp;</span></li>\n<li data-renderer-start-pos=\"11530\"><span style=\"font-size: 12pt;\"><strong data-renderer-mark=\"true\">Work from (M)Anywhere</strong>: Depending on your role, work from another location for up to 60 days per year.&nbsp;</span></li>\n<li data-renderer-start-pos=\"11636\"><span style=\"font-size: 12pt;\"><strong data-renderer-mark=\"true\">Hybrid work model</strong>: We are an office-first company, but we offer flexibility to balance work and life.&nbsp;</span></li>\n<li data-renderer-start-pos=\"11742\"><span style=\"font-size: 12pt;\"><strong data-renderer-mark=\"true\">Wellbeing support</strong>: Access confidential 1:1 counselling, courses, and stress management for yourself and up to four family members.&nbsp;</span></li>\n<li data-renderer-start-pos=\"11877\"><span style=\"font-size: 12pt;\"><strong data-renderer-mark=\"true\">Learning &amp; Development</strong>: Take advantage of language classes, training courses, and expert-led sessions to grow your skills.&nbsp;</span></li>\n<li data-renderer-start-pos=\"12004\"><span style=\"font-size: 12pt;\"><strong data-renderer-mark=\"true\">Mentoring Program</strong>: Connect with experienced colleagues to gain insights and accelerate your career.&nbsp;</span></li>\n</ul>\n<p style=\"line-height: 1.4;\"><span style=\"font-size: 12pt;\">To view more local benefits specific to each office location, please check out this link:&nbsp;<a href=\"https://flix.careers/locations/\">Locations - Flix Career</a></span></p>\n<hr>\n<p style=\"line-height: 1.4;\"><span style=\"font-size: 18pt;\"><strong>Why Join Flix?</strong></span></p>\n<p style=\"line-height: 1.4;\" data-renderer-start-pos=\"12125\"><span style=\"font-size: 12pt;\">At Flix, you'll find teams that rally together to overcome challenges and spark creativity. We believe in ownership culture - giving you the freedom to take initiative, make an impact, and shape your own career path.</span><br><span style=\"font-size: 12pt;\">As we continue to expand across the globe, you can make a real difference in how we work.</span></p>\n<p data-renderer-start-pos=\"12434\"><span style=\"font-size: 12pt;\">If you're ready to grow and lead your journey, Flix is the place for you!&nbsp;</span></p>\n<p><iframe src=\"https://www.youtube.com/embed/YlHz7TiiRAw\" width=\"560\" height=\"314\"></iframe></p>\n<p>&nbsp;</p><p>Find <a href=\"https://www.arbeitnow.com/\">Jobs in Germany</a> on Arbeitnow</a>",
+      "tags": [],
+      "salary_eur": null,
+      "posted_at": 1782308734,
+      "score": 51,
+      "reasons": [
+        "+0 title match (none)",
+        "+8 skills (4 matched)",
+        "+3 EN + DE OK",
+        "+0 certs (none)",
+        "+10 location — hybrid (munich, ~120km from Regensburg)",
+        "+0 salary — salary not listed"
+      ],
+      "matched_skills": [
+        "Make",
+        "Mentoring",
+        "Power BI",
+        "SQL"
+      ],
+      "matched_titles": [],
+      "matched_certs": [],
+      "ats_keywords_to_add": [
+        "UiPath",
+        "Orchestrator",
+        "Blue Prism",
+        "Power Automate",
+        "RPA",
+        "Robotic Process Automation",
+        "n8n",
+        "Zapier"
+      ],
+      "_age_hours": 20
+    },
+    {
+      "id": "greenhouse-celonis-7749204003",
+      "source": "greenhouse",
+      "company": "Celonis",
+      "title": "Principal Client Value Partner - Retail",
+      "location": "Remote, Germany, Duesseldorf",
+      "country": "Germany",
+      "remote_ok": true,
+      "url": "https://job-boards.greenhouse.io/celonis/jobs/7749204003?gh_jid=7749204003",
+      "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Celonis is the global leader in Process Intelligence and the pioneer of Process Mining technology. As one of the world’s fastest-growing enterprise SaaS companies, we are changemakers pushing the boundaries of what’s possible. We invest heavily in advanced AI capabilities—specifically our Process Intelligence Graph—to turn data insights into immediate business action. We believe there is a massive opportunity to unlock global productivity and sustainability by placing intelligence at the core of every business process. Join our mission to make processes work for people, companies, and the planet.&lt;/p&gt;&lt;/div&gt;&lt;h3&gt;&lt;strong&gt;The Opportunity&lt;/strong&gt;&lt;/h3&gt; &lt;p&gt;Are you a business outcome-driven transformation leader with 15+ years of experience designing and operationalizing large-scale cloud, edge, and AI platforms? We are looking for a Client Value Partner to bridge the gap between business and technology for top-tier retail, CPG, and logistics enterprise accounts.&lt;/p&gt; &lt;p&gt;You will act as a senior technical advisor to C-suite executives, guiding teams from prototype to production at a global scale. By combining Process Intelligence software (Celonis) with cutting-edge Edge AI and cloud technologies, you will map strategic goals to a long-term vision, deploy Process Mining Centers of Excellence, and architect large-scale transformational programs at Fortune 500 clients.&lt;/p&gt; &lt;h3&gt;&lt;strong&gt;The Work:&lt;/strong&gt;&lt;/h3&gt; &lt;h3&gt;&lt;strong&gt;Identify &amp;amp; Frame Value&lt;/strong&gt;&lt;/h3&gt; &lt;ul&gt; &lt;li&gt;&lt;strong&gt;Translate Strategy to Operations:&lt;/strong&gt;&amp;nbsp;Analyze the client&#39;s strategic goals and map them to a long-term vision utilizing Process Intelligence software.&lt;/li&gt; &lt;li&gt;&lt;strong&gt;Target High-Impact Areas:&lt;/strong&gt;&amp;nbsp;Architect the C-suite agenda by optimizing entire value chains, specifically targeting areas like procurement operations and inventory management. Integrate store-level anti-shrink detection, robotics, and automation enabling new retail concepts.&lt;/li&gt; &lt;li&gt;&lt;strong&gt;Build the Business Case:&lt;/strong&gt;&amp;nbsp;Develop robust Business Cases and AI roadmaps in support of organizations. Identify opportunities for general automation, Edge compute, and AI/ML pipelines across hybrid infrastructures.&lt;/li&gt; &lt;li&gt;&lt;strong&gt;Undertake Value Assessments:&lt;/strong&gt;&amp;nbsp;Leverage deep product knowledge as a certified Celonis Value Assessment Expert to communicate value opportunities and strategic roadmaps.&lt;/li&gt; &lt;/ul&gt; &lt;h3&gt;&lt;strong&gt;Realize &amp;amp; Orchestrate Value&lt;/strong&gt;&lt;/h3&gt; &lt;ul&gt; &lt;li&gt;&lt;strong&gt;Drive Engagement Success:&lt;/strong&gt;&amp;nbsp;Head several Process Improvement workstreams for transformational programs at Fortune 500 clients.&lt;/li&gt; &lt;li&gt;&lt;strong&gt;Orchestrate the Ecosystem:&lt;/strong&gt;&amp;nbsp;Deploy Process Mining Centers of Excellence to support the deployment and operationalization of Celonis. Coordinate technical teams to deliver architecture reviews, executive workshops, demos, and technical execution.&lt;/li&gt; &lt;li&gt;&lt;strong&gt;Solve Systemic Challenges:&lt;/strong&gt;&amp;nbsp;Develop custom data models, data dashboards, and automations to identify and correct errors, and execute requirements gathering to prevent mismatches of invoices, goods receipts, and purchase orders.&lt;/li&gt; &lt;li&gt;&lt;strong&gt;Facilitate Workshops:&lt;/strong&gt;&amp;nbsp;Facilitate process mapping workshops to identify and qualify opportunities for process enhancement in Supply Chain and Finance functions. Accelerate Proof of Concepts to drive business and technology decisions.&lt;/li&gt; &lt;li&gt;&lt;strong&gt;Deliver Measurable Impact:&lt;/strong&gt;&amp;nbsp;Drive significant P&amp;amp;L and Working Capital savings while automating workflows to save thousands of hours of manual effort for clients. Target shaping technical strategy with an estimated&amp;nbsp;&lt;strong&gt;$100M+&lt;/strong&gt;&amp;nbsp;in customer ROI.&lt;/li&gt; &lt;li&gt;&lt;strong&gt;Manage Architectural Risk:&lt;/strong&gt;&amp;nbsp;Perform architectural risk reviews to validate system direction early and minimize vulnerability exposure. Partner with infosec and legal teams to define strict guardrails for AI data collection, training, privacy, and Responsible AI.&lt;/li&gt; &lt;/ul&gt; &lt;h3&gt;&lt;strong&gt;Scale &amp;amp; Innovate&lt;/strong&gt;&lt;/h3&gt; &lt;ul&gt; &lt;li&gt;&lt;strong&gt;Codify Best Practices:&lt;/strong&gt;&amp;nbsp;Develop standards to analyze, automate, and improve business processes in a product-agnostic manner. Streamline deployments utilizing CI/CD and infrastructure automation concepts.&lt;/li&gt; &lt;li&gt;&lt;strong&gt;Build Strategic Partnerships:&lt;/strong&gt;&amp;nbsp;Develop meaningful partnerships with various process-oriented firms to support clients across data preparation, system migration, data warehousing, and process mining use case needs.&lt;/li&gt; &lt;li&gt;&lt;strong&gt;Innovate &amp;amp; Enable:&lt;/strong&gt;&amp;nbsp;Publish internally developed applications to enable customers to identify appropriate levels of inventory and take corrective action. Drive innovation utilizing IoT, computer vision, and experimental GPUs.&lt;/li&gt; &lt;li&gt;&lt;strong&gt;Expand Global Footprint:&lt;/strong&gt;&amp;nbsp;Manage multi-year regional deployments supporting multiple countries and languages for multi-national clients.&lt;/li&gt; &lt;/ul&gt; &lt;h3&gt;&lt;strong&gt;The Qualifications You Need&lt;/strong&gt;&lt;/h3&gt; &lt;ul&gt; &lt;li&gt;&lt;strong&gt;Deep Industry Experience:&lt;/strong&gt; 15+ years of relevant experience designing and operationalizing large-scale platforms, ideally combining time at a global Retail, Logistics, or Supply Chain-intensive firm with Strategy Consulting. You possess a proven track record delivering solutions for major enterprises.&lt;/li&gt; &lt;li&gt;&lt;strong&gt;Consulting Leadership:&lt;/strong&gt; Proven progression in consulting, with experience serving as a Consultant, Senior Consultant, Manager, Director or Vice President.&lt;/li&gt; &lt;li&gt;&lt;strong&gt;Value Realization Skills:&lt;/strong&gt;&amp;nbsp;You have a track record of driving large-scale transformation programs. You understand how to impact the P&amp;amp;L through inventory optimization, logistics efficiency, and cash flow improvement.&lt;/li&gt; &lt;li&gt;&lt;strong&gt;Domain Expertise:&lt;/strong&gt;&amp;nbsp;Demonstrated experience managing multi-year deployments for multi-national CPG clients, coupled with a deep understanding of accounts payable and procurement operations.&lt;/li&gt; &lt;li&gt;&lt;strong&gt;Technical Fluency:&lt;/strong&gt;&amp;nbsp;You understand the modern supply chain stack (SAP S/4HANA, Oracle, TMS/WMS systems) and how to translate Celonis use cases into the customer&#39;s specific business landscape.&lt;/li&gt; &lt;li&gt;&lt;strong&gt;Stakeholder Management:&lt;/strong&gt;&amp;nbsp;Exceptional stakeholder management skills, with proven experience working closely with application owners, server owners, managed service providers, and business leadership.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;div class=&quot;content-conclusion&quot;&gt;&lt;p&gt;&lt;strong&gt;What Celonis can offer you:&lt;/strong&gt;&lt;/p&gt; &lt;ul class=&quot;p-rich_text_list p-rich_text_list__bullet p-rich_text_list--nested&quot; data-stringify-type=&quot;unordered-list&quot; data-list-tree=&quot;true&quot; data-indent=&quot;0&quot; data-border=&quot;0&quot;&gt; &lt;li&gt;&lt;span style=&quot;text-decoration: underline;&quot;&gt;Pioneer Innovation:&lt;/span&gt; Work with the global leader in Process Mining and the Process Intelligence Graph to shape the future of AI-driven business operations.&lt;/li&gt; &lt;li&gt",
+      "tags": [],
+      "salary_eur": null,
+      "posted_at": "2026-05-27T04:21:32-04:00",
+      "score": 51,
+      "reasons": [
+        "+6 title match (Transformation Lead)",
+        "+6 skills (3 matched)",
+        "+1 German mentioned",
+        "+0 certs (none)",
+        "+8 location — remote (anywhere in DE)",
+        "+0 salary — salary not listed"
+      ],
+      "matched_skills": [
+        "CI/CD",
+        "Make",
+        "Stakeholder Management"
+      ],
+      "matched_titles": [
+        "Transformation Lead"
+      ],
+      "matched_certs": [],
+      "ats_keywords_to_add": [
+        "UiPath",
+        "Orchestrator",
+        "Blue Prism",
+        "Power Automate",
+        "Power BI",
+        "RPA",
+        "Robotic Process Automation",
+        "n8n"
+      ],
+      "_age_hours": 697
+    }
+  ]
+}
