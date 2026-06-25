@@ -23,6 +23,7 @@ from flask import (
 
 from config import DELIVERY, DATA
 from pipeline import run as run_pipeline
+from filters import load_prefs, save_prefs, apply_filters
 
 DIGESTS_DIR = DATA / "digests"
 DIGESTS_DIR.mkdir(exist_ok=True)
@@ -131,11 +132,21 @@ DIGEST_HTML = """<!doctype html><html><head><title>Job Radar — Digest</title>
 <div><a class="btn secondary" href="/logout">Logout</a></div>
 </header>
 <div class="container">
+  <form method="GET" action="/digest" class="toolbar" style="flex-wrap:wrap">
+    <input type="text" name="q" placeholder="🔍 Search title / company / description"
+           value="{{search}}" style="flex:1;min-width:200px;padding:9px 12px;
+           border-radius:8px;border:1px solid #334155;background:#0f172a;color:var(--text)">
+    <input type="text" name="role" placeholder="Role (e.g. uipath, automation)"
+           value="{{role}}" style="flex:1;min-width:200px;padding:9px 12px;
+           border-radius:8px;border:1px solid #334155;background:#0f172a;color:var(--text)">
+    <button class="btn" type="submit">Filter</button>
+    <a class="btn secondary" href="/prefs">⚙️ Saved filters</a>
+  </form>
   <div class="toolbar">
     <form method="POST" action="/rerun" style="display:flex;gap:8px;align-items:center">
-      <span style="color:var(--muted);font-size:13px">Custom rerun:</span>
+      <span style="color:var(--muted);font-size:13px">Rerun pipeline:</span>
       <input type="number" name="hours" value="24" min="1" max="720">
-      <span style="color:var(--muted);font-size:13px">hours</span>
+      <span style="color:var(--muted);font-size:13px">h</span>
       <label style="font-size:13px;color:var(--muted)">
         <input type="checkbox" name="global"> global
       </label>
@@ -143,11 +154,24 @@ DIGEST_HTML = """<!doctype html><html><head><title>Job Radar — Digest</title>
     </form>
     <a class="btn secondary" href="/saved">💾 Saved</a>
   </div>
+  {% if prefs.role_keywords or prefs.exclude_keywords or prefs.min_salary != 60000 or prefs.remote_only or prefs.location != 'any' %}
+  <div style="background:var(--card);padding:12px 16px;border-radius:8px;
+              margin-bottom:16px;font-size:13px;color:var(--muted)">
+    <strong style="color:var(--text)">Active saved filters:</strong>
+    {% if prefs.min_salary != 60000 %} · salary ≥ €{{ "{:,}".format(prefs.min_salary) }}{% endif %}
+    {% if prefs.min_score != 40 %} · score ≥ {{ prefs.min_score }}{% endif %}
+    {% if prefs.remote_only %} · remote only{% endif %}
+    {% if prefs.location != 'any' %} · location: {{ prefs.location }}{% endif %}
+    {% if prefs.role_keywords %} · roles: {{ prefs.role_keywords|join(', ') }}{% endif %}
+    {% if prefs.exclude_keywords %} · exclude: {{ prefs.exclude_keywords|join(', ') }}{% endif %}
+    · <a href="/prefs" style="color:var(--accent)">edit</a>
+  </div>
+  {% endif %}
   {% if not jobs %}
   <div class="empty">
-    <h3>No matching jobs in current window</h3>
-    <p>Try a custom rerun with a longer window (e.g. 168h / 7 days)
-       or enable global search.</p>
+    <h3>No matching jobs</h3>
+    <p>Try a different search, lower salary floor, or
+       <a href="/rerun" style="color:var(--accent)">rerun with longer window</a>.</p>
   </div>
   {% endif %}
   {% for j in jobs %}
@@ -249,15 +273,37 @@ def digest():
     if not p:
         return render_template_string(DIGEST_HTML, css=BASE_CSS,
                                       jobs=[], generated="(no data yet)",
-                                      hours=24, delivered=0)
+                                      hours=24, delivered=0,
+                                      prefs=load_prefs(),
+                                      search="", role="")
     data = json.loads(p.read_text())
+    jobs = data.get("jobs", [])
+
+    # Apply user-set filters (from /prefs)
+    prefs = load_prefs()
+    jobs = apply_filters(jobs, prefs)
+
+    # Apply request-level overrides (from query params)
+    q_search = (request.args.get("q") or "").strip().lower()
+    q_role = (request.args.get("role") or "").strip().lower()
+    if q_search:
+        jobs = [j for j in jobs
+                if q_search in (j.get("title", "")).lower()
+                or q_search in (j.get("description", "")).lower()
+                or q_search in (j.get("company", "")).lower()]
+    if q_role:
+        jobs = [j for j in jobs if q_role in (j.get("title", "")).lower()]
+
     return render_template_string(
-        DIGEST_HTML, css=BASE_CSS, jobs=data.get("jobs", []),
+        DIGEST_HTML, css=BASE_CSS, jobs=jobs,
         generated=datetime.fromisoformat(
             data.get("generated_at", "")).strftime("%Y-%m-%d %H:%M")
                   if data.get("generated_at") else "(no data)",
         hours=data.get("window_hours", 24),
         delivered=data.get("counts", {}).get("delivered", 0),
+        prefs=prefs,
+        search=q_search,
+        role=q_role,
     )
 
 
@@ -285,6 +331,111 @@ def saved():
                 seen.add(j["id"])
     return render_template_string(SAVED_HTML, css=BASE_CSS,
                                   jobs=jobs, count=len(jobs))
+
+
+PREFS_HTML = """<!doctype html><html><head><title>Job Radar — Filters</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>{{css|safe}}</style></head><body>
+<header><h1>⚙️ Saved Filters <span>· Raj</span></h1>
+<a class="btn secondary" href="/digest">← Back to digest</a></header>
+<div class="container" style="max-width:700px">
+  <form method="POST" action="/prefs" style="background:var(--card);
+        padding:24px;border-radius:12px">
+    <div style="margin-bottom:18px">
+      <label style="display:block;margin-bottom:6px;color:var(--muted);font-size:13px">
+        Min salary (€)
+      </label>
+      <input type="number" name="min_salary" value="{{prefs.min_salary}}"
+             min="0" step="5000" style="width:100%;padding:10px;border-radius:6px;
+             border:1px solid #334155;background:#0f172a;color:var(--text)">
+    </div>
+    <div style="margin-bottom:18px">
+      <label style="display:block;margin-bottom:6px;color:var(--muted);font-size:13px">
+        Min ATS score (0–100)
+      </label>
+      <input type="number" name="min_score" value="{{prefs.min_score}}"
+             min="0" max="100" style="width:100%;padding:10px;border-radius:6px;
+             border:1px solid #334155;background:#0f172a;color:var(--text)">
+    </div>
+    <div style="margin-bottom:18px">
+      <label style="display:block;margin-bottom:6px;color:var(--muted);font-size:13px">
+        Location
+      </label>
+      <select name="location" style="width:100%;padding:10px;border-radius:6px;
+              border:1px solid #334155;background:#0f172a;color:var(--text)">
+        <option value="any" {% if prefs.location=='any' %}selected{% endif %}>Any</option>
+        <option value="regensburg" {% if prefs.location=='regensburg' %}selected{% endif %}>Regensburg area</option>
+        <option value="munich" {% if prefs.location=='munich' %}selected{% endif %}>Munich area</option>
+        <option value="berlin" {% if prefs.location=='berlin' %}selected{% endif %}>Berlin area</option>
+        <option value="hamburg" {% if prefs.location=='hamburg' %}selected{% endif %}>Hamburg area</option>
+        <option value="frankfurt" {% if prefs.location=='frankfurt' %}selected{% endif %}>Frankfurt area</option>
+      </select>
+    </div>
+    <div style="margin-bottom:18px">
+      <label style="display:flex;align-items:center;gap:8px;color:var(--text);font-size:14px">
+        <input type="checkbox" name="remote_only" {% if prefs.remote_only %}checked{% endif %}>
+        Remote-only jobs
+      </label>
+    </div>
+    <div style="margin-bottom:18px">
+      <label style="display:block;margin-bottom:6px;color:var(--muted);font-size:13px">
+        Role keywords (comma-separated, job must match at least one)
+      </label>
+      <input type="text" name="role_keywords"
+             value="{{prefs.role_keywords|join(', ')}}"
+             placeholder="uipath, automation, power automate, test"
+             style="width:100%;padding:10px;border-radius:6px;
+             border:1px solid #334155;background:#0f172a;color:var(--text)">
+    </div>
+    <div style="margin-bottom:18px">
+      <label style="display:block;margin-bottom:6px;color:var(--muted);font-size:13px">
+        Exclude keywords (job containing any will be skipped)
+      </label>
+      <input type="text" name="exclude_keywords"
+             value="{{prefs.exclude_keywords|join(', ')}}"
+             placeholder="senior, lead, principal, staff"
+             style="width:100%;padding:10px;border-radius:6px;
+             border:1px solid #334155;background:#0f172a;color:var(--text)">
+    </div>
+    <div style="display:flex;gap:8px">
+      <button class="btn" type="submit">💾 Save filters</button>
+      <a class="btn secondary" href="/prefs/reset">Reset defaults</a>
+    </div>
+  </form>
+  <p style="color:var(--muted);font-size:13px;margin-top:20px">
+    These filters apply to <strong>/today</strong> on Telegram and the digest
+    page here. They persist across reboots and are shared between web &amp; bot.
+  </p>
+</div></body></html>"""
+
+
+@app.route("/prefs", methods=["GET", "POST"])
+@login_required
+def prefs():
+    if request.method == "POST":
+        from filters import DEFAULT_PREFS
+        cur = load_prefs()
+        cur["min_salary"] = int(request.form.get("min_salary", 60000))
+        cur["min_score"] = int(request.form.get("min_score", 40))
+        cur["location"] = request.form.get("location", "any")
+        cur["remote_only"] = bool(request.form.get("remote_only"))
+        rk = request.form.get("role_keywords", "").strip()
+        cur["role_keywords"] = [k.strip() for k in rk.split(",")
+                                 if k.strip()] if rk else []
+        ek = request.form.get("exclude_keywords", "").strip()
+        cur["exclude_keywords"] = [k.strip() for k in ek.split(",")
+                                    if k.strip()] if ek else []
+        save_prefs(cur)
+        return redirect("/digest")
+    return render_template_string(PREFS_HTML, css=BASE_CSS, prefs=load_prefs())
+
+
+@app.route("/prefs/reset")
+@login_required
+def prefs_reset():
+    from filters import DEFAULT_PREFS
+    save_prefs(DEFAULT_PREFS.copy())
+    return redirect("/prefs")
 
 
 @app.route("/save", methods=["POST"])

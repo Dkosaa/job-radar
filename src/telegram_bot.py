@@ -17,6 +17,7 @@ from telegram.constants import ParseMode
 
 from config import DELIVERY, DATA
 from pipeline import run as run_pipeline
+from filters import load_prefs, save_prefs, apply_filters, parse_filter_command
 
 logging.basicConfig(level=logging.INFO)
 log = logging.getLogger("job-radar-bot")
@@ -59,18 +60,15 @@ async def help_cmd(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
 
 async def today(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
     p = DIGESTS_DIR / "latest.json"
-    # Always ack immediately so user knows we're alive
     if not p.exists():
         await update.message.reply_text("No digest yet — running first scan now (1–2 min)…")
         from pipeline import run as run_pipeline
         run_pipeline(hours=24)
-        await _send_digest_message(update.effective_chat.id, ctx,
-                                    path=DIGESTS_DIR / "latest.json",
-                                    reply_to=update.message)
-    else:
-        await _send_digest_message(update.effective_chat.id, ctx,
-                                    path=DIGESTS_DIR / "latest.json",
-                                    reply_to=update.message)
+    # Apply user filters before sending
+    await _send_digest_message(update.effective_chat.id, ctx,
+                                path=DIGESTS_DIR / "latest.json",
+                                reply_to=update.message,
+                                apply_user_filters=True)
 
 
 async def rerun(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
@@ -95,6 +93,7 @@ async def rerun(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
         update.effective_chat.id, ctx,
         path=DIGESTS_DIR / "latest.json",
         text_prefix=f"🔄 *Custom rerun \\({hours}h\\)*\n",
+        apply_user_filters=True,
     )
 
 
@@ -105,6 +104,97 @@ async def global_cmd(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
         update.effective_chat.id, ctx,
         path=DIGESTS_DIR / "latest.json",
         text_prefix="🌐 *Global scan*\n",
+        apply_user_filters=True,
+    )
+
+
+async def filter_cmd(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
+    """
+    /filter role=uipath        → require role keyword
+    /filter salary=70          → min salary €70k
+    /filter remote=on          → only remote jobs
+    /filter location=munich    → only Munich jobs
+    /filter min_score=50       → higher bar
+    /filter exclude=senior     → exclude jobs with 'senior'
+    /filters                   → show current settings
+    /reset                     → reset to defaults
+    """
+    args = ctx.args or []
+    if not args:
+        await update.message.reply_text(_filters_help())
+        return
+
+    prefs = load_prefs()
+    parts = []
+    for arg in args:
+        parsed = parse_filter_command(arg)
+        if not parsed:
+            parts.append(f"⚠️ ignored `{arg}`")
+            continue
+        key, val = parsed
+        if key == "role_keywords_append":
+            prefs.setdefault("role_keywords", [])
+            if val.lower() not in [k.lower() for k in prefs["role_keywords"]]:
+                prefs["role_keywords"].append(val)
+            parts.append(f"role += `{val}`")
+        elif key == "exclude_keywords_append":
+            prefs.setdefault("exclude_keywords", [])
+            if val.lower() not in [k.lower() for k in prefs["exclude_keywords"]]:
+                prefs["exclude_keywords"].append(val)
+            parts.append(f"exclude += `{val}`")
+        elif key == "min_salary":
+            prefs["min_salary"] = val
+            parts.append(f"min salary = €{val:,}")
+        elif key == "remote_only":
+            prefs["remote_only"] = val
+            parts.append(f"remote only = {val}")
+        elif key == "location":
+            prefs["location"] = val
+            parts.append(f"location = `{val}`")
+        elif key == "min_score":
+            prefs["min_score"] = val
+            parts.append(f"min score = {val}")
+    save_prefs(prefs)
+    await update.message.reply_text(
+        "✅ Filters updated:\n• " + "\n• ".join(parts)
+        + "\n\nSend `/today` to apply."
+    )
+
+
+async def filters_cmd(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
+    """Show current filters."""
+    prefs = load_prefs()
+    msg = (
+        "*Current filters:*\n"
+        f"• Min salary: €{prefs['min_salary']:,}\n"
+        f"• Min score: {prefs['min_score']}\n"
+        f"• Remote only: {prefs['remote_only']}\n"
+        f"• Location: {prefs['location']}\n"
+        f"• Role keywords: {', '.join(prefs['role_keywords']) or 'none'}\n"
+        f"• Exclude keywords: {', '.join(prefs['exclude_keywords']) or 'none'}\n"
+    )
+    await update.message.reply_text(msg, parse_mode=ParseMode.MARKDOWN_V2)
+
+
+async def reset_cmd(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
+    from filters import DEFAULT_PREFS
+    save_prefs(DEFAULT_PREFS.copy())
+    await update.message.reply_text(
+        "✅ Filters reset to defaults.\nSend /today to apply."
+    )
+
+
+def _filters_help() -> str:
+    return (
+        "*Filter syntax* \\(one or more `key=value`\\):\n\n"
+        "`/filter role=uipath` \\- require role keyword\n"
+        "`/filter salary=70` \\- min salary €70k\n"
+        "`/filter remote=on` \\- only remote jobs\n"
+        "`/filter location=munich` \\- only Munich jobs\n"
+        "`/filter min_score=50` \\- higher bar\n"
+        "`/filter exclude=senior` \\- skip senior\\-level\n\n"
+        "*Combine:* `/filter role=automation salary=70`\n\n"
+        "*Other:* `/filters` to view, `/reset` to clear"
     )
 
 
@@ -147,7 +237,8 @@ async def on_button(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
 # ──── send digest ────────────────────────────────────────────────────
 async def _send_digest_message(chat_id, ctx, path: Path,
                                 text_prefix: str = "",
-                                reply_to=None):
+                                reply_to=None,
+                                apply_user_filters: bool = False):
     if not path.exists():
         if reply_to:
             await reply_to.reply_text("No digest available.")
@@ -155,11 +246,29 @@ async def _send_digest_message(chat_id, ctx, path: Path,
     digest = json.loads(path.read_text())
     jobs = digest.get("jobs", [])
 
+    # Apply user filters if requested
+    if apply_user_filters:
+        prefs = load_prefs()
+        before = len(jobs)
+        jobs = apply_filters(jobs, prefs)
+        # Show filter summary in prefix
+        fsummary = (
+            f"\n_Filters: salary≥€{prefs['min_salary']:,} • "
+            f"score≥{prefs['min_score']} • "
+            f"remote={prefs['remote_only']} • "
+            f"loc={prefs['location']}_"
+        )
+        if prefs["role_keywords"]:
+            fsummary += f"\n_Role: {', '.join(prefs['role_keywords'])}_"
+        if prefs["exclude_keywords"]:
+            fsummary += f"\n_Excluded: {', '.join(prefs['exclude_keywords'])}_"
+        text_prefix = (text_prefix or "") + fsummary
+
     if not jobs:
         await ctx.bot.send_message(
             chat_id=chat_id,
-            text=("No matching jobs in the window. "
-                  "Try `/rerun 168` for a 7-day look-back."),
+            text=("No matching jobs with current filters. "
+                  "Try `/reset` to clear, or `/filter salary=50` to lower the bar."),
             parse_mode=ParseMode.MARKDOWN_V2,
         )
         return
@@ -172,14 +281,12 @@ async def _send_digest_message(chat_id, ctx, path: Path,
         f"{digest['counts']['filtered']} matched_\n"
     )
 
-    # Send header as one message
     await ctx.bot.send_message(
         chat_id=chat_id, text=header,
         parse_mode=ParseMode.MARKDOWN_V2,
     )
 
-    # Send each job with its own buttons
-    for i, j in enumerate(jobs, 1):
+    for i, j in enumerate(jobs[:15], 1):  # cap at 15 jobs per send
         msg = _format_job_message(i, j)
         kb = _job_keyboard(j)
         try:
@@ -274,6 +381,9 @@ def build_application() -> Application:
     app.add_handler(CommandHandler("today", today))
     app.add_handler(CommandHandler("rerun", rerun))
     app.add_handler(CommandHandler("global", global_cmd))
+    app.add_handler(CommandHandler("filter", filter_cmd))
+    app.add_handler(CommandHandler("filters", filters_cmd))
+    app.add_handler(CommandHandler("reset", reset_cmd))
     app.add_handler(CallbackQueryHandler(on_button))
     return app
 
