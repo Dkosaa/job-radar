@@ -1,9 +1,18 @@
 """
 Indeed DE scraper using Playwright.
 Indeed has aggressive bot detection; we use realistic headers + slow scroll.
+
+NOTE: Indeed DE is currently behind Cloudflare/captcha bot protection.
+This scraper is preserved for future use. Import is wrapped so the
+pipeline works when playwright is not installed.
 """
 import re
-from playwright.sync_api import sync_playwright
+
+try:
+    from playwright.sync_api import sync_playwright
+    _PLAYWRIGHT_AVAILABLE = True
+except ImportError:
+    _PLAYWRIGHT_AVAILABLE = False
 
 QUERIES = [
     "RPA Developer",
@@ -41,6 +50,9 @@ def _parse_age(text: str) -> int | None:
 
 
 def fetch(timeout_ms: int = 30000) -> list[dict]:
+    if not _PLAYWRIGHT_AVAILABLE:
+        print("[indeed_de] playwright not installed, skipping")
+        return []
     out = []
     seen = set()
     try:

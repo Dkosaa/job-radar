@@ -1,10 +1,20 @@
 """
 StepStone DE scraper using Playwright (JS-rendered SPA).
 We use Playwright because StepStone's search results need JS execution.
+
+NOTE: StepStone is currently behind Cloudflare bot protection.
+This scraper is preserved for future use when a proxy/captcha solver
+is available. The import is wrapped so the rest of the pipeline
+works even when playwright is not installed.
 """
 import re
 from datetime import datetime, timedelta
-from playwright.sync_api import sync_playwright
+
+try:
+    from playwright.sync_api import sync_playwright
+    _PLAYWRIGHT_AVAILABLE = True
+except ImportError:
+    _PLAYWRIGHT_AVAILABLE = False
 
 SEARCH_URL = "https://www.stepstone.de/jobs/{query}"
 # Stepstone accepts URL-encoded queries via path
@@ -42,6 +52,9 @@ def _posted_age_to_hours(text: str) -> int | None:
 
 
 def fetch(timeout_ms: int = 25000) -> list[dict]:
+    if not _PLAYWRIGHT_AVAILABLE:
+        print("[stepstone] playwright not installed, skipping")
+        return []
     out = []
     seen_ids = set()
     try:

@@ -71,8 +71,6 @@ def dedupe(jobs: list[dict]) -> list[dict]:
 def fetch_all() -> list[dict]:
     """Fetch from all enabled sources. Per-source failures don't break the run."""
     from sources import arbeitnow, greenhouse, lever, jobicy, adzuna
-    from sources.stepstone import fetch as ss_fetch
-    from sources.indeed_de import fetch as ind_fetch
 
     all_jobs: list[dict] = []
     if SOURCES["arbeitnow"]["enabled"]:
@@ -90,11 +88,14 @@ def fetch_all() -> list[dict]:
             print(f"[adzuna] skipped: {e}")
     if SOURCES["stepstone"]["enabled"]:
         try:
+            # lazy import — playwright only needed if stepstone is on
+            from sources.stepstone import fetch as ss_fetch
             all_jobs.extend(ss_fetch())
         except Exception as e:
             print(f"[stepstone] skipped: {e}")
     if SOURCES["indeed_de"]["enabled"]:
         try:
+            from sources.indeed_de import fetch as ind_fetch
             all_jobs.extend(ind_fetch())
         except Exception as e:
             print(f"[indeed_de] skipped: {e}")
