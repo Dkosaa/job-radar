@@ -59,7 +59,10 @@ def apply_filters(jobs: list[dict], prefs: dict | None = None) -> list[dict]:
         # Location filter
         if prefs["location"] != "any":
             loc_filter = prefs["location"].lower()
-            if loc_filter not in loc and not j.get("remote_ok"):
+            # support multiple locations separated by spaces/commas
+            allowed_locs = [x.strip() for x in loc_filter.replace(",", " ").split()
+                            if x.strip()]
+            if not any(al in loc for al in allowed_locs) and not j.get("remote_ok"):
                 continue
 
         # Role keywords (any match passes)

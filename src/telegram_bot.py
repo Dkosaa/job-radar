@@ -116,8 +116,17 @@ async def filter_cmd(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
     /filter location=munich    → only Munich jobs
     /filter min_score=50       → higher bar
     /filter exclude=senior     → exclude jobs with 'senior'
-    /filters                   → show current settings
-    /reset                     → reset to defaults
+
+    Multiple values for the same key — TWO supported syntaxes:
+
+      Syntax A (space-separated, implicit repeat):
+        /filter role=uipath power_automate test_automation
+        /filter location=munich berlin hamburg
+        # the bare tokens after the first `key=val` are added to the same key
+
+      Syntax B (explicit repeat):
+        /filter role=uipath role=power_automate role=test_automation
+        /filter location=munich location=berlin
     """
     args = ctx.args or []
     if not args:
@@ -126,39 +135,77 @@ async def filter_cmd(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
 
     prefs = load_prefs()
     parts = []
+
+    # First pass: explicit `key=value` tokens
+    last_key = None
+    pending = []
     for arg in args:
-        parsed = parse_filter_command(arg)
-        if not parsed:
-            parts.append(f"⚠️ ignored `{arg}`")
-            continue
-        key, val = parsed
-        if key == "role_keywords_append":
-            prefs.setdefault("role_keywords", [])
-            if val.lower() not in [k.lower() for k in prefs["role_keywords"]]:
-                prefs["role_keywords"].append(val)
-            parts.append(f"role += `{val}`")
-        elif key == "exclude_keywords_append":
-            prefs.setdefault("exclude_keywords", [])
-            if val.lower() not in [k.lower() for k in prefs["exclude_keywords"]]:
-                prefs["exclude_keywords"].append(val)
-            parts.append(f"exclude += `{val}`")
-        elif key == "min_salary":
-            prefs["min_salary"] = val
-            parts.append(f"min salary = €{val:,}")
-        elif key == "remote_only":
-            prefs["remote_only"] = val
-            parts.append(f"remote only = {val}")
-        elif key == "location":
-            prefs["location"] = val
-            parts.append(f"location = `{val}`")
-        elif key == "min_score":
-            prefs["min_score"] = val
-            parts.append(f"min score = {val}")
+        if "=" in arg:
+            # finalize any pending tokens for previous key
+            if last_key and pending:
+                _apply_filter_set(prefs, last_key, pending, parts)
+                pending = []
+            parsed = parse_filter_command(arg)
+            if not parsed:
+                parts.append(f"⚠️ ignored `{arg}`")
+                last_key = None
+                continue
+            key, val = parsed
+            if key in {"role_keywords_append", "exclude_keywords_append"}:
+                # accumulate these into lists
+                _apply_filter_set(prefs, key, [val], parts)
+                last_key = None
+                pending = []
+            else:
+                # scalar setting — apply immediately
+                _apply_scalar(prefs, key, val, parts)
+                last_key = None
+                pending = []
+        else:
+            # bare token — attach to last append-style key, or default to role
+            if last_key is None:
+                last_key = "role_keywords_append"
+            pending.append(arg)
+
+    # flush trailing pending
+    if last_key and pending:
+        _apply_filter_set(prefs, last_key, pending, parts)
+
     save_prefs(prefs)
     await update.message.reply_text(
         "✅ Filters updated:\n• " + "\n• ".join(parts)
         + "\n\nSend `/today` to apply."
     )
+
+
+def _apply_filter_set(prefs, key, values, parts):
+    if key == "role_keywords_append":
+        prefs.setdefault("role_keywords", [])
+        for v in values:
+            if v.lower() not in [k.lower() for k in prefs["role_keywords"]]:
+                prefs["role_keywords"].append(v)
+        parts.append(f"role += `{', '.join(values)}`")
+    elif key == "exclude_keywords_append":
+        prefs.setdefault("exclude_keywords", [])
+        for v in values:
+            if v.lower() not in [k.lower() for k in prefs["exclude_keywords"]]:
+                prefs["exclude_keywords"].append(v)
+        parts.append(f"exclude += `{', '.join(values)}`")
+
+
+def _apply_scalar(prefs, key, val, parts):
+    if key == "min_salary":
+        prefs["min_salary"] = val
+        parts.append(f"min salary = €{val:,}")
+    elif key == "remote_only":
+        prefs["remote_only"] = val
+        parts.append(f"remote only = {val}")
+    elif key == "location":
+        prefs["location"] = val
+        parts.append(f"location = `{val}`")
+    elif key == "min_score":
+        prefs["min_score"] = val
+        parts.append(f"min score = {val}")
 
 
 async def filters_cmd(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
