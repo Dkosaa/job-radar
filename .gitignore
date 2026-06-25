@@ -1,0 +1,14 @@
+# Local secrets (Render uses env vars, not .env)
+.env
+*.log
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Local data (Render has persistent disk for /data, but don't commit it)
+data/seen_jobs.json
+data/saved_jobs.json
+data/adzuna_quota.json
+data/scheduler.log
+data/digests/

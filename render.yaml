@@ -6,11 +6,10 @@ services:
     env: python
     region: frankfurt  # closest to DE
     plan: free
-    buildCommand: |
-      pip install -r requirements.txt
-      python3 -m playwright install chromium
+    buildCommand: pip install -r requirements.txt
     startCommand: bash start.sh
     healthCheckPath: /healthz
+    autoDeploy: true
     envVars:
       - key: TELEGRAM_BOT_TOKEN
         sync: false

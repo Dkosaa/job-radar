@@ -1,11 +1,12 @@
 #!/bin/bash
-# Job Radar — start script
+# Job Radar — start script for Render
 set -e
 
-cd /workspace/job-radar
+cd "${RENDER_PROJECT_DIR:-$(pwd)}"
 
-# Install Playwright browsers if not present
-python3 -m playwright install chromium --with-deps 2>/dev/null || true
-
+echo "Working dir: $(pwd)"
+ls -la
+echo "---"
+echo "Python: $(python3 --version)"
 echo "Starting Job Radar scheduler..."
 exec python3 src/scheduler.py
