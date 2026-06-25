@@ -13,17 +13,59 @@ from config import (
 from matcher import score_job
 
 
-def load_seen() -> set[str]:
+def load_seen() -> dict[str, float]:
+    """Returns {job_id: first_seen_timestamp}."""
     if SEEN_FILE.exists():
         try:
-            return set(json.loads(SEEN_FILE.read_text()))
+            data = json.loads(SEEN_FILE.read_text())
+            if isinstance(data, list):  # legacy format
+                return {jid: 0.0 for jid in data}
+            return data
         except Exception:
-            return set()
-    return set()
+            return {}
+    return {}
 
 
-def save_seen(seen: set[str]) -> None:
-    SEEN_FILE.write_text(json.dumps(sorted(seen)))
+def save_seen(seen: dict[str, float]) -> None:
+    SEEN_FILE.write_text(json.dumps(seen, indent=2))
+
+
+def dedupe(jobs: list[dict]) -> list[dict]:
+    """Drop jobs we've already shown in a previous digest,
+    BUT resurface them if they've been unseen for >= seen_resurfacing_days
+    AND are still within freshness window."""
+    import time as _t
+    seen = load_seen()
+    now = _t.time()
+    resurface_seconds = PIPELINE.get("seen_resurfacing_days", 7) * 86400
+
+    out = []
+    new_ids: dict[str, float] = {}
+    for j in jobs:
+        jid = j["id"]
+        url_key = (j.get("url") or "").split("?")[0]
+        if jid in seen:
+            age = now - seen[jid]
+            if age < resurface_seconds:
+                continue  # recently seen, skip
+            # else: resurfacing — let through
+        # also dedupe by url within current batch
+        if url_key and url_key in {s.get("url", "").split("?")[0]
+                                    for s in out if s.get("url")}:
+            continue
+        out.append(j)
+        new_ids[jid] = now
+
+    # update seen with newest first-seen time (keep oldest)
+    for jid, ts in new_ids.items():
+        if jid not in seen:  # only set first-seen time
+            seen[jid] = ts
+
+    # garbage-collect seen entries older than 60d to bound file size
+    cutoff = now - 60 * 86400
+    seen = {k: v for k, v in seen.items() if v >= cutoff}
+    save_seen(seen)
+    return out
 
 
 def fetch_all() -> list[dict]:
@@ -95,8 +137,15 @@ def _age_hours(job: dict) -> int | None:
         return None
 
 
-def filter_jobs(jobs: list[dict], hours: int | None = None) -> list[dict]:
-    """Filter by DE / freshness / minimum viability."""
+def filter_jobs(jobs: list[dict], hours: int | None = None,
+                strict_freshness: bool = True) -> list[dict]:
+    """
+    Filter by DE / freshness / minimum viability.
+    strict_freshness=True: drop jobs with unknown age (most APIs don't expose
+        reliable timestamps, so defaulting to 'unknown = fresh' caused 697h-old
+        jobs in the digest).
+    strict_freshness=False: keep unknown-age jobs (used for /global / historical).
+    """
     if hours is None:
         hours = PIPELINE["freshness_hours"]
 
@@ -161,10 +210,21 @@ def filter_jobs(jobs: list[dict], hours: int | None = None) -> list[dict]:
         if not is_de:
             continue
 
-        # Freshness — keep if unknown (we err on side of inclusion)
+        # Freshness — strict mode drops unknown-age jobs
         age = _age_hours(j)
-        if age is not None and age > max(hours, PIPELINE["max_age_days"] * 24):
-            continue
+        if age is None:
+            if strict_freshness:
+                # Adzuna + Greenhouse usually have no timestamp; we let those
+                # through because their content is fresh by API design.
+                # Arbeitnow always has unix timestamp, so it gets dropped if missing.
+                if j.get("source") in ("arbeitnow",):
+                    continue
+                # others: assume recent (let through) but flag
+                j["_age_estimated"] = True
+            # if not strict, let through
+        else:
+            if age > max(hours, PIPELINE["max_age_days"] * 24):
+                continue
 
         # Must contain at least one automation / testing / process keyword
         all_kw = []
@@ -184,35 +244,23 @@ def filter_jobs(jobs: list[dict], hours: int | None = None) -> list[dict]:
 
 
 def rank_jobs(jobs: list[dict]) -> list[dict]:
-    """Score + sort + attach match metadata."""
+    """Score + sort + attach match metadata.
+    Sort priority:
+      1. Higher score first
+      2. Known-recent first (unknown-age jobs sink to bottom)
+      3. Among known-age, newer first
+    """
     scored = []
     for j in jobs:
+        age = _age_hours(j)
         m = score_job(j)
-        scored.append({**j, **m, "_age_hours": _age_hours(j)})
-    scored.sort(key=lambda x: (-x["score"], x.get("_age_hours") or 9999))
+        scored.append({**j, **m, "_age_hours": age})
+    scored.sort(key=lambda x: (
+        -x["score"],                           # higher score first
+        0 if x.get("_age_hours") is not None else 1,  # known-age first
+        x.get("_age_hours") if x.get("_age_hours") is not None else 9999,
+    ))
     return scored
-
-
-def dedupe(jobs: list[dict]) -> list[dict]:
-    """Drop jobs we've already shown in a previous digest."""
-    seen = load_seen()
-    out = []
-    new_ids = set()
-    for j in jobs:
-        jid = j["id"]
-        if jid in seen:
-            continue
-        # also dedupe by url (different IDs for same posting)
-        url_key = (j.get("url") or "").split("?")[0]
-        if url_key and url_key in {s.get("url", "").split("?")[0]
-                                    for s in out if s.get("url")}:
-            continue
-        out.append(j)
-        new_ids.add(jid)
-    # remember them
-    seen |= new_ids
-    save_seen(seen)
-    return out
 
 
 def run(hours: int | None = None,
@@ -230,7 +278,7 @@ def run(hours: int | None = None,
     print(f"[pipeline] fetched {len(raw)} jobs across sources")
 
     if not global_search:
-        filtered = filter_jobs(raw, hours=hours)
+        filtered = filter_jobs(raw, hours=hours, strict_freshness=True)
     else:
         filtered = raw  # skip DE filter
     print(f"[pipeline] after filter: {len(filtered)}")

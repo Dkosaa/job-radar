@@ -90,7 +90,8 @@ PIPELINE = {
     "freshness_hours": 24,       # default window
     "top_n": 10,                 # jobs per digest
     "min_score": 40,             # drop anything below this ATS score
-    "max_age_days": 30,          # hard cap (in case 24h is empty)
+    "max_age_days": 14,          # hard cap (was 30, too generous)
+    "seen_resurfacing_days": 7,  # show same job again after 7d if still fresh
     "fetch_timeout_sec": 20,
     "user_agent": (
         "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
