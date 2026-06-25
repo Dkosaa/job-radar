@@ -89,7 +89,7 @@ USER_PROFILE = {
 PIPELINE = {
     "freshness_hours": 24,       # default window
     "top_n": 10,                 # jobs per digest
-    "min_score": 50,             # drop anything below this ATS score
+    "min_score": 40,             # drop anything below this ATS score
     "max_age_days": 30,          # hard cap (in case 24h is empty)
     "fetch_timeout_sec": 20,
     "user_agent": (

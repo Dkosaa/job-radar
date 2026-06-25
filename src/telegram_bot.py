@@ -38,7 +38,19 @@ async def start(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
         "/help — this message\n\n"
         "I'll auto\\-ping you every day at *07:00 CET*\\."
     )
-    await update.message.reply_text(msg, parse_mode=ParseMode.MARKDOWN_V2)
+    try:
+        await update.message.reply_text(msg, parse_mode=ParseMode.MARKDOWN_V2)
+    except Exception:
+        # fallback if MarkdownV2 parsing fails
+        await update.message.reply_text(
+            "Hey! I'm Job Radar.\n\n"
+            "Commands:\n"
+            "/today — show today's digest\n"
+            "/rerun 48 — last 48 hours\n"
+            "/global — worldwide search\n"
+            "/help — command list\n\n"
+            "Daily digest at 07:00 CET."
+        )
 
 
 async def help_cmd(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
@@ -47,12 +59,18 @@ async def help_cmd(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
 
 async def today(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
     p = DIGESTS_DIR / "latest.json"
+    # Always ack immediately so user knows we're alive
     if not p.exists():
-        await update.message.reply_text("No digest yet — running one now…")
-        run_pipeline()
-    await _send_digest_message(update.effective_chat.id, ctx,
-                                 path=DIGESTS_DIR / "latest.json",
-                                 reply_to=update.message)
+        await update.message.reply_text("No digest yet — running first scan now (1–2 min)…")
+        from pipeline import run as run_pipeline
+        run_pipeline(hours=24)
+        await _send_digest_message(update.effective_chat.id, ctx,
+                                    path=DIGESTS_DIR / "latest.json",
+                                    reply_to=update.message)
+    else:
+        await _send_digest_message(update.effective_chat.id, ctx,
+                                    path=DIGESTS_DIR / "latest.json",
+                                    reply_to=update.message)
 
 
 async def rerun(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
