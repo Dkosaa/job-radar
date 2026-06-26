@@ -20,7 +20,7 @@ except Exception:
 # ──────────────────────────────────────────────────────────────────────
 USER_PROFILE = {
     "name": "Raj Sakhiya",
-    "title": "Automation & Digital Transformation Specialist",
+    "title": "Robotics Process Automation Developer",
     "years_experience": 7,
     "min_salary_eur": 60000,
     "preferred_locations": {
@@ -61,18 +61,18 @@ USER_PROFILE = {
             "Test Automation Engineer", "QA Automation Engineer",
             "Process Automation Engineer", "Workflow Automation Engineer",
             # Broad automation roles (medium weight)
-            "Automation Engineer", "Automation Developer",
-            "AI Automation", "Intelligent Automation",
-            "Process Automation", "Workflow Automation",
-            "Flow Automation", "Power Platform Developer",
-            "Automation Lead", "Automation Architect",
-            "Test Engineer", "QA Engineer", "SDET",
+            #"Automation Engineer", "Automation Developer",
+            #"AI Automation", "Intelligent Automation",
+            #"Process Automation", "Workflow Automation",
+            #"Flow Automation", "Power Platform Developer",
+            #"Automation Lead", "Automation Architect",
+            #"Test Engineer", "QA Engineer", "SDET",
             # Adjacent roles (lower weight but still match)
-            "Product Owner", "Product Manager", "Workflow Manager",
-            "Process Manager", "Transformation Lead",
-            "Digital Transformation", "Business Automation",
-            "Integration Engineer", "DevOps Engineer",
-            "Low-Code Developer", "No-Code Developer",
+            #"Product Owner", "Product Manager", "Workflow Manager",
+            #"Process Manager", "Transformation Lead",
+            #"Digital Transformation", "Business Automation",
+            #"Integration Engineer", "DevOps Engineer",
+            #"Low-Code Developer", "No-Code Developer",
         ],
     },
     # explicit dealbreakers (rejected if matched)
@@ -89,9 +89,9 @@ USER_PROFILE = {
 PIPELINE = {
     "freshness_hours": 24,       # default window
     "top_n": 10,                 # jobs per digest
-    "min_score": 40,             # drop anything below this ATS score
-    "max_age_days": 14,          # hard cap (was 30, too generous)
-    "seen_resurfacing_days": 7,  # show same job again after 7d if still fresh
+    "min_score": 80,             # drop anything below this ATS score
+    "max_age_days": 7,          # hard cap (was 30, too generous)
+    "seen_resurfacing_days": 2,  # show same job again after 7d if still fresh
     "fetch_timeout_sec": 20,
     "user_agent": (
         "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
@@ -133,7 +133,7 @@ COMPANY_BOARDS = {
         "wolt", "bolt", "transfergo", "qonto", "revolut",
         "aleph", "contentful", "younited", "scalablecapital",
         "jimdo", "doctolib", "wefox", "adjust", "tandem",
-        "weclapp", "personio", "raisin", "solaris",
+        "weclapp", "personio", "raisin", "solaris", "MR", "Schneider", "Alten",
     ],
     "lever": [
         # Lever API is unstable across companies; keep small verified list
