@@ -1,0 +1,78 @@
+{
+  "owner": "Raj Sakhiya",
+  "title": "ISTQB-certified Test Automation and Quality Engineering professional",
+  "experience_years": 7,
+  "extracted_at": "2026-06-26",
+  "tier1_core_identity": {
+    "description": "Must-match skills — these are your strongest signals. Jobs mentioning any of these get strong boost.",
+    "weight": "high",
+    "skills": [
+      "Selenium WebDriver", "Cypress", "Postman", "RestAssured",
+      "Swagger UI", "SoapUI", "UiPath", "Blue Prism", "Power Automate",
+      "Python", "Java", "C#", "SQL", "Docker", "Git", "GitHub Actions",
+      "Linux", "Windows", "Jira", "Confluence", "Appium", "HP ALM",
+      "ISTQB", "Scrum", "Agile", "API Testing"
+    ]
+  },
+  "tier2_domain_expertise": {
+    "description": "Domain skills — strong signals for the work you've done.",
+    "weight": "medium",
+    "skills": [
+      "Test Automation Frameworks", "Regression Testing", "Functional Testing",
+      "Integration Testing", "System Testing", "UAT", "Smoke Testing",
+      "Sanity Testing", "Test Cases", "Test Plans", "Traceability Matrix",
+      "Defect Reports", "REST API", "Enterprise Applications",
+      "RPA", "Robotic Process Automation", "Process Automation",
+      "Test Automation", "Quality Engineering", "Quality Assurance",
+      "BPMN", "PDD", "SDD", "CI/CD", "DevOps"
+    ]
+  },
+  "tier3_soft_signals": {
+    "description": "Soft skills / role markers. Boost for senior/lead roles.",
+    "weight": "low",
+    "skills": [
+      "Analytical Thinking", "Problem Solving", "Team Leadership",
+      "Stakeholder Collaboration", "Code Review", "Mentoring",
+      "Cross-functional", "Agile Scrum"
+    ]
+  },
+  "negative_signals": {
+    "description": "Don't match these — wrong domain for your profile.",
+    "weight": "exclude",
+    "skills": [
+      "iOS development", "Android development", "Swift", "Kotlin (mobile)",
+      "Sales", "Marketing", "Business Development",
+      "Data Science only", "ML Research",
+      "Junior only", "Internship only"
+    ]
+  },
+  "target_role_keywords": [
+    "RPA Developer", "RPA Engineer", "Senior RPA",
+    "UiPath Developer", "Power Automate Developer",
+    "Test Automation Engineer", "QA Automation Engineer",
+    "Automation Engineer", "Automation Developer",
+    "Process Automation Engineer", "Workflow Automation Engineer",
+    "Robotic Process Automation Developer",
+    "Blue Prism Developer", "Automation Anywhere Developer",
+    "Intelligent Automation Engineer", "QA Engineer", "Test Engineer",
+    "SDET", "Quality Engineer", "Automation Lead",
+    "Power Platform Developer", "Integration Engineer"
+  ],
+  "preferred_locations": {
+    "regensburg": {"mode": "onsite", "km_radius": 0},
+    "near_regensburg": {"mode": "hybrid", "km_radius": 200,
+                          "cities": ["München", "Munich", "Nürnberg",
+                                      "Ingolstadt", "Augsburg", "Landshut",
+                                      "Straubing", "Passau"]},
+    "rest_of_germany": {"mode": "remote_only",
+                          "cities": ["Berlin", "Hamburg", "Frankfurt",
+                                      "Stuttgart", "Köln", "Düsseldorf",
+                                      "Leipzig", "Dresden", "Hannover"]}
+  },
+  "min_salary_eur": 60000,
+  "languages": {
+    "English": "fluent",
+    "German": "B1"
+  },
+  "work_visa": "no sponsorship needed"
+}

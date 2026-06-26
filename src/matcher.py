@@ -10,6 +10,10 @@ import re
 from typing import Any
 
 from config import USER_PROFILE
+from resume import (
+    get_tier1_skills, get_tier2_skills, get_tier3_skills,
+    get_negative_signals, get_target_roles,
+)
 
 
 # ──── text utilities ─────────────────────────────────────────────────
@@ -87,11 +91,12 @@ KNOWN_TECH = {
 
 
 # Raj's profile — what he ALREADY has (used to filter out "add to resume")
+# Built dynamically from resume data + config
 RAJ_HAS = set()
 for cat in ["rpa", "ai_workflow", "testing", "languages", "devops",
             "process", "management", "certifications"]:
     RAJ_HAS.update(k.lower() for k in USER_PROFILE["skills"][cat])
-# Also add explicit tools/keywords from his actual experience
+# Add explicit tools/keywords from his resume
 RAJ_HAS.update({
     "uipath", "orchestrator", "blue prism", "power automate", "power bi",
     "n8n", "zapier", "make", "selenium webdriver", "postman", "jmeter",
@@ -104,6 +109,12 @@ RAJ_HAS.update({
     "shared services", "finance", "hr", "operations",
     "english", "german", "b1",
     "uipath advanced", "istqb",
+    "hp alm", "swagger ui", "vb.net", "vba macros",
+    "test automation frameworks", "regression testing",
+    "functional testing", "integration testing", "system testing",
+    "uat", "smoke testing", "sanity testing",
+    "test cases", "test plans", "traceability matrix", "defect reports",
+    "api testing", "rest api",
 })
 
 
@@ -164,10 +175,16 @@ def location_rule(job: dict) -> tuple[int, str]:
 # ──── dealbreakers ───────────────────────────────────────────────────
 def dealbreaker_penalties(text: str) -> tuple[int, list[str]]:
     pen, hits = 0, []
+    # User-set dealbreakers (e.g., sponsorship, C2 German)
     for d in USER_PROFILE["dealbreakers"]:
         if d.lower() in text:
             pen -= 50
             hits.append(d)
+    # Negative signals from resume (wrong-domain skills)
+    for neg in get_negative_signals():
+        if _has(text, neg):
+            pen -= 15
+            hits.append(f"wrong-domain: {neg}")
     return pen, hits
 
 
@@ -184,59 +201,74 @@ def salary_check(job: dict) -> tuple[int, str]:
 
 # ──── core scoring (rewritten, honest) ──────────────────────────────
 def _title_score(text: str) -> tuple[int, list[str]]:
-    """Tiered title scoring. Tier 1 = strong fit (12 pts), tier 2 = medium
-    fit (6 pts), tier 3 = adjacent (3 pts). Capped at 30."""
-    tier1 = [
+    """Tiered title scoring using Raj's resume target roles.
+    Tier 1 = strong fit (12 pts), tier 2 = medium (6 pts), tier 3 = adjacent (3 pts)."""
+    target_roles = [r.lower() for r in get_target_roles()]
+
+    # Classify each target role by strength of fit
+    tier1_roles = [
         "rpa developer", "rpa engineer", "senior rpa",
         "uipath developer", "power automate developer",
         "test automation engineer", "qa automation engineer",
         "process automation engineer", "workflow automation engineer",
         "automation architect", "automation lead",
         "intelligent automation engineer",
+        "robotic process automation developer",
+        "blue prism developer", "automation anywhere developer",
+        "sdet", "quality engineer",
     ]
-    tier2 = [
+    tier2_roles = [
         "automation engineer", "automation developer",
         "ai automation", "process automation", "workflow automation",
         "flow automation", "power platform developer",
-        "test engineer", "qa engineer", "sdet",
+        "test engineer", "qa engineer",
         "integration engineer", "low-code developer",
     ]
-    tier3 = [
+    tier3_roles = [
         "product owner", "product manager", "workflow manager",
         "process manager", "transformation lead",
         "digital transformation", "business automation",
         "devops engineer", "no-code developer",
-        "scrum master",
     ]
+
     matched, score = [], 0
-    for kw in tier1:
+    for kw in tier1_roles:
         if _has(text, kw):
             matched.append(kw); score += 12
-    for kw in tier2:
+    for kw in tier2_roles:
         if _has(text, kw):
             matched.append(kw); score += 6
-    for kw in tier3:
+    for kw in tier3_roles:
         if _has(text, kw):
             matched.append(kw); score += 3
     return min(score, 30), sorted(set(matched))
 
 
 def _skill_score(text: str) -> tuple[int, list[str]]:
-    """Strong-skill match scoring.
-    Skills in KNOWN_TECH that ALSO appear in Raj's profile = strong match (+3 each).
-    Skills in KNOWN_TECH that DON'T appear in Raj's profile = weak (no points).
+    """Skill scoring using resume tiered keywords.
+    Tier 1 (core identity): +4 each
+    Tier 2 (domain):       +2 each
+    Tier 3 (soft signals): +1 each
     Capped at 35."""
-    profile_skills = set()
-    for cat in ["rpa", "ai_workflow", "testing", "languages", "devops",
-                "process", "management", "certifications"]:
-        profile_skills.update(USER_PROFILE["skills"][cat])
-    profile_skills_lower = {s.lower() for s in profile_skills}
+    t1 = {s.lower() for s in get_tier1_skills()}
+    t2 = {s.lower() for s in get_tier2_skills()}
+    t3 = {s.lower() for s in get_tier3_skills()}
 
-    matched_strong = []
-    for kw in KNOWN_TECH:
-        if _has(text, kw) and kw in profile_skills_lower:
-            matched_strong.append(kw)
-    return min(len(matched_strong) * 3, 35), matched_strong
+    matched = []
+    score = 0
+    # Tier 1 — strong signals
+    for kw in t1:
+        if _has(text, kw):
+            matched.append(kw); score += 4
+    # Tier 2 — domain skills
+    for kw in t2:
+        if _has(text, kw):
+            matched.append(kw); score += 2
+    # Tier 3 — soft signals (less weight)
+    for kw in t3:
+        if _has(text, kw):
+            matched.append(kw); score += 1
+    return min(score, 35), matched
 
 
 def _language_score(text: str) -> tuple[int, str]:

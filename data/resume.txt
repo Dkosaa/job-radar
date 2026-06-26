@@ -1,0 +1,109 @@
+Raj Sakhiya
+ISTQB-certified Test Automation and Quality Engineering professional
+
+SUMMARY
+ISTQB-certified Test Automation and Quality Engineering professional with 7+ years
+of experience in software testing, automation, quality assurance, and process
+automation. Proven expertise in designing and maintaining automated test
+frameworks, executing API and web application testing, developing regression
+test suites, and collaborating within Agile Scrum teams. Strong hands-on
+experience with Selenium WebDriver, Cypress, Postman, Docker, Linux, and CI/CD
+practices. Adept at analyzing test results, identifying defects, and delivering
+high-quality software solutions through continuous improvement and automation.
+
+CORE COMPETENCIES
+
+Test Automation Frameworks: Selenium WebDriver, Cypress
+API Testing: Postman, RestAssured, Swagger UI, SoapUI
+Testing Types: Regression, Functional, Integration, System, UAT, Smoke, Sanity
+Programming Languages: Python, Java, C#, SQL, VB.NET
+DevOps & CI/CD: Docker, Git, GitHub Actions
+Operating Systems: Linux, Windows
+Agile Methodologies: Scrum, Jira, Confluence
+Defect Management: Jira, HP ALM
+Test Documentation: Test Cases, Test Plans, Traceability Matrix, Defect Reports
+Automation Tools: UiPath, Blue Prism, Microsoft Power Automate
+Soft Skills: Analytical Thinking, Problem Solving, Team Leadership,
+Stakeholder Collaboration
+
+PROFESSIONAL EXPERIENCE
+
+Senior RPA Developer | Tech Mahindra Business Services, India
+Jun 2021 – Aug 2024
+
+- Designed and implemented scalable automation solutions integrating web
+  applications, APIs, and enterprise systems.
+- Developed automated validation and monitoring mechanisms to improve system
+  reliability and process quality.
+- Collaborated with cross-functional Agile Scrum teams to analyze requirements,
+  define acceptance criteria, and support quality assurance activities.
+- Conducted root cause analysis for production issues and implemented
+  preventive quality controls.
+- Utilized Docker-based environments and Linux systems for deployment and
+  testing activities.
+- Led code reviews and established automation standards, improving solution
+  stability and maintainability.
+- Mentored developers on automation best practices, coding standards, and
+  quality assurance processes.
+
+RPA Developer | Bigstep Technologies Pvt. Ltd., India
+Apr 2020 – May 2021
+
+- Developed and maintained automation solutions integrating APIs, web
+  applications, and enterprise platforms.
+- Executed system integration testing and validation of business-critical
+  workflows.
+- Collaborated closely with QA teams during SIT and UAT phases to ensure
+  software quality and successful deployments.
+- Created detailed technical and testing documentation including process flows,
+  test scenarios, and validation reports.
+- Participated in Agile ceremonies, sprint planning, backlog refinement, and
+  defect tracking activities.
+
+Associate Consultant | Capgemini India Pvt. Ltd., India
+Mar 2018 – Mar 2020
+
+- Designed and maintained automated testing frameworks for REST APIs and
+  enterprise web applications.
+- Developed automated regression test suites using Selenium WebDriver, Python,
+  and Postman, significantly reducing manual testing effort.
+- Executed functional, integration, regression, and end-to-end testing across
+  distributed systems.
+- Analyzed test results, identified defects, documented findings, and
+  collaborated with developers to ensure timely resolution.
+- Participated in Agile Scrum ceremonies and worked closely with Product
+  Owners, Business Analysts, and Development teams.
+- Improved test coverage and software quality through automation and
+  continuous testing practices.
+
+QA/QC Engineer | Xiphi Tech Pvt. Ltd., India
+Aug 2016 – Feb 2018
+
+- Designed, developed, and executed automated and manual test cases for web
+  and mobile applications using Selenium WebDriver, Appium, and Postman.
+- Created and maintained regression test suites to validate application
+  stability across releases.
+- Performed functional, smoke, sanity, integration, system, and user
+  acceptance testing.
+- Defined test scenarios, documented defects, and tracked issue resolution
+  using Jira and HP ALM.
+- Collaborated with development teams to improve software quality and
+  accelerate release cycles.
+- Conducted end-to-end testing of web-based applications across multiple
+  environments.
+
+EDUCATION
+Bachelor of Engineering (Information Technology) - University of Mumbai, 2015
+
+CERTIFICATIONS
+- ISTQB Foundation Level Certified
+- UiPath Advanced Certification (UiARD)
+
+LANGUAGES
+- English – Fluent
+- German – B1 Intermediate
+
+TECHNICAL ENVIRONMENT
+Selenium WebDriver | Cypress | Postman | RestAssured | Swagger UI | SoapUI |
+Python | Java | C# | SQL | Docker | Linux | Git | GitHub Actions |
+Jira | Confluence | Appium | HP ALM
