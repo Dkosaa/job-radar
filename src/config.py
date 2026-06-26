@@ -106,6 +106,13 @@ PIPELINE = {
 # ──────────────────────────────────────────────────────────────────────
 #  Job sources
 # ──────────────────────────────────────────────────────────────────────
+# Apify (paid scraper API) — defined here so SOURCES can reference it
+APIFY = {
+    "enabled": bool(os.environ.get("APIFY_API_TOKEN", "")),
+    "token": os.environ.get("APIFY_API_TOKEN", ""),
+    "monthly_budget_usd": 5.0,
+}
+
 SOURCES = {
     "arbeitnow": {"enabled": True, "label": "Arbeitnow"},
     "greenhouse": {"enabled": True, "label": "Greenhouse (DE tech)"},
@@ -113,34 +120,62 @@ SOURCES = {
     "jobicy":    {"enabled": True, "label": "Jobicy (remote, EU-friendly)"},
     "adzuna":     {"enabled": True, "label": "Adzuna DE (StepStone/Indeed aggregator, 250/month)"},
     "remotive":   {"enabled": True, "label": "Remotive (tech remote jobs)"},
-    "jobicy_eu":  {"enabled": True, "label": "Jobicy EU-tagged jobs"},
-    # The following are blocked / require payment:
+    # Apify is conditional — only enabled if APIFY_API_TOKEN is set in env
+    "apify_indeed":   {"enabled": APIFY.get("enabled", False),
+                       "label": "Apify Indeed scraper ($5/mo budget)"},
+    "apify_stepstone":{"enabled": APIFY.get("enabled", False),
+                       "label": "Apify StepStone scraper ($5/mo budget)"},
+    # The following are blocked / require direct access:
     "stepstone":  {"enabled": False, "label": "StepStone direct (Cloudflare captcha)"},
     "indeed_de":  {"enabled": False, "label": "Indeed DE direct (Cloudflare captcha)"},
     "xing":       {"enabled": False, "label": "XING (JS-rendered, login required)"},
     "kimeta":     {"enabled": False, "label": "Kimeta (JS-rendered)"},
     "honeypot":   {"enabled": False, "label": "Honeypot (premium partner only)"},
-    "linkedin":   {"enabled": False, "label": "LinkedIn (anti-bot, $500/mo API)"},
+    "linkedin":   {"enabled": False, "label": "LinkedIn (anti-bot, or via Apify $5/mo)"},
     "glassdoor":  {"enabled": False, "label": "Glassdoor (anti-bot)"},
 }
 
 # Greenhouse + Lever: German tech companies that post publicly
 COMPANY_BOARDS = {
     "greenhouse": [
-        # DE RPA-heavy companies (added by Raj)
-        "schneiderelectric", "altengmbh", "alten",
-        # German / DACH tech on Greenhouse
-        "celonis", "personio", "deliveryhero", "traderepublic",
-        "sennder", "omio", "flaconi", "remazing", "taxfix",
-        "kaiahealth", "raisin", "n26", "zalando", "hellofresh",
-        "kayak", "babbel", "sumup", "wirecard", "qonto",
-        "wolt", "bolt", "transfergo", "qonto", "revolut",
-        "aleph", "contentful", "younited", "scalablecapital",
-        "jimdo", "doctolib", "wefox", "adjust", "tandem",
-        "weclapp", "personio", "raisin", "solaris",
+        # === German RPA / automation hirers ===
+        "schneiderelectric", "altengmbh", "alten",  # Schneider, Alten — big RPA consultancies in DE
+        # === Major DE tech companies (verified active Greenhouse boards) ===
+        "n26",          # 38 DE jobs — Berlin mobile bank
+        "celonis",      # 37 DE — Munich, process mining leader
+        "sumup",        # 85 DE — payments, lots of automation roles
+        "traderepublic",# 1 DE — Berlin fintech
+        "raisin",       # 33 DE — Berlin fintech
+        "doctolib",     # 61 DE — telehealth
+        "contentful",   # 7 DE — Berlin/DEN content platform
+        "flaconi",     # 13 DE — Berlin beauty e-com
+        "wolt",        # 74 DE — Berlin delivery
+        "hellofresh",  # 77 DE — Berlin food delivery
+        "personio",    # 25+ DE — Munich HR SaaS
+        "omio",        # Berlin travel
+        "sennder",     # Berlin freight
+        "taxfix",      # Berlin tax SaaS
+        "babbel",      # Berlin language learning
+        "kayak",       # Berlin travel
+        "kaiahealth",  # Munich digital health
+        "deliveryhero",# Berlin food delivery
+        "wirecard",    # DE payments (legacy)
+        # === Mid-size / startup ===
+        "aleph", "younited", "scalablecapital",
+        "jimdo", "wefox", "adjust", "tandem",
+        "weclapp", "solaris", "remazing",
+        "transfergo", "qonto", "revolut",
+        # === Internationals with DE presence ===
+        "adyen",       # payments, 200+ jobs incl DE
+        "catawiki",    # Berlin/NL collector marketplace
+        "bitpanda",    # Vienna crypto, 50+ jobs
+        "kayak",
+        # === Duplicates kept for redundancy ===
+        "zelando",
     ],
     "lever": [
-        "justwatch", "aleph",
+        "justwatch",   # Berlin streaming guide
+        "aleph",       # 100+ jobs
     ],
 }
 

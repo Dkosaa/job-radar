@@ -91,6 +91,15 @@ def fetch_all() -> list[dict]:
             all_jobs.extend(remotive.fetch(PIPELINE["fetch_timeout_sec"]))
         except Exception as e:
             print(f"[remotive] skipped: {e}")
+    # Apify — pay-per-result scraper for LinkedIn/Indeed/StepStone
+    if SOURCES["apify_indeed"]["enabled"] or SOURCES["apify_stepstone"]["enabled"]:
+        try:
+            from sources import apify
+            apify_jobs = apify.fetch(timeout=120)
+            all_jobs.extend(apify_jobs)
+            print(f"[apify] contributed {len(apify_jobs)} jobs")
+        except Exception as e:
+            print(f"[apify] skipped: {e}")
     if SOURCES["stepstone"]["enabled"]:
         try:
             from sources.stepstone import fetch as ss_fetch
