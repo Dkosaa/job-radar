@@ -15,12 +15,13 @@ try:
 except Exception:
     pass
 
+
 # ──────────────────────────────────────────────────────────────────────
 #  User profile (Raj Sakhiya)
 # ──────────────────────────────────────────────────────────────────────
 USER_PROFILE = {
     "name": "Raj Sakhiya",
-    "title": "Automation & Digital Transformation Specialist",
+    "title": "Robotics Process Automation Developer",
     "years_experience": 7,
     "min_salary_eur": 60000,
     "preferred_locations": {
@@ -53,24 +54,24 @@ USER_PROFILE = {
                        "Stakeholder Management", "Governance", "GDPR",
                        "Code Review", "Mentoring", "Backlog Prioritization"],
         "certifications": ["UiPath Advanced (UiARD)", "ISTQB Foundation"],
-        # target roles
+        # target roles — STRICT: only true fit. Raj wants quality over quantity.
         "target_titles": [
-            # Exact matches (highest weight)
+            # Tier 1: pure RPA / automation fit
             "RPA Developer", "RPA Engineer", "Senior RPA",
             "UiPath Developer", "Power Automate Developer",
-            "Test Automation Engineer", "QA Automation Engineer",
+            "Robotic Process Automation Developer",
+            "Blue Prism Developer", "Automation Anywhere Developer",
             "Process Automation Engineer", "Workflow Automation Engineer",
-            # Broad automation roles (medium weight)
+            "Test Automation Engineer", "QA Automation Engineer",
+            "Intelligent Automation Engineer", "Automation Architect",
+            "Automation Lead", "Power Platform Developer",
+            # Tier 2: broader automation roles (still a fit)
             "Automation Engineer", "Automation Developer",
             "AI Automation", "Intelligent Automation",
             "Process Automation", "Workflow Automation",
-            "Flow Automation", "Power Platform Developer",
-            "Automation Lead", "Automation Architect",
-            "Test Engineer", "QA Engineer", "SDET",
-            # Adjacent roles (lower weight but still match)
-            "Product Owner", "Product Manager", "Workflow Manager",
-            "Process Manager", "Transformation Lead",
-            "Digital Transformation", "Business Automation",
+            "Flow Automation", "Test Engineer", "QA Engineer", "SDET",
+            # Tier 3: adjacent (only if JD also mentions automation keywords)
+            "Product Owner", "Product Manager",
             "Integration Engineer", "DevOps Engineer",
             "Low-Code Developer", "No-Code Developer",
         ],
@@ -83,15 +84,16 @@ USER_PROFILE = {
     ],
 }
 
+
 # ──────────────────────────────────────────────────────────────────────
 #  Pipeline behavior
 # ──────────────────────────────────────────────────────────────────────
 PIPELINE = {
     "freshness_hours": 24,       # default window
     "top_n": 10,                 # jobs per digest
-    "min_score": 35,             # tight but not absurd
-    "max_age_days": 7,           # last week max (was 14, too lenient)
-    "seen_resurfacing_days": 5,  # show same job again after 5d if still fresh
+    "min_score": 50,             # tight quality bar (was 40/80)
+    "max_age_days": 7,           # last week max
+    "seen_resurfacing_days": 3,  # resurface same job after 3 days if still fresh
     "fetch_timeout_sec": 20,
     "user_agent": (
         "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
@@ -100,9 +102,9 @@ PIPELINE = {
     ),
 }
 
+
 # ──────────────────────────────────────────────────────────────────────
 #  Job sources
-#  Add/remove freely — each entry is a callable in src/sources/*.py
 # ──────────────────────────────────────────────────────────────────────
 SOURCES = {
     "arbeitnow": {"enabled": True, "label": "Arbeitnow"},
@@ -112,20 +114,16 @@ SOURCES = {
     "lever":      {"enabled": True, "label": "Lever"},
     "jobicy":    {"enabled": True, "label": "Jobicy (remote, EU-friendly)"},
     "adzuna":     {"enabled": True, "label": "Adzuna DE (StepStone/Indeed aggregator, 250/month)"},
-    "honeypot":   {"enabled": False, "label": "Honeypot"},  # gated API
-}
-
-# If you ever register for Adzuna free tier (adzuna.com/api), drop keys here:
-ADZUNA = {
-    "app_id": os.environ.get("ADZUNA_APP_ID", "56bf71a8"),
-    "app_key": os.environ.get("ADZUNA_APP_KEY",
-                              "b6ef9b5ba4412279de0ebd6e935755a6"),
+    "honeypot":   {"enabled": False, "label": "Honeypot"},
+    "adzuna":     {"enabled": False, "label": "Adzuna DE (needs free API key)"},
 }
 
 # Greenhouse + Lever: German tech companies that post publicly
 COMPANY_BOARDS = {
-    # German / DACH tech companies on Greenhouse public boards
     "greenhouse": [
+        # DE RPA-heavy companies (added by Raj)
+        "schneiderelectric", "altengmbh", "alten",
+        # German / DACH tech on Greenhouse
         "celonis", "personio", "deliveryhero", "traderepublic",
         "sennder", "omio", "flaconi", "remazing", "taxfix",
         "kaiahealth", "raisin", "n26", "zalando", "hellofresh",
@@ -136,10 +134,16 @@ COMPANY_BOARDS = {
         "weclapp", "personio", "raisin", "solaris",
     ],
     "lever": [
-        # Lever API is unstable across companies; keep small verified list
         "justwatch", "aleph",
     ],
 }
+
+ADZUNA = {
+    "app_id": os.environ.get("ADZUNA_APP_ID", "56bf71a8"),
+    "app_key": os.environ.get("ADZUNA_APP_KEY",
+                              "b6ef9b5ba4412279de0ebd6e935755a6"),
+}
+
 
 # ──────────────────────────────────────────────────────────────────────
 #  Delivery
@@ -170,6 +174,7 @@ DELIVERY = {
         "daily_minute_cet": 0,
     },
 }
+
 
 # ──────────────────────────────────────────────────────────────────────
 #  Paths

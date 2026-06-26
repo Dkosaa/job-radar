@@ -1,14 +1,158 @@
 {
-  "generated_at": "2026-06-25T12:26:35.495042+00:00",
-  "window_hours": 24,
+  "generated_at": "2026-06-26T17:01:47.063726+00:00",
+  "window_hours": 168,
   "global_search": false,
   "counts": {
-    "fetched": 2476,
-    "filtered": 613,
-    "fresh": 574,
-    "delivered": 10
+    "fetched": 2509,
+    "filtered": 530,
+    "fresh": 483,
+    "delivered": 4
   },
   "jobs": [
+    {
+      "id": "arbeitnow-staff-ai-backend-engineer-heidelberg-329925",
+      "source": "arbeitnow",
+      "title": "Staff AI Backend Engineer (f/m/d)",
+      "company": "paretos GmbH",
+      "location": "Heidelberg",
+      "country": "",
+      "remote_ok": true,
+      "url": "https://www.arbeitnow.com/jobs/companies/paretos-gmbh/staff-ai-backend-engineer-heidelberg-329925",
+      "description": "<p><strong>paretos</strong> is the leading AI-based Decision Intelligence platform for effective, data-driven decisions across entire enterprises. Our Business Agents make it possible to evaluate complex data volumes, predict scenarios, and derive optimal actions - from demand forecasting and replenishment to strategic C-level decisions. All through a code-free interface, with no prior data science knowledge required. paretos is an inclusive company with equal opportunities for all. Our culture is guided by the principles of <strong>GUNG HO</strong>: meaningful work, shared goals, and mutual support. We are proud of a team of passionate, high-performing, and caring people of all genders, cultures, and backgrounds.</p>\n<p>As Staff AI Backend Engineer, you work in a remote or hybrid setup in close collaboration with Product, Forward Deployed/AI Engineers, and Data Scientists. You operate as the technical anchor for our backend and agent platform — setting direction, raising the bar, and multiplying the impact of the engineers around you. We look forward to your application.</p>\n<h2>Tasks</h2>\n<p>As a Staff AI Backend Engineer, you own the technical backbone of our Decision Intelligence platform and the architecture that lets it scale. You set the direction for how we build scalable backend services that bring our forecasting and optimization models, agentic workflows, and our semantic data layer into productive use. You work AI-first: Claude Code or similar CLIs, MCPs, and custom skills are your standard toolkit, and you define how the rest of the team uses them. You think not only in terms of endpoints and databases, but in customer value, product impact, and adoption - and you are relentless about strengthening the system, not just solving the task at hand.</p>\n<ul>\n<li>With a strong <strong>product mindset</strong>, you set <strong>technical direction</strong>: defining how we measure <strong>feature adoption</strong>, instrumenting <strong>usage patterns</strong>, and steering the <strong>roadmap</strong> with Product and FDE — accountable to <strong>outcomes, not output</strong>.</li>\n<li>Scalable <strong>backend services in Python (FastAPI, Pydantic)</strong> for <strong>agent workflows, forecasting, and replenishment</strong> are yours to architect, build, and operate — including the <strong>decisions, trade-offs, and standards</strong> behind them.</li>\n<li>Clean <strong>API and service contracts</strong> between platform, agents, ML models, frontend, and <strong>customer systems (ERP, BI, planning tools)</strong> are designed by you, with <strong>robustness, observability, and reliability</strong> as first-class properties.</li>\n<li>Our <strong>semantic data layer</strong> — the foundation for accurate forecasts and precise agent responses — is yours: <strong>PostgreSQL modeling, dbt transformations, pipelines, caching, and retrieval</strong>, built to <strong>scale across customers and use cases</strong>.</li>\n<li>How we integrate <strong>LLM and agent systems</strong> into the backend is defined by you: <strong>tool use, function calling, RAG pipelines, eval frameworks, guardrails, and production deployment</strong> — setting the <strong>patterns and quality bars</strong> the team builds against.</li>\n<li>Driving our <strong>AI-first engineering culture</strong> is central: <strong>Claude Code, AI-assisted development, and subagents</strong> are part of your daily toolkit, and you evolve our <strong>internal setup (CLAUDE, hooks, skills, plan/execute/review loop, plugins, docs)</strong> so the team ships faster and safer.</li>\n<li>Ambiguous business and customer requirements get translated into <strong>coherent technical strategy</strong> with FDEs and Product, making <strong>pragmatic trade-offs between speed, scalability, and maintainability</strong> — explained clearly to <strong>technical and non-technical stakeholders</strong>.</li>\n<li><strong>Prototyping fast and close to the user</strong>, you put ideas into FDEs' and customers' hands in <strong>days</strong>, gather feedback autonomously, iterate on the real workflow, and decide from <strong>actual usage</strong> what to harden and roll out.</li>\n<li>Through <strong>code and design review, mentoring, documentation, and standards</strong>, you raise the <strong>engineering bar</strong> — growing the <strong>people</strong> around you and making the <strong>system more resilient</strong> over time.</li>\n</ul>\n<h2>Requirements</h2>\n<ul>\n<li><strong>8+ years</strong> as a Backend, Software, or AI Engineer in a <strong>product-oriented environment</strong>, with a track record of leading the design and delivery of complex systems — ideally in a <strong>product or SaaS context</strong>; <strong>startup (0→1) experience</strong> very welcome.</li>\n<li>Larger parts of a tech organization have been yours end-to-end: <strong>significant services, domains, or platform areas</strong> — from architecture and delivery to <strong>operation, reliability, and on-call</strong>, not just individual features.</li>\n<li>Deep backend expertise across <strong>Python (FastAPI, Pydantic), clean and durable API design, async programming, PostgreSQL and Redis, Docker, and mature CI/CD</strong> — at a level where you <strong>define standards</strong> rather than follow them.</li>\n<li>Proven in <strong>agile, fast-moving teams</strong>: operating inside <strong>sprints, iterative shipping, and continuous feedback</strong>, you keep <strong>quality high while moving fast</strong>.</li>\n<li>Demonstrated <strong>technical leadership</strong>: you've owned the architecture of <strong>non-trivial systems</strong>, made <strong>high-stakes trade-offs</strong>, and guided multiple engineers through ambiguity — <strong>without formal authority</strong>.</li>\n<li>A strong <strong>product mindset</strong> drives you: not just \"How do I build this?\" but <strong>\"What for, for whom, and how will we know it has impact?\"</strong> — thinking in <strong>users, adoption, and chains of impact</strong>.</li>\n<li><strong>Production-grade LLM and agent experience</strong>: prompt engineering, <strong>tool use/function calling, RAG, eval frameworks, guardrails</strong>, and deploying <strong>LLM-powered features real users depend on</strong>.</li>\n<li>Solid command of <strong>cloud infrastructure (ideally AWS)</strong>, including <strong>Kubernetes and Infrastructure-as-Code with Terraform</strong> — you design, reason about, and operate this stack confidently, deciding <strong>where complexity belongs</strong>.</li>\n<li>A very high level of <strong>ownership</strong>, comfort with <strong>ambiguity</strong>, and the judgment to know when to <strong>go deep versus delegate, document, or simplify</strong>.</li>\n<li><strong>Clear, compelling communication</strong>, technical and non-technical, with <strong>low ego</strong> — building alignment, writing things down, and making others better.</li>\n<li><strong>Fluent English</strong></li>\n</ul>\n<h2>Benefits</h2>\n<ul>\n<li>You receive the hardware setup you need to unlock your full potential.</li>\n<li>You use your personal learning budget (2000€ per year) to continuously develop yourself.</li>\n<li>Flexible working hours: you work when it suits you best.</li>\n<li>You receive a monthly benefit budget of 60€ that you can use however fits you best — whether that's Urban Sports Club, a mobility budget for fuel, public transport or the Deutschlandticket, or simply gift cards from your favorite shop. It's entirely up to you.</li>\n<li>A rich selection of snacks and drinks is available to you free of charge in the office at all times.</li>\n<li>You get direct access to frontier AI developments and learning sessions in close exchange with our product development.</li>\n<li>You complement a highly qualified and motivated team of paretoneers who get things done and have fun doing it.</li>\n<li>You take part in our quarterly Hacky Days, full of creativity and new ideas.</li>\n<li>We regularly host professional and social team events, both online and on site.</li>\n<li>If you are a member of the paretos Dog Club, you are welcome to bring your four-legged friend to the office.</li>\n<li>In the office, you can prove your barista skills and have coffee conversations with other paretoneers. Maybe you'll be crowned \"paretos Office Barista of the Year\" at our Christmas party.</li>\n</ul>\n<p>Transparency notice: We use AI tools to pre-screen applications. However, the decision on who we meet is always made by us – not by the algorithm.</p>\n<p>paretos is an inclusive company with equal opportunities for all. We explicitly encourage you to apply even if you don't meet 100% of the requirements.</p>\n<p>Find more <a href=\"https://www.arbeitnow.com/english-speaking-jobs\">English Speaking Jobs in Germany</a> on Arbeitnow</a>",
+      "tags": [
+        "Remote",
+        "Software Development"
+      ],
+      "salary_eur": null,
+      "posted_at": 1782473442,
+      "score": 38,
+      "reasons": [
+        "+0 title (none)",
+        "+21 skills (7 matched)",
+        "+5 EN + DE OK",
+        "+0 certs (none)",
+        "+12 location — remote (DE-eligible)",
+        "+0 salary — salary not listed"
+      ],
+      "matched_skills": [
+        "python",
+        "llm",
+        "mentoring",
+        "agile",
+        "docker",
+        "ci/cd",
+        "make"
+      ],
+      "matched_titles": [],
+      "matched_certs": [],
+      "ats_keywords_to_add": [
+        "claude",
+        "fastapi",
+        "postgresql",
+        "rag",
+        "terraform",
+        "agentic",
+        "redis",
+        "go"
+      ],
+      "_age_hours": 5
+    },
+    {
+      "id": "arbeitnow-senior-iot-cloud-engineer-berlin-476643",
+      "source": "arbeitnow",
+      "title": "(Senior) IoT Cloud Engineer (m/f/d)",
+      "company": "1KOMMA5˚",
+      "location": "Berlin",
+      "country": "Germany",
+      "remote_ok": true,
+      "url": "https://www.arbeitnow.com/jobs/companies/1komma50/senior-iot-cloud-engineer-berlin-476643",
+      "description": "<h2>1KOMMA5°</h2>\n<p>At <strong>1KOMMA5°</strong>, we pursue a clear vision: <strong>Living on wind and sunlight forever for free</strong>. To make this a reality, we are building the energy system of the future with Heartbeat AI. Want to be part of it?</p>\n<p>We bring together regional craftsmanship and scalable software: We don't think of solar, batteries, heat pumps, and e-mobility as isolated components, but control them as an intelligent, integrated overall system in our virtual power plant. Directly connected to the electricity market – in real time, fully automated. This way, energy is used when it is available from renewables and particularly cost-effective. By 2030, our goal is to transition 1.5 million households to renewable energies. Over 3,000 people are working towards this every day, at more than 80 locations worldwide, from Finland to Australia.</p>\n<p><strong>Want to take responsibility and build solutions that truly matter? Apply now and help us shape the energy world of tomorrow.</strong></p>\n<p>Learn about our Product &#x26; Tech team!</p>\n<h2>Deine Position</h2>\n<p>At 1KOMMA5°, we connect and manage tens of thousands of distributed energy devices at scale. As a (Senior) IoT Cloud Engineer, you will own the cloud side of our IoT Platform that ingests, routes, and observes every message flowing between our gateway fleet and our cloud services.</p>\n<p>You will work at the intersection of cloud infrastructure, messaging systems, data and IoT engineering, making sure our device-to-cloud highway is reliable, secure, observable, and cost-efficient as the fleet grows. We are a Platform team: your work directly enables product teams across Heartbeat AI to ship features faster, while giving the business a clear, data-driven view of fleet health and performance.</p>\n<p>Key responsibilities include but are not limited to:</p>\n<ul>\n<li>Take ownership of our systems at the intersection of Cloud Services and residential IoT Gateways</li>\n<li>Operate and evolve our Kubernetes-based IoT Cloud Platform, including the deployment, scaling, and hardening of our connectivity and fleet services</li>\n<li>Develop and run our Eclipse Hono stack as the messaging backbone between gateways and the cloud</li>\n<li>Design, build and operate features around fleet management enabling the lifecycle of gateways from production line to field</li>\n<li>Integrate tightly with Mender to operate safe OTA rollouts across the fleet.</li>\n<li>Contribute to load and resilience tests to prove the platform scales and to find limits before our customers do</li>\n<li>Build and own the observability pipelines for the IoT Platform and turn metrics into automated monitors, alerts, and self-healing mechanisms</li>\n<li>Build data pipelines and BI models to turn raw data into fleet insights</li>\n<li>Work collaboratively with product managers, data engineers, IoT engineers, as well as cloud engineers to understand problems, support discoveries, and create solutions enabling a scalable virtual power plant</li>\n<li>Foster a culture of experiment-driven innovation within the team\nTechnologies you will work with include:</li>\n<li>Cloud &#x26; Infra: Google Cloud Platform, GKE (Kubernetes), Cloud Run, Terraform/IaC</li>\n<li>Messaging &#x26; IoT: Eclipse Hono, MQTT, Mender</li>\n<li>Data &#x26; BI: PostgreSQL, BigQuery, SQLMesh, Looker</li>\n<li>Observability: Datadog, OpenTelemetry</li>\n<li>Languages: TypeScript (Nest.js), Java, Go</li>\n<li>DevOps: CI/CD pipelines (GitHub Actions)</li>\n</ul>\n<h2>Dein Profil</h2>\n<p>The successful candidate will have:</p>\n<ul>\n<li>Bachelor's or Master's degree in Computer Science, Software Engineering, or related field</li>\n<li>5+ years of experience building and operating cloud / distributed backend systems in production</li>\n<li>Strong hands-on experience with Kubernetes (ideally GKE) and modern cloud-native operations</li>\n<li>Solid understanding of MQTT and device-to-cloud messaging patterns at scale, including back-pressure, QoS, and fan-out</li>\n<li>Experience designing and running observability pipelines (logs, metrics, traces) for large-scale distributed systems, and turning them into actionable monitors</li>\n<li>Comfortable working with data and BI tooling — writing SQL, modeling data, and building dashboards that drive decisions</li>\n<li>Experience with CI/CD, IaC, and platform engineering practices</li>\n<li>A strong reliability and security mindset</li>\n<li>Ability to guide architectural decisions and navigate across embedded, hardware, data, and product teams</li>\n<li>Agile, product-oriented mindset and a strong team player with a bias for action and ownership</li>\n<li>Strong troubleshooting and analytical mindset</li>\n<li>Clear and effective communicator in English (German is a plus)\nBonus points for:</li>\n<li>Production experience with Eclipse Hono or a comparable IoT connectivity platform</li>\n<li>Familiarity with Mender or other large-scale OTA / fleet management systems</li>\n<li>Experience with SQLMesh and/or Looker (LookML) specifically</li>\n<li>Familiarity with Google Cloud Platform as the primary cloud</li>\n<li>Experience running load tests for messaging infrastructure or large-scale distributed systems.</li>\n<li>Passion for climate tech and distributed energy systems\nWe are an ambitious and dynamic company with a talented team. We require our engineers to be imaginative, enthusiastic, and willing to tackle new challenges as we strive to provide everyone with renewable energy technologies.</li>\n</ul>\n<h2>Benefits</h2>\n<ul>\n<li>You are part of an international, dynamic, and highly motivated team of people who have proven to make things happen</li>\n<li>With your work, you accelerate the \"energy transition\" and hence have a direct impact on our climate</li>\n<li>Work with and learn from other super-smart colleagues</li>\n<li>You will enjoy direct contact with core decision-makers</li>\n<li>You will enjoy the best chances of entering full-time in one of Europe’s most thriving scaleups</li>\n<li>You work remotely (Germany-wide), with offices in Hamburg, Berlin or Munich</li>\n<li>Create a healthy balance alongside your work and enjoy all the benefits of the EGYM Wellpass</li>\n<li>Benefits and discounts are yours with Futurebens</li>\n<li>Whether city bike or e-bike - be flexible with our job bike leasing and do something good for the environment at the same time</li>\n</ul>\n<p>Find <a href=\"https://www.arbeitnow.com/\">Jobs in Germany</a> on Arbeitnow</a>",
+      "tags": [
+        "Remote",
+        "Software Development"
+      ],
+      "salary_eur": null,
+      "posted_at": 1782423071,
+      "score": 38,
+      "reasons": [
+        "+3 title (product manager)",
+        "+18 skills (6 matched)",
+        "+5 EN + DE OK",
+        "+0 certs (none)",
+        "+12 location — remote (DE-eligible)",
+        "+0 salary — salary not listed"
+      ],
+      "matched_skills": [
+        "sql",
+        "java",
+        "agile",
+        "ci/cd",
+        "make",
+        "github actions"
+      ],
+      "matched_titles": [
+        "product manager"
+      ],
+      "matched_certs": [],
+      "ats_keywords_to_add": [
+        "kubernetes",
+        "google cloud",
+        "terraform",
+        "postgresql",
+        "bigquery",
+        "product manager",
+        "go",
+        "safe"
+      ],
+      "_age_hours": 19
+    },
+    {
+      "id": "arbeitnow-senior-enterprise-architect-it-service-management-consultant-for-our-talent-pool-bonn-465187",
+      "source": "arbeitnow",
+      "title": "Senior Enterprise Architect & IT Service Management Consultant (m/f/d) for our Talent Pool",
+      "company": "Sidekick Network GmbH & Co. KG",
+      "location": "Bonn",
+      "country": "",
+      "remote_ok": true,
+      "url": "https://www.arbeitnow.com/jobs/companies/sidekick-network-gmbh-co-kg/senior-enterprise-architect-it-service-management-consultant-for-our-talent-pool-bonn-465187",
+      "description": "<p>At Sidekick Network, we connect highly experienced IT and business professionals with international transformation programs across industries such as Automotive, Manufacturing, Energy, Telecommunications, Healthcare, and Financial Services.</p>\n<p>As our network continues to grow, we are expanding our <strong>German Talent Pool</strong> with experienced consultants who combine Enterprise Architecture expertise with a pragmatic understanding of IT Service Management and Digital Transformation.</p>\n<p>If you enjoy working at the intersection of business and technology, helping organizations modernize their IT landscape while ensuring operational excellence, we would love to hear from you.</p>\n<h2>Tasks</h2>\n<p>Depending on the project, you may be involved in:</p>\n<ul>\n<li>Supporting enterprise-wide IT transformation initiatives</li>\n<li>Developing and maintaining Enterprise Architecture concepts and roadmaps</li>\n<li>Bridging the gap between Enterprise Architecture, Solution Architecture and IT Operations</li>\n<li>Analyzing complex technical dependencies and identifying implementation risks</li>\n<li>Supporting IT Service Management initiatives and process improvements</li>\n<li>Contributing to service transition, operational readiness and continuous improvement</li>\n<li>Coordinating stakeholders across business and IT organizations</li>\n<li>Supporting testing activities including test planning, coordination and defect management</li>\n<li>Facilitating workshops and aligning technical and business teams</li>\n<li>Supporting change management and adoption during transformation programs</li>\n<li>Working closely with project managers, architects, service owners and technical teams</li>\n<li>Contributing to governance, documentation and architectural decision-making</li>\n</ul>\n<h2>Requirements</h2>\n<p>We are looking for experienced consultants who bring several of the following qualifications:</p>\n<ul>\n<li>Extensive experience in Enterprise Architecture, Solution Architecture or IT Transformation</li>\n<li>Strong understanding of IT Service Management processes (ITIL)</li>\n<li>Experience with large enterprise environments and complex application landscapes</li>\n<li>Ability to understand technical dependencies across multiple systems</li>\n<li>Experience supporting service transition, operational readiness or platform transformations</li>\n<li>Strong analytical and problem-solving skills</li>\n<li>Excellent stakeholder management and communication skills</li>\n<li>Experience coordinating testing, issue resolution and cross-functional teams</li>\n<li>Familiarity with Agile delivery models and modern collaboration tools</li>\n<li>Hands-on mentality combined with strategic thinking</li>\n<li>Professional English is required; German is an advantage</li>\n</ul>\n<p>Experience with one or more of the following:</p>\n<ul>\n<li>Jira and Confluence</li>\n<li>Jira Service Management</li>\n<li>ServiceNow</li>\n<li>BMC Remedy / BMC Helix</li>\n<li>LeanIX, ArchiMate or TOGAF</li>\n<li>Azure DevOps</li>\n<li>CMDB and Configuration Management</li>\n<li>IT Governance and Operating Model Design</li>\n<li>Cloud transformation initiatives (Azure, AWS or Google Cloud)</li>\n</ul>\n<h2>Benefits</h2>\n<ul>\n<li>Access to exciting international transformation programs</li>\n<li>Flexible project models (remote, hybrid or on-site)</li>\n<li>Long-term cooperation with Sidekick Network</li>\n<li>Transparent communication and personal support throughout every assignment</li>\n<li>Access to a strong international expert community</li>\n<li>Opportunities to work with well-known global organizations</li>\n</ul>\n<p>Find more <a href=\"https://www.arbeitnow.com/english-speaking-jobs\">English Speaking Jobs in Germany</a> on Arbeitnow</a>",
+      "tags": [
+        "Remote",
+        "IT"
+      ],
+      "salary_eur": null,
+      "posted_at": 1782369029,
+      "score": 35,
+      "reasons": [
+        "+3 title (digital transformation)",
+        "+15 skills (5 matched)",
+        "+5 EN + DE OK",
+        "+0 certs (none)",
+        "+12 location — remote (DE-eligible)",
+        "+0 salary — salary not listed"
+      ],
+      "matched_skills": [
+        "confluence",
+        "agile",
+        "jira",
+        "stakeholder management",
+        "governance"
+      ],
+      "matched_titles": [
+        "digital transformation"
+      ],
+      "matched_certs": [],
+      "ats_keywords_to_add": [
+        "azure",
+        "itil",
+        "servicenow",
+        "aws",
+        "devops",
+        "google cloud",
+        "azure devops"
+      ],
+      "_age_hours": 34
+    },
     {
       "id": "arbeitnow-product-owner-digital-products-ai-hamburg-84864",
       "source": "arbeitnow",
@@ -25,430 +169,36 @@
       ],
       "salary_eur": null,
       "posted_at": 1782307849,
-      "score": 55,
+      "score": 35,
       "reasons": [
-        "+6 title match (Product Manager, Product Owner)",
-        "+8 skills (4 matched)",
-        "+3 EN + DE OK",
+        "+6 title (product manager, product owner)",
+        "+12 skills (4 matched)",
+        "+5 EN + DE OK",
         "+0 certs (none)",
-        "+8 location — remote (anywhere in DE)",
+        "+12 location — remote (DE-eligible)",
         "+0 salary — salary not listed"
       ],
       "matched_skills": [
-        "Governance",
-        "LLM",
-        "Scrum",
-        "Stakeholder Management"
+        "llm",
+        "scrum",
+        "stakeholder management",
+        "governance"
       ],
       "matched_titles": [
-        "Product Manager",
-        "Product Owner"
+        "product manager",
+        "product owner"
       ],
       "matched_certs": [],
       "ats_keywords_to_add": [
-        "UiPath",
-        "Orchestrator",
-        "Blue Prism",
-        "Power Automate",
-        "Power BI",
-        "RPA",
-        "Robotic Process Automation",
-        "n8n"
-      ],
-      "_age_hours": 22
-    },
-    {
-      "id": "arbeitnow-senior-enterprise-architect-it-service-management-consultant-for-our-talent-pool-bonn-465187",
-      "source": "arbeitnow",
-      "title": "Senior Enterprise Architect & IT Service Management Consultant (m/f/d) for our Talent Pool",
-      "company": "Sidekick Network GmbH & Co. KG",
-      "location": "Bonn",
-      "country": "",
-      "remote_ok": true,
-      "url": "https://www.arbeitnow.com/jobs/companies/sidekick-network-gmbh-co-kg/senior-enterprise-architect-it-service-management-consultant-for-our-talent-pool-bonn-465187",
-      "description": "<p>At Sidekick Network, we connect highly experienced IT and business professionals with international transformation programs across industries such as Automotive, Manufacturing, Energy, Telecommunications, Healthcare, and Financial Services.</p>\n<p>As our network continues to grow, we are expanding our <strong>German Talent Pool</strong> with experienced consultants who combine Enterprise Architecture expertise with a pragmatic understanding of IT Service Management and Digital Transformation.</p>\n<p>If you enjoy working at the intersection of business and technology, helping organizations modernize their IT landscape while ensuring operational excellence, we would love to hear from you.</p>\n<h2>Tasks</h2>\n<p>Depending on the project, you may be involved in:</p>\n<ul>\n<li>Supporting enterprise-wide IT transformation initiatives</li>\n<li>Developing and maintaining Enterprise Architecture concepts and roadmaps</li>\n<li>Bridging the gap between Enterprise Architecture, Solution Architecture and IT Operations</li>\n<li>Analyzing complex technical dependencies and identifying implementation risks</li>\n<li>Supporting IT Service Management initiatives and process improvements</li>\n<li>Contributing to service transition, operational readiness and continuous improvement</li>\n<li>Coordinating stakeholders across business and IT organizations</li>\n<li>Supporting testing activities including test planning, coordination and defect management</li>\n<li>Facilitating workshops and aligning technical and business teams</li>\n<li>Supporting change management and adoption during transformation programs</li>\n<li>Working closely with project managers, architects, service owners and technical teams</li>\n<li>Contributing to governance, documentation and architectural decision-making</li>\n</ul>\n<h2>Requirements</h2>\n<p>We are looking for experienced consultants who bring several of the following qualifications:</p>\n<ul>\n<li>Extensive experience in Enterprise Architecture, Solution Architecture or IT Transformation</li>\n<li>Strong understanding of IT Service Management processes (ITIL)</li>\n<li>Experience with large enterprise environments and complex application landscapes</li>\n<li>Ability to understand technical dependencies across multiple systems</li>\n<li>Experience supporting service transition, operational readiness or platform transformations</li>\n<li>Strong analytical and problem-solving skills</li>\n<li>Excellent stakeholder management and communication skills</li>\n<li>Experience coordinating testing, issue resolution and cross-functional teams</li>\n<li>Familiarity with Agile delivery models and modern collaboration tools</li>\n<li>Hands-on mentality combined with strategic thinking</li>\n<li>Professional English is required; German is an advantage</li>\n</ul>\n<p>Experience with one or more of the following:</p>\n<ul>\n<li>Jira and Confluence</li>\n<li>Jira Service Management</li>\n<li>ServiceNow</li>\n<li>BMC Remedy / BMC Helix</li>\n<li>LeanIX, ArchiMate or TOGAF</li>\n<li>Azure DevOps</li>\n<li>CMDB and Configuration Management</li>\n<li>IT Governance and Operating Model Design</li>\n<li>Cloud transformation initiatives (Azure, AWS or Google Cloud)</li>\n</ul>\n<h2>Benefits</h2>\n<ul>\n<li>Access to exciting international transformation programs</li>\n<li>Flexible project models (remote, hybrid or on-site)</li>\n<li>Long-term cooperation with Sidekick Network</li>\n<li>Transparent communication and personal support throughout every assignment</li>\n<li>Access to a strong international expert community</li>\n<li>Opportunities to work with well-known global organizations</li>\n</ul>\n<p>Find <a href=\"https://www.arbeitnow.com/\">Jobs in Germany</a> on Arbeitnow</a>",
-      "tags": [
-        "Remote",
-        "IT"
-      ],
-      "salary_eur": null,
-      "posted_at": 1782369029,
-      "score": 54,
-      "reasons": [
-        "+3 title match (Digital Transformation)",
-        "+10 skills (5 matched)",
-        "+3 EN + DE OK",
-        "+0 certs (none)",
-        "+8 location — remote (anywhere in DE)",
-        "+0 salary — salary not listed"
-      ],
-      "matched_skills": [
-        "Agile",
-        "Confluence",
-        "Governance",
-        "Jira",
-        "Stakeholder Management"
-      ],
-      "matched_titles": [
-        "Digital Transformation"
-      ],
-      "matched_certs": [],
-      "ats_keywords_to_add": [
-        "UiPath",
-        "Orchestrator",
-        "Blue Prism",
-        "Power Automate",
-        "Power BI",
-        "RPA",
-        "Robotic Process Automation",
-        "n8n"
-      ],
-      "_age_hours": 5
-    },
-    {
-      "id": "arbeitnow-business-systems-ai-automation-manager-munich-309432",
-      "source": "arbeitnow",
-      "title": "Business Systems & AI Automation Manager (m/w/d)",
-      "company": "feld.energy GmbH",
-      "location": "Munich",
-      "country": "Germany",
-      "remote_ok": false,
-      "url": "https://www.arbeitnow.com/jobs/companies/feldenergy-gmbh/business-systems-ai-automation-manager-munich-309432",
-      "description": "<h2>Deine Mission</h2>\n<p>Als Business Systems &#x26; AI Automation Manager (m/w/d) betreibst du unsere „Single Source of Truth“, verantwortest die Weiterentwicklung unserer operativen Systemlandschaft und baust Automatisierung, Datenqualität und den Einsatz von KI in unsere Systeme ein. So sorgst du dafür, dass unsere Unternehmens-Maschine schnell, vorhersehbar und skalierbar läuft.</p>\n<h2>Über uns</h2>\n<p>feld.energy ist mehr als nur ein Unternehmen – wir sind eine Bewegung!<br>\nWir helfen Landwirten und Landeigentümern dabei, Landwirtschaft und Energieerzeugung intelligent miteinander zu verbinden. Mit unseren innovativen Agri-PV-Lösungen schaffen wir die Grundlage für eine nachhaltige und wirtschaftlich erfolgreiche Landwirtschaft.<br>\nUnser Ziel: Die Energiewende dahin bringen, wo sie am meisten Wirkung hat – aufs Land.</p>\n<h2>Deine Aufgaben</h2>\n<ul>\n<li>Als Business Systems &#x26; AI Automation Manager baust du und betreibst unsere „Single Source of Truth“ inklusive Datenqualität, Phasen-Status entlang des EPC-Funnels und konsistenter Datenflüsse zwischen den Teams.</li>\n<li>Manuelle Abläufe automatisierst du systematisch über Schnittstellen zwischen unseren Systemen (CRM, Projektmanagement und weitere Fachtools).</li>\n<li>Du baust KI gezielt in unsere Systeme und Prozesse ein: von KI-gestützten Workflows bis zu Agenten, die wiederkehrende Aufgaben eigenständig übernehmen.</li>\n<li>Unser KPI-Framework setzt du technisch um: Felder, Datenanbindung und Dashboards für operative Steuerung, Management und Investor-Reporting.</li>\n<li>Eng arbeitest du mit dem Head of Operations &#x26; Processes sowie den Teams aus Sales, Permitting, EPC und O&#x26;M zusammen.</li>\n<li>Deine Rolle ist dreigeteilt: du bist Product Manager:in und identifizierst Potenziale für Automatisierungen und KI, du bist technische:r Umsetzer:in und implementierst Lösungen praxisnah und berätst Kolleg:innen bei Fragen zu Tools und KI-Anwendungen.</li>\n</ul>\n<h2>Dein Profil</h2>\n<ul>\n<li>Mehrjährige Erfahrung im Aufbau und Betrieb von CRM- und Automatisierungssystemen sowie fundierte Kenntnisse in Datenmodellierung, Schnittstellenmanagement und Workflow-Automatisierung (z. B. APIs und externe Datenquellen).</li>\n<li>Selbstverständlicher Einsatz von KI-Tools im Arbeitsalltag sowie Erfahrung in der Integration von KI-Funktionen in Systeme und Prozesse (z. B. LLM-APIs oder agentenbasierte Workflows).</li>\n<li>Ausgeprägtes Produktverständnis sowie die Fähigkeit, Nutzeranforderungen zu identifizieren und in belastbare Konzepte zu überführen.</li>\n<li>Fähigkeit, mithilfe von KI, Software und Coding eigene Tools und Lösungen von Grund auf zu entwickeln.</li>\n<li>Ausgeprägte Reporting- und Business-Intelligence-Affinität sowie Erfahrung in der Übersetzung von KPI-Logiken in aussagekräftige Dashboards.</li>\n<li>Analytische Denkweise, pragmatische Umsetzungsstärke und ein hoher Anspruch an Dokumentation und nachhaltige Systemgestaltung.</li>\n<li>Prozessverständnis im EPC-, Bau- oder Energieumfeld von Vorteil</li>\n<li>Sehr gute Deutsch- sowie gute Englischkenntnisse.</li>\n</ul>\n<h2>Warum wir?</h2>\n<ul>\n<li>Option auf Remote-Arbeit (bis zu 60%) und flexible Arbeitszeiten.</li>\n<li>Anteile am Unternehmenserfolg durch Mitarbeiterbeteiligung möglich.</li>\n<li>Donnerstags gibt es im Office gemeinsames Lunch kostenfrei.</li>\n<li>Office in der Münchener Innenstadt (inkl. Parkplätze).</li>\n<li>27 Tage für deine persönliche Erholung.</li>\n<li>Regelmäßige Team-Events und gemeinsame Feiern der Erfolge.</li>\n<li>Kostenlose Getränke und frisches Obst im Büro für deinen Energie-Boost.</li>\n<li>Neueste technische Ausstattung und innovative Software, die deinen Arbeitsalltag erleichtert.</li>\n<li>Top-Weiterbildungsmöglichkeiten im Bereich erneuerbare Energien und nachhaltige Geschäftsführung.</li>\n<li>Eine Unternehmenskultur, die auf Nachhaltigkeit, Innovation und Zusammenarbeit setzt.</li>\n</ul>\n<p>Bist du bereit als Business Systems &#x26; AI Automation Manager, die Energiewende in der Landwirtschaft mitzugestalten?<br>\nDann freuen wir uns auf deine Bewerbung!</p>\n<p>Find more <a href=\"https://www.arbeitnow.com/english-speaking-jobs\">English Speaking Jobs in Germany</a> on Arbeitnow</a>",
-      "tags": [
-        "Project Management"
-      ],
-      "salary_eur": null,
-      "posted_at": 1782318542,
-      "score": 54,
-      "reasons": [
-        "+9 title match (AI Automation, Product Manager)",
-        "+2 skills (1 matched)",
-        "+3 EN + DE OK",
-        "+0 certs (none)",
-        "+10 location — hybrid (munich, ~120km from Regensburg)",
-        "+0 salary — salary not listed"
-      ],
-      "matched_skills": [
-        "LLM"
-      ],
-      "matched_titles": [
-        "AI Automation",
-        "Product Manager"
-      ],
-      "matched_certs": [],
-      "ats_keywords_to_add": [
-        "UiPath",
-        "Orchestrator",
-        "Blue Prism",
-        "Power Automate",
-        "Power BI",
-        "RPA",
-        "Robotic Process Automation",
-        "n8n"
-      ],
-      "_age_hours": 19
-    },
-    {
-      "id": "arbeitnow-agentic-engineering-expert-munchen-munich-34281",
-      "source": "arbeitnow",
-      "title": "Agentic Engineering Expert (m/w/d), München",
-      "company": "TOWA - the digital growth company",
-      "location": "Munich",
-      "country": "Germany",
-      "remote_ok": false,
-      "url": "https://www.arbeitnow.com/jobs/companies/towa-the-digital-growth-company/agentic-engineering-expert-munchen-munich-34281",
-      "description": "<h2>Wofür wir stehen:</h2>\n<p><strong>„We drive digital transformation end-to-end – from strategy to execution. Creating measurable progress and real impact for our clients.“</strong></p>\n<p>Stillstand? Nicht mit uns. Wir glauben: <strong>Alles ist BETA – und genau darin liegt die Chance für Fortschritt.</strong> Während andere noch über AI-Strategie diskutieren, bauen wir unsere Delivery AI-native um – mit Specs, Verification Gates und Agenten im gesamten Entwicklungsprozess.</p>\n<p><strong>Und jetzt kommst du:</strong> Wir suchen die Person, die diese Transformation in unseren Engineering-Teams beschleunigt. Nicht als Konzeptlieferant, sondern hands-on, als jemand, der es selbst vorlebt und andere mitzieht.</p>\n<h2>Deine Aufgaben:</h2>\n<p><strong>Deine Mission:</strong> Du machst unsere Entwicklungsteams schneller und besser, indem du agentische Workflows aufbaust, Standards setzt und Wissen multiplizierst. Du bist dabei mehr als Techniker:in – du bist Change Agent: Frontrunner und Innovator, der in den Projekten vorangeht, die neue Arbeitsweise vorlebt und die Teams mitnimmt. Klarstellung vorab: Das ist keine AI/ML-Rolle. Du baust keine Modelle – du baust Software schneller, indem du AI-Agenten orchestrierst und die Umgebungen designst, in denen sie zuverlässig arbeiten.</p>\n<h2>Claude-Expertise, Workflows &#x26; Agent Teams</h2>\n<ul>\n<li>Du baust agentische Workflows und Agent Teams auf: Multi-Agent-Setups, die parallel recherchieren, entwickeln und reviewen – und im Projektalltag zuverlässig funktionieren</li>\n<li>Du baust und betreibst MCP-Server, die unsere Tools und Datenquellen für Agenten nutzbar machen</li>\n<li>Du etablierst Spec-driven Development: standardisierte Inputs, klare Verification Gates, auditierbarer Agent-Output</li>\n</ul>\n<h2>Qualität &#x26; Verifikation</h2>\n<ul>\n<li>Du entwickelst Eval-Harnesses und Testverfahren, die AI-generierten Code messbar und vertrauenswürdig machen</li>\n<li>Du behandelst Context Engineering als Disziplin: das kleinste Set an High-Signal-Tokens, nicht der längste Prompt</li>\n<li>Du reviewst AI-Output kritisch – „trust then verify“ ist deine Grundhaltung, kein Slogan</li>\n</ul>\n<h2>Change &#x26; Enablement</h2>\n<ul>\n<li>Du arbeitest als Frontrunner direkt in den Projektteams mit: Du zeigst am echten Kundenprojekt, was agentisch möglich ist und machst die Teams dann selbst dazu fähig</li>\n<li>Du treibst den Wandel als Change Agent: Du begeisterst statt zu missionieren, nimmst Skeptiker:innen mit und räumst Hürden in Prozessen und Köpfen aus dem Weg</li>\n<li>Du baust wiederverwendbare Assets: Plugins, Skill-Bibliotheken, Prompt-Patterns, Runbooks</li>\n<li>Du beobachtest das Ökosystem (Anthropic, MCP-Standard, Tooling) als Innovator, testest Neues früh und übersetzt es in nutzbare Praxis für TOWA</li>\n</ul>\n<h2>Damit kannst Du punkten:</h2>\n<h2>Agentic-Engineering-Erfahrung</h2>\n<ul>\n<li>Du hast produktiv mit LLMs gebaut, nicht nur Tutorials geschaut. Der Lackmustest: Du kannst eine Evaluation beschreiben, die du selbst designt hast</li>\n<li>Tiefe Praxis mit Claude Code oder vergleichbaren agentischen Coding-Tools: Du weißt, wann Agenten brillieren, wann sie scheitern und woran man den Unterschied erkennt</li>\n<li>Erfahrung im Bau von MCP-Servern, Custom Tools oder Agent-Integrationen</li>\n</ul>\n<h2>Software-Engineering-Fundament</h2>\n<ul>\n<li>Solider Engineering-Background (z. B. TypeScript, Python) – du bist Entwickler:in, die agentisch arbeitet, nicht Prompt-Autor:in ohne Codebasis</li>\n<li>Verständnis für CI/CD, Testing und Delivery-Prozesse, in die sich Agenten einfügen müssen</li>\n<li>LLM-Grundlagen sitzen: Tokens, Context Windows, Modell-Tiers, Kosten-/Latenz-Trade-offs</li>\n</ul>\n<h2>Haltung &#x26; Kommunikation</h2>\n<ul>\n<li>Learning Velocity: Die Tools ändern sich monatlich – du entwickelst dich mindestens so schnell</li>\n<li>Ownership: Du stehst für jeden Commit mit deinem Namen ein, auch wenn ihn ein Agent geschrieben hat</li>\n<li>Change-Agent-Qualitäten: Du holst Menschen ab, gehst mit gutem Beispiel voran und hältst durch, wenn Veränderung auf Widerstand trifft</li>\n<li>Du kannst erklären, befähigen und überzeugen – im Team und beim Kunden, auf Deutsch oder Englisch</li>\n</ul>\n<h2>Nice to have</h2>\n<ul>\n<li>Erfahrung im Agentur- oder Beratungsumfeld mit parallelen Projekten</li>\n<li>Praxis mit Eval-Frameworks, LLM-as-a-Judge-Setups oder Agent-Observability</li>\n<li>Beiträge zur Community: Open Source, Talks, Blogposts</li>\n</ul>\n<h2>Was wir von Dir benötigen:</h2>\n<p><strong>Mission started?!</strong> Dann brauchen wir von dir:</p>\n<ul>\n<li>Deinen <strong>CV</strong></li>\n<li>Ein konkretes <strong>Beispiel</strong>, wie du agentisch gearbeitet hast (Setup, Workflow oder Asset – Format egal)</li>\n<li>Welche <strong>Vergütung</strong> du dir für deine Performance vorstellst</li>\n<li>Deine <strong>Kündigungsfrist</strong> bzw. möglicher <strong>Starttermin</strong></li>\n</ul>\n<h2>Warum wir?</h2>\n<p>Wir glauben: <strong>Wer viel gibt, soll auch viel zurückbekommen</strong>. Deshalb erwarten dich bei uns Benefits, die über „Extras“ hinausgehen. Sie geben dir Freiheit, Flexibilität und die Möglichkeit, dich fachlich wie persönlich weiterzuentwickeln, und machen deinen Arbeitsalltag einfach besser.</p>\n<ul>\n<li><strong>T</strong> <strong>eamspirit pur</strong>: Kollegiale Teams mit echtem Zusammenhalt, Hilfsbereitschaft und einer guten Portion Humor.</li>\n<li><strong>Transparente Strukturen</strong>: Flache Hierarchien und eine gelebte Open-Door-Mentalität - Austausch auf Augenhöhe ist selbstverständlich.</li>\n<li><strong>Open Vacation Policy</strong>: Neben deinen gesetzlichen Urlaubstagen kannst du dir mit unserer „Above &#x26; Beyond“-Regelung zusätzliche freie Tage gönnen.</li>\n<li><strong>Work from anywhere</strong>: Ob Home-Office oder temporär im Ausland - du entscheidest, wo du am produktivsten bist.</li>\n<li><strong>Flexible Arbeitszeiten</strong>: Großer Gleitzeitrahmen - du bestimmst deinen Rhythmus mit Verlässlichkeit bei Kunden- und Teammeetings.</li>\n<li><strong>Modelle, die zu deinem Leben passen</strong>: Vollzeit oder Teilzeit, fix oder zeitlich begrenzt – wir finden gemeinsam die passende Lösung.</li>\n<li><strong>Spannende Projekte,</strong> innovativ, abwechslungsreich und mit steiler Lernkurve – bei uns gestaltest du echten Fortschritt mit.</li>\n<li><strong>Wachstum garantiert</strong>: Individuelles Weiterbildungsbudget für Workshops, Zertifizierungen oder Coachings.</li>\n<li><strong>Karrierepfade</strong>: Auch bei flachen Hierarchien sorgen klare Strukturen für deine Weiterentwicklung.</li>\n<li><strong>Mobility &#x26; Events</strong>: Bis zu 467 € fürs Öffi- oder Deutschlandticket, regelmäßige Teamevents und Besuche von Messen &#x26; Conventions.</li>\n<li><strong>Loft-Offices</strong>: Zentral gelegen, modern ausgestattet, kreativ – mit Raum für Austausch, Ideen und natürlich Snacks &#x26; Drinks.</li>\n<li><strong>Rewards</strong>:Prämiensystem für deine persönlichen und unternehmerischen Erfolge.</li>\n</ul>\n<p><em>Diese Position ist im Solution Cluster von TOWA auf Senior Level angesiedelt. Das Gehalt liegt zwischen <strong>€54.000 und €80.000 brutto/Jahr (All-in)</strong>. Die angegebene Range umfasst alle Gehaltsbestandteile und ist als Zielgehalt zu verstehen (z. B. inklusive variabler Anteile oder weiterer Benefits, sofern zutreffend). Im Falle einer Zusammenarbeit erstellen wir dir ein individuelles Angebot – die Einstufung innerhalb der Range richtet sich nach deinen Skills, deinem Verantwortungsbereich und deiner Erfahrung, niemals nach deinem vorherigen Gehalt.</em></p>\n<p><em>Im Einklang mit der EU-Entgelttransparenzrichtlinie (2023/970) und den länderspezifischen Gleichbehandlungsgesetzen veröffentlichen wir für jede Rolle die Gehaltsspanne und fragen Kandidat:innen nicht nach ihrem aktuellen oder vorherigen Gehalt. Unsere Kriterien zur Gehaltsfestlegung – Cluster, Level, Skills, Verantwortungsbereich und Erfahrung – gelten unternehmensweit einheitlich. Du kannst während des gesamten Prozesses jederzeit schriftlich weitere Informationen zur Gehaltsspanne dieser Rolle oder zu unserer Vergütungspolitik anfordern.</em></p>\n<p><strong>Chancengleichheit</strong></p>\n<p><em>TOWA stellt nach Skills und Impact ein. Wir freuen uns über Bewerbungen aller qualifizierten Personen – unabhängig von Geschlecht, Alter, Hintergrund, Herkunft, Religion, sexueller Orientierung oder Behinderung. Die Stellenbezeichnung gilt für alle Geschlechter (m/w/d).</em></p>\n<h2>Vorgesetzter</h2>\n<p>Dein Lead ist Matthias Frank - Klick  um mehr über ihn zu erfahren.</p>\n<p>Find more <a href=\"https://www.arbeitnow.com/english-speaking-jobs\">English Speaking Jobs in Germany</a> on Arbeitnow</a>",
-      "tags": [
-        "Software Development"
-      ],
-      "salary_eur": null,
-      "posted_at": 1782242942,
-      "score": 52,
-      "reasons": [
-        "+3 title match (Digital Transformation)",
-        "+6 skills (3 matched)",
-        "+3 EN + DE OK",
-        "+0 certs (none)",
-        "+10 location — hybrid (munich, ~120km from Regensburg)",
-        "+0 salary — salary not listed"
-      ],
-      "matched_skills": [
-        "CI/CD",
-        "LLM",
-        "Python"
-      ],
-      "matched_titles": [
-        "Digital Transformation"
-      ],
-      "matched_certs": [],
-      "ats_keywords_to_add": [
-        "UiPath",
-        "Orchestrator",
-        "Blue Prism",
-        "Power Automate",
-        "Power BI",
-        "RPA",
-        "Robotic Process Automation",
-        "n8n"
-      ],
-      "_age_hours": 40
-    },
-    {
-      "id": "arbeitnow-automation-engineer-ft-cologne-372102",
-      "source": "arbeitnow",
-      "title": "Automation Engineer (m/w/d, FT)",
-      "company": "Finton Advisors by EFPINAI GmbH",
-      "location": "Cologne",
-      "country": "Germany",
-      "remote_ok": false,
-      "url": "https://www.arbeitnow.com/jobs/companies/finton-advisors-by-efpinai-gmbh/automation-engineer-ft-cologne-372102",
-      "description": "<p>Finton builds AI-powered FP&#x26;A software and services for investor-backed companies. Our platform brings together financial reporting, KPI dashboards, data analysis, and centralized data access in one scalable solution. Combined with AI-driven workflows and hands-on support from experienced finance professionals, we help ambitious businesses gain a clear, reliable view of their performance and make better decisions faster.</p>\n<p>At the core of our work is software we've developed ourselves. It enables data-driven finance teams to spend less time on manual processes and more time generating insights. The same technology powers our own operations and helps our customers automate reporting, improve transparency, and create a single source of truth for their financial data.</p>\n<p>Because we work closely with private equity-backed companies, we're often involved in high-impact situations such as acquisitions, fundraising processes, refinancing projects, and strategic growth initiatives. This gives our team unique exposure to both technology and corporate finance in a fast-moving environment.</p>\n<p>Since founding the company in December 2023, we've grown to support more than 30 clients with a lean, highly capable team. As we continue to scale, we're building our team in Cologne and looking for people who want to help shape the next generation of finance technology.</p>\n<h2>Aufgaben</h2>\n<p>You own the technical health of day-to-day operations, from the annoying one-off to the system that prevents a whole class of them.</p>\n<ul>\n<li>Solve daily technical problems for the operations team: Be the person they come to with a stuck data load, a broken export, or a \"can we automate this?\"</li>\n<li>Build automations: Turn recurring manual processes into durable Temporal workflows: data ingestion, reconciliation, reporting, internal tooling.</li>\n<li>Work with data: Write SQL and Python to investigate issues, validate pipelines, and produce the numbers and checks operations relies on.</li>\n<li>Build what the team needs: Work with operations to add features to the Finton app and internal tools that make their lives easier.</li>\n</ul>\n<h2>Qualifikation</h2>\n<p>We hire pragmatic builders who would rather automate a problem once than handle it ten times. Experience level matters less than the evidence of what you've shipped andside projects absolutely count.</p>\n<p>You'll stand out if you:</p>\n<ul>\n<li>Reach for automation by default: When you see a repeated manual step, your instinct is to script it, schedule it, or wrap it in a workflow.</li>\n<li>Are comfortable in SQL and Python: You can pull the data, reshape it, and reason about what it's telling you.</li>\n<li>Think in durable workflows: You understand (or are eager to learn) how to model long-running, multi-step processes that survive failure and retries.</li>\n<li>Debug with patience: You isolate variables, read logs and error messages, and don't stop at the first symptom.</li>\n<li>Communicate clearly: You can explain a technical problem to both an operator and an engineer, in <strong>English and German</strong>.</li>\n<li>Own the outcome: You follow a problem through to a shipped, working fix rather than handing it off.</li>\n</ul>\n<p><strong>Our Stack:</strong> Fundamentals matter more to us than familiarity with any one tool. If you're strong, you'll pick ours up fast. Here's the setup you'll work with and grow into:</p>\n<ul>\n<li>Temporal (durable workflows)</li>\n<li>Python</li>\n<li>SQL</li>\n<li>Terraform</li>\n<li>AWS</li>\n<li>Dart / Flutter</li>\n<li>React</li>\n<li>Rust</li>\n</ul>\n<h2>Benefits</h2>\n<ul>\n<li>Real ownership: You own the operation's technical health, not a checklist. What you automate sticks.</li>\n<li>A small, technical team where operations and engineering sit close together and ship fast.</li>\n<li>Cologne home base: You work out of our Cologne office, with optional home-office days. Being based in Cologne is a hard requirement — this isn't a remote role.</li>\n<li>Modern tooling, AI-assisted workflows, and a culture that treats internal tooling as first-class engineering.</li>\n<li>Learn, build, and grow: As an early-stage company, we offer maximum ownership and room to shape the future of the business. Together, we're bringing finance into the AI era. You'll be a fully integrated team member from day one, with the opportunity to transition into a full-time role after your studies.</li>\n<li>Growth with purpose: We are growing quickly, but deliberately. You bring ideas; we provide trust, responsibility, and the freedom to execute. Our foundation is built on honesty, reliability, and long-term relationships—with both our customers and our team.</li>\n<li>Great benefits and team culture: Enjoy a competitive salary, Germany-wide public transport ticket, bike leasing, regular team events, and a collaborative, supportive work environment.</li>\n</ul>\n<p>Send us a short note about why this role fits, plus your CV. No cover-letter template needed; tell us about something tedious you automated and the difference it made. Looking forward to receiving your application!</p>\n<p>Find more <a href=\"https://www.arbeitnow.com/english-speaking-jobs\">English Speaking Jobs in Germany</a> on Arbeitnow</a>",
-      "tags": [
-        "IT"
-      ],
-      "salary_eur": null,
-      "posted_at": 1782210632,
-      "score": 52,
-      "reasons": [
-        "+6 title match (Automation Engineer)",
-        "+10 skills (5 matched)",
-        "+3 EN + DE OK",
-        "+0 certs (none)",
-        "+3 location — Germany (city unknown — likely remote OK)",
-        "+0 salary — salary not listed"
-      ],
-      "matched_skills": [
-        "Lean",
-        "Make",
-        "Python",
-        "SIT",
-        "SQL"
-      ],
-      "matched_titles": [
-        "Automation Engineer"
-      ],
-      "matched_certs": [],
-      "ats_keywords_to_add": [
-        "UiPath",
-        "Orchestrator",
-        "Blue Prism",
-        "Power Automate",
-        "Power BI",
-        "RPA",
-        "Robotic Process Automation",
-        "n8n"
-      ],
-      "_age_hours": 49
-    },
-    {
-      "id": "greenhouse-celonis-7627719003",
-      "source": "greenhouse",
-      "company": "Celonis",
-      "title": "Associate Technology Consultant - Galaxy Graduate Program",
-      "location": "Munich, Germany",
-      "country": "Germany",
-      "remote_ok": false,
-      "url": "https://job-boards.greenhouse.io/celonis/jobs/7627719003?gh_jid=7627719003",
-      "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Celonis is the global leader in Process Intelligence and the pioneer of Process Mining technology. As one of the world’s fastest-growing enterprise SaaS companies, we are changemakers pushing the boundaries of what’s possible. We invest heavily in advanced AI capabilities—specifically our Process Intelligence Graph—to turn data insights into immediate business action. We believe there is a massive opportunity to unlock global productivity and sustainability by placing intelligence at the core of every business process. Join our mission to make processes work for people, companies, and the planet.&lt;/p&gt;&lt;/div&gt;&lt;h2&gt;The Team&amp;nbsp;&lt;/h2&gt; &lt;p&gt;You will be joining the Celonis Services team. Our team’s mission is to drive product success along three core principles: simplicity, focus, and execution.&amp;nbsp;&lt;/p&gt; &lt;p&gt;As a team, we enjoy working in a fast-paced environment and share a sense of belonging to a community that wants to learn and grow together. The team culture is based on diversity, trust, continuous development, and improvement with people from across the globe.&amp;nbsp;&lt;/p&gt; &lt;p&gt;The Galaxy program unites Celonauts across different locations into one dedicated onboarding program which develops recent graduates into well rounded, skilled Services professionals in 12 months.&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;p&gt;&amp;nbsp;&lt;/p&gt; &lt;h2&gt;The Role&lt;/h2&gt; &lt;p&gt;In this role you have the chance to launch your career in the enterprise software world by joining the Galaxy Graduate Program as an Associate Technology Consultant. The Galaxy Program will provide you with a structured approach to kick start your career within Celonis, learning and delivering value to our customers, over a period of 12 months.&lt;/p&gt; &lt;p&gt;In particular, Galaxy’s cohort structure nature will develop your expertise across the Celonis value journey with a focus on learning the technology, implementation cycle, approaches to innovation and automation, enablement, support, and customer engagement best practices.&amp;nbsp;&lt;/p&gt; &lt;h3&gt;The work you’ll do:&lt;/h3&gt; &lt;p&gt;As an Associate Services Consultant (within the Galaxy Program), you will be an integral part of our teams, preparing yourself for a career with Celonis. The program will combine learning and hands-on experience, making sure all aspects of the post-sale customer experience are represented.&lt;/p&gt; &lt;p&gt;The following activities are part of the program:&amp;nbsp;&lt;/p&gt; &lt;ul&gt; &lt;li&gt;Practical assignments across our customer projects. Accelerate our customers’ digital transformation and drive Celonis’ expansion within the market.&amp;nbsp;&lt;/li&gt; &lt;ul&gt; &lt;li&gt;Deploy high-value use cases&lt;/li&gt; &lt;li&gt;Perform complex data transformations to optimize data for analysis&lt;/li&gt; &lt;li&gt;Collaborate with consultants to develop analyses&amp;nbsp;&lt;/li&gt; &lt;li&gt;Conduct precise calculations of KPIs integrated in customer solutions&lt;/li&gt; &lt;li&gt;Support the configuration of Process Intelligence implementations for customers&lt;/li&gt; &lt;li&gt;Assist in troubleshooting and resolving technical issues for customers&lt;/li&gt; &lt;li&gt;Develop individual Python scripts utilizing Machine Learning Workbench (MLWB) to efficiently consume and transmit data to Process Intelligence Platform&lt;/li&gt; &lt;li&gt;Collaborate with the Celonis Academy team to create custom enablement plans and train customer&#39;s analysts and business users on the analysis, KPIs and other Celonis solutions you developed&lt;/li&gt; &lt;/ul&gt; &lt;li&gt;Rotate between the various teams within the Celonis Services organization.&lt;/li&gt; &lt;ul&gt; &lt;li&gt;Customer-facing implementation consulting&lt;/li&gt; &lt;li&gt;Technical onboarding,&amp;nbsp;&lt;/li&gt; &lt;li&gt;Celonis support,&lt;/li&gt; &lt;li&gt;Academy and global programs.&amp;nbsp;&lt;/li&gt; &lt;/ul&gt; &lt;/ul&gt; &lt;h3&gt;The qualifications you need:&lt;/h3&gt; &lt;p&gt;We are looking for people who enjoy solving problems, thinking outside the box, and are not afraid to make and learn from mistakes.&amp;nbsp;&lt;/p&gt; &lt;p&gt;You have a degree level in the field of Business Informatics, Computer Science, Information-oriented Business Administration/Economics, Mathematics or a comparable degree program and gained first working experience in (IT-) Consulting or a similar area in the form of an internship.&amp;nbsp;&lt;/p&gt; &lt;p&gt;You have a strong interest in Big Data, Data Mining, AI and Process Mining and you seek continuous improvement of your know-how.&lt;/p&gt; &lt;p&gt;Any exposure to process mining principles and completion of Celonis &quot;Rising Star&quot; modules would be a welcome indicator of your eagerness to develop in this field.&lt;/p&gt; &lt;p&gt;&lt;strong&gt;You are available to start working full time from September 15, 2026 onwards, with the rest of our global cohort.&lt;/strong&gt;&lt;/p&gt; &lt;p&gt;&amp;nbsp;&lt;/p&gt; &lt;h2&gt;You are successful as an Associate Galaxy Celonaut if you:&lt;/h2&gt; &lt;ul&gt; &lt;li&gt;Enjoy interacting with various customers&amp;nbsp;&lt;/li&gt; &lt;li&gt;Understand and are able to interpret business processes&lt;/li&gt; &lt;li&gt;Are a person with analytical skills, and have a basic knowledge of SQL, Python or other programming languages (R, Matlab...)&lt;/li&gt; &lt;li&gt;Search for a job with a steep learning curve in order to think outside the box and to continuously broaden your knowledge&lt;/li&gt; &lt;li style=&quot;font-weight: bold;&quot;&gt;&lt;strong&gt;Have native/proficient German skills and are fluent in English.&lt;/strong&gt;&lt;/li&gt; &lt;/ul&gt;&lt;div class=&quot;content-conclusion&quot;&gt;&lt;p&gt;&lt;strong&gt;What Celonis can offer you:&lt;/strong&gt;&lt;/p&gt; &lt;ul class=&quot;p-rich_text_list p-rich_text_list__bullet p-rich_text_list--nested&quot; data-stringify-type=&quot;unordered-list&quot; data-list-tree=&quot;true&quot; data-indent=&quot;0&quot; data-border=&quot;0&quot;&gt; &lt;li&gt;&lt;span style=&quot;text-decoration: underline;&quot;&gt;Pioneer Innovation:&lt;/span&gt; Work with the global leader in Process Mining and the Process Intelligence Graph to shape the future of AI-driven business operations.&lt;/li&gt; &lt;li&gt;&lt;span style=&quot;text-decoration: underline;&quot;&gt;Ownership from Day 1:&lt;/span&gt; Every full-time &quot;Celonaut&quot; is an owner, receiving Restricted Stock Units (RSUs) and merit-based refresh grants.&lt;/li&gt; &lt;li&gt;&lt;span style=&quot;text-decoration: underline;&quot;&gt;Unrivaled Family Support:&lt;/span&gt; Benefit from our inclusive parental leave policy—24 weeks of fully paid leave for primary carers and 12 weeks for supporting carers, available from your first day of employment.&lt;/li&gt; &lt;li&gt;&lt;span style=&quot;text-decoration: underline;&quot;&gt;Work-Life Integration:&lt;/span&gt; Enjoy Unlimited PTO (in applicable regions) and generous PTO globally, as well as a flexible hybrid work model that balances remote focus with vibrant office collaboration.&lt;/li&gt; &lt;li&gt;&lt;span style=&quot;text-decoration: underline;&quot;&gt;Continuous Growth:&lt;/span&gt; Elevate your skills through our 70-20-10 learning framework, mentorship programs, and access to a dedicated learning platform.&lt;/li&gt; &lt;li&gt;&lt;span style=&quot;text-decoration: underline;&quot;&gt;Holistic Well-being:&lt;/span&gt; Prioritize your health with subsidized Wellhub memberships, mental health counseling, and dedicated &quot;Wellness Weeks&quot; that prioritize work/life balance.&lt;/li&gt; &lt;li&gt;&lt;span style=&quot;text-decoration: underline;&quot;&gt;Drive Sustainability:&lt;/span&gt; Participate in annual Impact Days, where you receive paid time off to volunteer for community and environmental causes with your local office, or virtually.&lt;/li&gt; &lt;li&gt;&lt;s",
-      "tags": [],
-      "salary_eur": null,
-      "posted_at": "2026-06-17T09:57:15-04:00",
-      "score": 52,
-      "reasons": [
-        "+3 title match (Digital Transformation)",
-        "+6 skills (3 matched)",
-        "+3 EN + DE OK",
-        "+0 certs (none)",
-        "+10 location — hybrid (munich, ~120km from Regensburg)",
-        "+0 salary — salary not listed"
-      ],
-      "matched_skills": [
-        "Make",
-        "Python",
-        "SQL"
-      ],
-      "matched_titles": [
-        "Digital Transformation"
-      ],
-      "matched_certs": [],
-      "ats_keywords_to_add": [
-        "UiPath",
-        "Orchestrator",
-        "Blue Prism",
-        "Power Automate",
-        "Power BI",
-        "RPA",
-        "Robotic Process Automation",
-        "n8n"
-      ],
-      "_age_hours": 190
-    },
-    {
-      "id": "arbeitnow-senior-data-analyst-crm-munich-337424",
-      "source": "arbeitnow",
-      "title": "Senior Data Analyst - CRM (m/f/d)",
-      "company": "Flix",
-      "location": "Munich, Bavaria, Germany",
-      "country": "Germany",
-      "remote_ok": false,
-      "url": "https://www.arbeitnow.com/jobs/companies/flix/senior-data-analyst-crm-munich-337424",
-      "description": "<p style=\"line-height: 1.4;\"><span style=\"font-size: 12pt;\">At Flix, we offer a dynamic work environment with competitive pay, strong growth opportunities, and a tech-driven approach to making travel more accessible, sustainable, and affordable. &nbsp;</span></p>\n<p style=\"line-height: 1.4;\"><span style=\"font-size: 12pt;\">As a<strong data-renderer-mark=\"true\"> Senior Data Analyst (m/f/d),</strong> you will join our global CRM team. This is an important role for CRM at Flix as we expand our capabilities, redefine our communication strategy and constantly optimize for maximum growth, as well as scalability and efficiency. We support global market growth with our marketing activities to increase repeated purchases and prevent churn. We always aim for cutting-edge technologies and a high level of innovation. By joining our team, you will be a crucial part of driving the team forward, developing our brands and customer communication throughout the globe.</span></p>\n<p><span style=\"font-size: 24pt;\"><strong data-renderer-mark=\"true\">About the Role</strong></span></p>\n<div>\n<ul>\n<li style=\"font-size: 12pt;\"><span style=\"font-size: 12pt;\">Own CRM analytics and reporting across 45+ markets, delivering clear visibility into performance, customer behavior, and commercial impact</span></li>\n<li style=\"font-size: 12pt;\"><span style=\"font-size: 12pt;\">Build and maintain Power BI dashboards providing real-time tracking of CRM performance, targets, and business trends</span></li>\n<li style=\"font-size: 12pt;\"><span style=\"font-size: 12pt;\">Deliver actionable insights on campaign performance, drivers of customer behavior, value-generating segments, and cross-market differences</span></li>\n<li style=\"font-size: 12pt;\"><span style=\"font-size: 12pt;\">Develop scalable, automated reporting solutions alongside deep-dive analyses and ad hoc business investigations</span></li>\n<li style=\"font-size: 12pt;\"><span style=\"font-size: 12pt;\">Monitor and optimize key CRM KPIs (engagement, conversion, retention, reactivation, communication effectiveness) and customer lifecycle performance</span></li>\n<li style=\"font-size: 12pt;\"><span style=\"font-size: 12pt;\">Partner with CRM, data, and product teams to improve segmentation, personalization, experimentation, tracking quality, and data reliability</span></li>\n<li style=\"font-size: 12pt;\"><span style=\"font-size: 12pt;\">Evaluate A/B tests and proactively identify trends, anomalies, risks, and opportunities, presenting clear recommendations to senior stakeholders</span></li>\n</ul>\n</div>\n<p><span style=\"font-size: 24pt;\"><strong>About You</strong></span></p>\n<div>\n<ul>\n<li style=\"font-size: 12pt;\"><span style=\"font-size: 12pt;\">5+ years of experience in data analytics or BI, ideally within CRM, marketing, or e-commerce environments</span></li>\n<li style=\"font-size: 12pt;\"><span style=\"font-size: 12pt;\">Proven track record of building dashboards and automated reporting solutions for non-technical stakeholders</span></li>\n<li style=\"font-size: 12pt;\"><span style=\"font-size: 12pt;\">Strong SQL expertise (CTEs, window functions, multi-table joins) in a modern cloud data warehouse, preferably Snowflake</span></li>\n<li style=\"font-size: 12pt;\"><span style=\"font-size: 12pt;\">Advanced Power BI skills including data modeling, DAX, and best-practice dashboard design and visualization</span></li>\n<li style=\"font-size: 12pt;\"><span style=\"font-size: 12pt;\">Solid understanding of marketing and CRM KPIs (conversion, engagement, attribution, customer lifetime value)</span></li>\n<li style=\"font-size: 12pt;\"><span style=\"font-size: 12pt;\">Experience working cross-functionally with product, engineering, and marketing/CRM teams; familiarity with marketing automation tools (e.g., Braze is a plus)</span></li>\n<li style=\"font-size: 12pt;\"><span style=\"font-size: 12pt;\">Strong data storytelling, statistical literacy (e.g., significance testing), and a structured, detail-oriented, and autonomous working style</span></li>\n<li style=\"font-size: 12pt;\"><span style=\"font-size: 12pt;\">Proficiency in English</span></li>\n</ul>\n</div>\n<p style=\"line-height: 1.4;\"><span style=\"font-size: 12pt;\">We recognize that everyone carries a unique set of valuable skills and experiences. If you think you could have an impact even though you don't meet 100% of the requirements, we still encourage you to apply. We want to hear from you! &nbsp;</span></p>\n<p><span style=\"font-size: 24pt;\"><strong>What We Offer</strong></span></p>\n<ul>\n<li data-renderer-start-pos=\"11445\"><span style=\"font-size: 12pt;\"><strong data-renderer-mark=\"true\">Travel perks</strong>: 12 free Flix vouchers + 12 discount vouchers for friends &amp; family.&nbsp;</span></li>\n<li data-renderer-start-pos=\"11530\"><span style=\"font-size: 12pt;\"><strong data-renderer-mark=\"true\">Work from (M)Anywhere</strong>: Depending on your role, work from another location for up to 60 days per year.&nbsp;</span></li>\n<li data-renderer-start-pos=\"11636\"><span style=\"font-size: 12pt;\"><strong data-renderer-mark=\"true\">Hybrid work model</strong>: We are an office-first company, but we offer flexibility to balance work and life.&nbsp;</span></li>\n<li data-renderer-start-pos=\"11742\"><span style=\"font-size: 12pt;\"><strong data-renderer-mark=\"true\">Wellbeing support</strong>: Access confidential 1:1 counselling, courses, and stress management for yourself and up to four family members.&nbsp;</span></li>\n<li data-renderer-start-pos=\"11877\"><span style=\"font-size: 12pt;\"><strong data-renderer-mark=\"true\">Learning &amp; Development</strong>: Take advantage of language classes, training courses, and expert-led sessions to grow your skills.&nbsp;</span></li>\n<li data-renderer-start-pos=\"12004\"><span style=\"font-size: 12pt;\"><strong data-renderer-mark=\"true\">Mentoring Program</strong>: Connect with experienced colleagues to gain insights and accelerate your career.&nbsp;</span></li>\n</ul>\n<p style=\"line-height: 1.4;\"><span style=\"font-size: 12pt;\">To view more local benefits specific to each office location, please check out this link:&nbsp;<a href=\"https://flix.careers/locations/\">Locations - Flix Career</a></span></p>\n<hr>\n<p style=\"line-height: 1.4;\"><span style=\"font-size: 18pt;\"><strong>Why Join Flix?</strong></span></p>\n<p style=\"line-height: 1.4;\" data-renderer-start-pos=\"12125\"><span style=\"font-size: 12pt;\">At Flix, you'll find teams that rally together to overcome challenges and spark creativity. We believe in ownership culture - giving you the freedom to take initiative, make an impact, and shape your own career path.</span><br><span style=\"font-size: 12pt;\">As we continue to expand across the globe, you can make a real difference in how we work.</span></p>\n<p data-renderer-start-pos=\"12434\"><span style=\"font-size: 12pt;\">If you're ready to grow and lead your journey, Flix is the place for you!&nbsp;</span></p>\n<p><iframe src=\"https://www.youtube.com/embed/YlHz7TiiRAw\" width=\"560\" height=\"314\"></iframe></p>\n<p>&nbsp;</p><p>Find <a href=\"https://www.arbeitnow.com/\">Jobs in Germany</a> on Arbeitnow</a>",
-      "tags": [],
-      "salary_eur": null,
-      "posted_at": 1782308734,
-      "score": 51,
-      "reasons": [
-        "+0 title match (none)",
-        "+8 skills (4 matched)",
-        "+3 EN + DE OK",
-        "+0 certs (none)",
-        "+10 location — hybrid (munich, ~120km from Regensburg)",
-        "+0 salary — salary not listed"
-      ],
-      "matched_skills": [
-        "Make",
-        "Mentoring",
-        "Power BI",
-        "SQL"
-      ],
-      "matched_titles": [],
-      "matched_certs": [],
-      "ats_keywords_to_add": [
-        "UiPath",
-        "Orchestrator",
-        "Blue Prism",
-        "Power Automate",
-        "RPA",
-        "Robotic Process Automation",
-        "n8n",
-        "Zapier"
-      ],
-      "_age_hours": 22
-    },
-    {
-      "id": "greenhouse-raisin-4871004101",
-      "source": "greenhouse",
-      "company": "Raisin",
-      "title": "(Junior) Third Party Control & Process Manager (m/f/d)",
-      "location": "Berlin, Berlin, Germany; Frankfurt a. M.; Munich",
-      "country": "Germany",
-      "remote_ok": false,
-      "url": "https://job-boards.eu.greenhouse.io/raisin/jobs/4871004101",
-      "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p class=&quot;sc-gEkIjz cjtSrT MuiTypography-root MuiTypography-body1 sc-hoLEA&quot;&gt;Raisin is the world’s leading platform for savings and investment products. Founded in 2012, the&amp;nbsp;&lt;strong&gt;FinTech&lt;/strong&gt; connects consumers with banks in the EU, the UK and the US. This gives consumers &lt;strong&gt;better interest rates&lt;/strong&gt; and banks a &lt;strong&gt;diversified form of refinancing&lt;/strong&gt;. Our vision is to offer savings and investments without barriers and thus open up the global 160 trillion euro market.&lt;/p&gt; &lt;p class=&quot;sc-gEkIjz cjtSrT MuiTypography-root MuiTypography-body1 sc-hoLEA&quot;&gt;Raisin currently employs more than 800 people from over 75 countries worldwide. Today, the platform holds over 80 billion euros in assets from&amp;nbsp;&lt;strong&gt;more than one million investors&lt;/strong&gt; which have accrued over 5 billion euros in returns.&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;&lt;strong&gt;Team&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt; &lt;p&gt;The Raisin Platform Solutions team is at the vital center of our service bank. Composed of talented professionals driven by a passion for efficiency, innovation, and seamless financial transactions, this team is at the forefront of shaping the future of modern banking services.&amp;nbsp;&lt;br&gt;Our mission is to revolutionize the landscape of banking through the strategic application of technology, data-driven insights, and a commitment to delivering unparalleled service. We stand at the intersection of finance and technology, where every member plays a crucial role in driving operational excellence.&amp;nbsp;&lt;/p&gt; &lt;p&gt;&lt;br&gt;&lt;strong&gt;Your Responsibilities&lt;/strong&gt;&lt;/p&gt; &lt;p&gt;We are looking for a strategic and process-driven Business Development Manager to support our Third-Party Management function. In this role, you will own the end-to-end operational lifecycle of our critical vendors, external partners, and outsourced service providers.&lt;/p&gt; &lt;p&gt;A critical component of this role is ensuring our third-party ecosystem is highly resilient and fully compliant with the Digital Operational Resilience Act (DORA). You will be responsible for ensuring that external partners operate seamlessly, adhere to strict Service Level Agreements (SLAs), and meet rigorous ICT (Information and Communication Technology) risk management standards to continuously deliver value to our core business operations safely.&lt;/p&gt; &lt;p&gt;&lt;strong&gt;Vendor Lifecycle &amp;amp; Operational Relationship Management&lt;/strong&gt;&lt;/p&gt; &lt;ul&gt; &lt;li&gt;Own the end-to-end third-party operational lifecycle, from initial onboarding and technical integration to continuous monitoring and eventual offboarding.&lt;/li&gt; &lt;li&gt;Build and maintain strong, strategic relationships with key external partners, acting as the primary point of escalation for operational bottlenecks and service disruptions.&lt;/li&gt; &lt;li&gt;Collaborate closely with Compliance, Procurement and Legal teams to ensure operational readiness and compliance requirements are met during the vendor selection and renewal phases.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;strong&gt;Digital Operational Resilience &amp;amp; DORA Compliance&lt;/strong&gt;&lt;/p&gt; &lt;ul&gt; &lt;li&gt;Lead the implementation and ongoing management of ICT third-party risk management controls in strict alignment with DORA requirements.&lt;/li&gt; &lt;li&gt;Maintain an accurate and up-to-date Register of Information detailing all ICT third-party service dependencies.&lt;/li&gt; &lt;li&gt;Partner with InfoSec, Compliance, and Risk teams to conduct regular vendor risk assessments, evaluate concentration risks, and ensure third parties participate in required operational resilience testing (e.g., TLPT).&lt;/li&gt; &lt;li&gt;Develop and maintain joint business continuity plans, robust vendor escalation matrices, and incident management protocols, ensuring alignment with DORA’s incident reporting mandates.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;strong&gt;Performance &amp;amp; SLA Monitoring&lt;/strong&gt;&lt;/p&gt; &lt;ul&gt; &lt;li&gt;Define, implement, and track rigorous KPIs and SLAs for all third-party providers.&lt;/li&gt; &lt;li&gt;Conduct regular Quarterly Business Reviews (QBRs) and performance audits with key vendors to ensure continuous improvement and strict adherence to service availability targets.&lt;/li&gt; &lt;li&gt;Design and maintain operational dashboards (e.g., via Looker) to monitor vendor performance, dependency health, and risk metrics in real-time.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;strong&gt;Process Optimization &amp;amp; Integration&lt;/strong&gt;&lt;/p&gt; &lt;ul&gt; &lt;li&gt;Design seamless operational workflows that integrate third-party services into our internal value chain without friction.&lt;/li&gt; &lt;li&gt;Transition reactive, detective vendor controls into automated, preventive systems to build stronger system-based safeguarding mechanisms.&lt;/li&gt; &lt;li&gt;Map and document product setups and process dependencies, ensuring the exact impact of third-party outages on customer orders is clearly understood and mitigated.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;strong&gt;Your Profile&lt;/strong&gt;&lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;strong&gt;Experience:&lt;/strong&gt; 1-2 years of experience in Operations, Vendor Management, or Third-Party Risk Management (TPRM), specifically within a regulated financial, FinTech, or SaaS environment.&lt;/li&gt; &lt;li&gt;&lt;strong&gt;Regulatory knowledge (DORA):&lt;/strong&gt; particularly its pillars relating to ICT third-party risk management, incident reporting, and resilience testing.&lt;/li&gt; &lt;li&gt;&lt;strong&gt;Risk &amp;amp; Controls:&lt;/strong&gt; Deep understanding of vendor due diligence, SLA formulation, and transitioning operational controls from detective to preventive models.&lt;/li&gt; &lt;li&gt;&lt;strong&gt;Analytical Skills:&lt;/strong&gt; Highly data-driven with the ability to build performance metrics and utilize data visualization tools e.g., Looker, Snowflake, Excel/Google Sheets to monitor vendor health.&lt;/li&gt; &lt;li&gt;&lt;strong&gt;Stakeholder Management:&lt;/strong&gt; Exceptional communication skills with the ability to collaborate effectively with technical teams, compliance officers, C-level executives, and external partners.&lt;/li&gt; &lt;li&gt;&lt;strong&gt;Language:&lt;/strong&gt; Fluent in English and German (B2).&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;strong&gt;Join our mission, join our team – and grow with us!&lt;/strong&gt;&lt;/p&gt; &lt;p&gt;At Raisin, we care about each other and it is one of our top priorities to foster an open and caring environment in which everyone feels welcome and comfortable. Our culture is strongly driven by our ambitious team, which connects more than 75 different nationalities.&lt;/p&gt; &lt;p&gt;As part of our team, you will benefit from:&lt;/p&gt; &lt;ul&gt; &lt;li&gt;Employee Development Budget of €2,000 and four full training days per year.&lt;/li&gt; &lt;li&gt;Flexible working hours, home office and 30 vacation days.&lt;/li&gt; &lt;li&gt;A company pension scheme (Betriebliche Altersvorsorge), which we support with 20%.&lt;/li&gt; &lt;li&gt;Enjoy more than 50+ different sports with Urban Sports Club: We subsidize your membership with more than €20 per month.&amp;nbsp;&lt;/li&gt; &lt;li&gt;Do you miss being in the office? The Deutschland Ticket gets you there, which we subsidize with €25 per month.&lt;/li&gt; &lt;li&gt;Love cycling? With JobRad, lease the bike of your choice and enjoy tax savings, plus Raisin covers your monthly insurance costs.&lt;/li&gt; &lt;li&gt;Hungry all the time? Snacks, daily fresh fruit as well as drinks provided at the office.&lt;/li&gt; &lt;li&gt;You are moving from another country or city to join us? We may support your reloc",
-      "tags": [],
-      "salary_eur": null,
-      "posted_at": "2026-06-23T05:14:47-04:00",
-      "score": 50,
-      "reasons": [
-        "+3 title match (Process Manager)",
-        "+4 skills (2 matched)",
-        "+3 EN + DE OK",
-        "+0 certs (none)",
-        "+10 location — hybrid (munich, ~120km from Regensburg)",
-        "+0 salary — salary not listed"
-      ],
-      "matched_skills": [
-        "Process Optimization",
-        "Stakeholder Management"
-      ],
-      "matched_titles": [
-        "Process Manager"
-      ],
-      "matched_certs": [],
-      "ats_keywords_to_add": [
-        "UiPath",
-        "Orchestrator",
-        "Blue Prism",
-        "Power Automate",
-        "Power BI",
-        "RPA",
-        "Robotic Process Automation",
-        "n8n"
+        "product owner",
+        "azure",
+        "kanban",
+        "c2",
+        "deutsch",
+        "copilot",
+        "product manager"
       ],
       "_age_hours": 51
-    },
-    {
-      "id": "arbeitnow-testmanager-software-und-systemtests-munich-360351",
-      "source": "arbeitnow",
-      "title": "Testmanager Software und Systemtests (m/w/d)",
-      "company": "MY Humancapital GmbH",
-      "location": "Munich",
-      "country": "Germany",
-      "remote_ok": false,
-      "url": "https://www.arbeitnow.com/jobs/companies/my-humancapital-gmbh/testmanager-software-und-systemtests-munich-360351",
-      "description": "<p><strong>Testmanager Software und Systemtests (m/w/d) gesucht – Vollzeit | München</strong></p>\n<p>Im Auftrag unseres Partnerunternehmens in München suchen wir Sie zum nächstmöglichen Zeitpunkt als <strong>„Testmanager Software und Systemtests (m/w/d)“.</strong></p>\n<h2><strong>Aufgaben</strong></h2>\n<ul>\n<li>Sie planen, steuern und überwachen sämtliche Testaktivitäten innerhalb von Software- und Systemprojekten und stellen eine hohe Produktqualität sicher</li>\n<li>Sie erstellen Testkonzepte und Testspezifikationen, koordinieren die Durchführung von Tests und bewerten die erzielten Ergebnisse</li>\n<li>Darüber hinaus analysieren Sie Testabdeckung und Fehlerbilder, verfolgen Maßnahmen nach und entwickeln die Teststrategie kontinuierlich weiter</li>\n<li>Sie stimmen Testaktivitäten mit Projektteams, Kunden und Anwendern ab und begleiten Kundenabnahmen bis zur erfolgreichen Freigabe</li>\n<li>Zusätzlich bereiten Sie Testergebnisse auf, erstellen aussagekräftige Reports und koordinieren bereichsübergreifende Testaktivitäten</li>\n</ul>\n<h2><strong>Qualifikation</strong></h2>\n<ul>\n<li>Grundlage bildet ein abgeschlossenes Studium der Informatik, Wirtschaftsinformatik, Software Engineering oder eine vergleichbare Qualifikation</li>\n<li>Idealerweise bringen Sie Berufserfahrung als Testmanager (m/w/d), IT-Testmanager (m/w/d), Test Engineer (m/w/d) oder Software Quality Manager (m/w/d) mit</li>\n<li>Sie verfügen über mehrjährige Erfahrung im Testmanagement komplexer verteilter Systeme sowie in der Planung, Durchführung und Auswertung von Softwaretests</li>\n<li>Zusätzlich sind Kenntnisse in der Testautomatisierung, im Umgang mit Testmanagement-Tools sowie idealerweise eine ISTQB-Zertifizierung im Bereich Testmanagement wünschenswert</li>\n<li>Wichtig sind Kommunikationsstärke, Teamfähigkeit, analytisches Denkvermögen, Reisebereitschaft sowie sehr gute Deutsch- und Englischkenntnisse in Wort und Schrift</li>\n</ul>\n<h2><strong>Benefits</strong></h2>\n<ul>\n<li><strong>Work-Life-Balance</strong>: Freuen Sie sich auf flexible Arbeitszeiten sowie eine anteilige Homeoffice-Möglichkeit</li>\n<li><strong>Krisensicherheit beim Marktführer</strong>: Kaum ein Unternehmen bietet eine derartige Sicherheit wie dieses</li>\n<li><strong>Entwicklung</strong>: Firmenintern gibt es zahlreiche Weiterbildungs- und Entwicklungsmöglichkeiten</li>\n<li><strong>Vielseitigkeit</strong>: Freuen Sie sich auf spannende und abwechslungsreiche Tätigkeiten in einem dynamischen Umfeld</li>\n<li><strong>Teamspirit</strong>: Sie erwarten flache Hierarchien, kurze Entscheidungswege sowie eine wertschätzende Zusammenarbeit</li>\n</ul>\n<p>Sie finden das Stellenprofil interessant? Dann freuen wir uns auf Ihre Bewerbung. Für Rückfragen steht Ihnen <strong>Simon Schneider</strong> gerne unter <strong>089 954 287 111</strong> zur Verfügung.</p>\n<p>Find more <a href=\"https://www.arbeitnow.com/english-speaking-jobs\">English Speaking Jobs in Germany</a> on Arbeitnow</a>",
-      "tags": [
-        "Software Development"
-      ],
-      "salary_eur": null,
-      "posted_at": 1782372650,
-      "score": 49,
-      "reasons": [
-        "+6 title match (Test Engineer)",
-        "+0 skills (0 matched)",
-        "+3 EN + DE OK",
-        "+0 certs (none)",
-        "+10 location — hybrid (munich, ~120km from Regensburg)",
-        "+0 salary — salary not listed"
-      ],
-      "matched_skills": [],
-      "matched_titles": [
-        "Test Engineer"
-      ],
-      "matched_certs": [],
-      "ats_keywords_to_add": [
-        "UiPath",
-        "Orchestrator",
-        "Blue Prism",
-        "Power Automate",
-        "Power BI",
-        "RPA",
-        "Robotic Process Automation",
-        "n8n"
-      ],
-      "_age_hours": 4
-    },
-    {
-      "id": "greenhouse-celonis-7681585003",
-      "source": "greenhouse",
-      "company": "Celonis",
-      "title": "Enterprise Architect Director",
-      "location": "Munich, Germany",
-      "country": "Germany",
-      "remote_ok": false,
-      "url": "https://job-boards.greenhouse.io/celonis/jobs/7681585003?gh_jid=7681585003",
-      "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Celonis is the global leader in Process Intelligence and the pioneer of Process Mining technology. As one of the world’s fastest-growing enterprise SaaS companies, we are changemakers pushing the boundaries of what’s possible. We invest heavily in advanced AI capabilities—specifically our Process Intelligence Graph—to turn data insights into immediate business action. We believe there is a massive opportunity to unlock global productivity and sustainability by placing intelligence at the core of every business process. Join our mission to make processes work for people, companies, and the planet.&lt;/p&gt;&lt;/div&gt;&lt;h4&gt;&lt;strong&gt;The Role&lt;/strong&gt;&lt;/h4&gt; &lt;p&gt;To push further our vision of Enterprise AI, we are looking for a senior leader to grow and lead our team of Enterprise Architects.&amp;nbsp;&lt;/p&gt; &lt;p&gt;This high-impact leadership role demands a unique blend of deep technical expertise, people management experience, and executive presence. You will act as an executive sponsor, confidently presenting to customer C-level executives and helping your team translate strategic goals into actionable technical plans.&lt;/p&gt; &lt;p&gt;Your primary goal is to lead and empower a team that supports our growing sales organization in achieving revenue goals. You will ensure your team successfully unlocks technical blockers by fostering close partnerships with leadership across Sales, Value Engineering, Product Management, Data Ops, and Information Security teams.&lt;/p&gt; &lt;h4&gt;Measures of Success&lt;/h4&gt; &lt;p&gt;Your success will be measured by your team&#39;s impact, including new customer acquisition rates, retention, up-selling, and your overarching contribution to the overall sales team and business success.&lt;/p&gt; &lt;h4&gt;The work you’ll do:&lt;/h4&gt; &lt;ul&gt; &lt;li&gt;Team Leadership: Hire, mentor, and manage a team of Enterprise Architects who define the overall architecture, data, and cloud strategy for our largest client accounts.&lt;/li&gt; &lt;li&gt;Executive Engagement: Act as an executive sponsor in pre-Sales and post-Sales phases, presenting strategic visions to C-level executives and engaging with customer Architecture and security teams.&lt;/li&gt; &lt;li&gt;Drive Strategic Innovation: Guide your team to design architectures that drive enterprise modernization, leverage capability mapping, and explore innovative solutions using emergent technologies like Agentic AI.&lt;/li&gt; &lt;li&gt;Cross-Functional Alignment: Serve as the leadership bridge between our product &amp;amp; engineering teams within Celonis and client teams to ensure the delivery of premier technical services.&lt;/li&gt; &lt;li&gt;Ecosystem &amp;amp; Readiness: Oversee the assessment of the IT landscape maturity of our customer installed base and ensure your team effectively coaches Celonis account teams and ecosystem partners on architecture, integration, performance, and scalability.&lt;/li&gt; &lt;li&gt;Thought Leadership: Direct the development of re-usable assets for projects, as well as customer-facing position papers and thought leadership presentations on architecture and innovation with Celonis.&lt;/li&gt; &lt;/ul&gt; &lt;h4&gt;The qualifications you need:&lt;/h4&gt; &lt;ul&gt; &lt;li&gt;Experience: 20+ years of relevant experience, including a proven track record of managing Enterprise Architects or technical teams at a top consulting firm or software vendor.&lt;/li&gt; &lt;li&gt;Strategic Vision: Proven ability to think strategically, guiding your team to connect technical solutions to business value and customer objectives.&lt;/li&gt; &lt;li&gt;Communication: Excellent written and verbal communication skills, with a proven track record of navigating complex negotiations and presenting to C-level executives.&lt;/li&gt; &lt;li&gt;Enterprise Architecture Expertise: Demonstrated experience and deep understanding of Capability Mapping, Enterprise Modernization, and Agentic AI.&lt;/li&gt; &lt;li&gt;Technical Foundation: Strong background in Data Architecture, system integrations, data operations, automation capabilities, and data-related languages (SQL, Python, etc.). You must be able to comfortably switch from discussing high-level architecture strategy to understanding hands-on demo environments.&lt;/li&gt; &lt;li&gt;Ecosystem Knowledge: Strong understanding of cloud-native architectures, SaaS solutions (Salesforce, SAP, Dynamics CRM, ServiceNow), cybersecurity posture fundamentals, API ecosystems, and legacy on-premise enterprise architectures.&lt;/li&gt; &lt;li&gt;Education: MSc degree in Computer Science or an equivalent in an Information Technology-related field.&lt;/li&gt; &lt;li&gt;Languages: Fluency in English is required; an additional language such as Spanish, French, German, or Italian is a strong advantage.&lt;/li&gt; &lt;/ul&gt; &lt;h4&gt;Preferred:&lt;/h4&gt; &lt;ul&gt; &lt;li&gt;Celonis Certifications and extensive leadership experience managing projects with OCPM and Case Centric Data Pipelines.&lt;/li&gt; &lt;li&gt;Industry standard certifications such as AWS/Azure/GCP, ESB / ETL (Mulesoft, Oracle, SAP, Talend, Informatica), or TOGAF/Zachmann.&lt;/li&gt; &lt;li&gt;Experience spanning at least two domains (e.g., Finance, Manufacturing, Supply Chain, HR) and at least two industries (e.g., Consumer Goods, Banking, Pharma, Aerospace).&lt;/li&gt; &lt;/ul&gt;&lt;div class=&quot;content-conclusion&quot;&gt;&lt;p&gt;&lt;strong&gt;What Celonis can offer you:&lt;/strong&gt;&lt;/p&gt; &lt;ul class=&quot;p-rich_text_list p-rich_text_list__bullet p-rich_text_list--nested&quot; data-stringify-type=&quot;unordered-list&quot; data-list-tree=&quot;true&quot; data-indent=&quot;0&quot; data-border=&quot;0&quot;&gt; &lt;li&gt;&lt;span style=&quot;text-decoration: underline;&quot;&gt;Pioneer Innovation:&lt;/span&gt; Work with the global leader in Process Mining and the Process Intelligence Graph to shape the future of AI-driven business operations.&lt;/li&gt; &lt;li&gt;&lt;span style=&quot;text-decoration: underline;&quot;&gt;Ownership from Day 1:&lt;/span&gt; Every full-time &quot;Celonaut&quot; is an owner, receiving Restricted Stock Units (RSUs) and merit-based refresh grants.&lt;/li&gt; &lt;li&gt;&lt;span style=&quot;text-decoration: underline;&quot;&gt;Unrivaled Family Support:&lt;/span&gt; Benefit from our inclusive parental leave policy—24 weeks of fully paid leave for primary carers and 12 weeks for supporting carers, available from your first day of employment.&lt;/li&gt; &lt;li&gt;&lt;span style=&quot;text-decoration: underline;&quot;&gt;Work-Life Integration:&lt;/span&gt; Enjoy Unlimited PTO (in applicable regions) and generous PTO globally, as well as a flexible hybrid work model that balances remote focus with vibrant office collaboration.&lt;/li&gt; &lt;li&gt;&lt;span style=&quot;text-decoration: underline;&quot;&gt;Continuous Growth:&lt;/span&gt; Elevate your skills through our 70-20-10 learning framework, mentorship programs, and access to a dedicated learning platform.&lt;/li&gt; &lt;li&gt;&lt;span style=&quot;text-decoration: underline;&quot;&gt;Holistic Well-being:&lt;/span&gt; Prioritize your health with subsidized Wellhub memberships, mental health counseling, and dedicated &quot;Wellness Weeks&quot; that prioritize work/life balance.&lt;/li&gt; &lt;li&gt;&lt;span style=&quot;text-decoration: underline;&quot;&gt;Drive Sustainability:&lt;/span&gt; Participate in annual Impact Days, where you receive paid time off to volunteer for community and environmental causes with your local office, or virtually.&lt;/li&gt; &lt;li&gt;&lt;span style=&quot;text-decoration: underline;&quot;&gt;Global Inclusion &amp;amp; Belonging:&lt;/span&gt; Find community through our Inclusion Think Tank and participate in our annual Inclusion Days, ensuring every voice is heard and valued.&lt;/li&gt; &lt;li&gt;&lt;span style=&quot;text-decoration: underline;&quot;&gt;Value-Dr",
-      "tags": [],
-      "salary_eur": null,
-      "posted_at": "2026-06-24T04:52:02-04:00",
-      "score": 49,
-      "reasons": [
-        "+0 title match (none)",
-        "+6 skills (3 matched)",
-        "+3 EN + DE OK",
-        "+0 certs (none)",
-        "+10 location — hybrid (munich, ~120km from Regensburg)",
-        "+0 salary — salary not listed"
-      ],
-      "matched_skills": [
-        "Make",
-        "Python",
-        "SQL"
-      ],
-      "matched_titles": [],
-      "matched_certs": [],
-      "ats_keywords_to_add": [
-        "UiPath",
-        "Orchestrator",
-        "Blue Prism",
-        "Power Automate",
-        "Power BI",
-        "RPA",
-        "Robotic Process Automation",
-        "n8n"
-      ],
-      "_age_hours": 27
     }
   ]
 }
