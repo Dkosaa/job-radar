@@ -91,7 +91,7 @@ USER_PROFILE = {
 PIPELINE = {
     "freshness_hours": 24,       # default window
     "top_n": 10,                 # jobs per digest
-    "min_score": 50,             # tight quality bar (was 40/80)
+    "min_score": 30,             # loose to allow realistic market matches
     "max_age_days": 7,           # last week max
     "seen_resurfacing_days": 3,  # resurface same job after 3 days if still fresh
     "fetch_timeout_sec": 20,
@@ -108,14 +108,20 @@ PIPELINE = {
 # ──────────────────────────────────────────────────────────────────────
 SOURCES = {
     "arbeitnow": {"enabled": True, "label": "Arbeitnow"},
-    "stepstone": {"enabled": False, "label": "StepStone (captcha-blocked, needs proxy)"},
-    "indeed_de": {"enabled": False, "label": "Indeed DE (captcha-blocked, needs proxy)"},
     "greenhouse": {"enabled": True, "label": "Greenhouse (DE tech)"},
     "lever":      {"enabled": True, "label": "Lever"},
     "jobicy":    {"enabled": True, "label": "Jobicy (remote, EU-friendly)"},
     "adzuna":     {"enabled": True, "label": "Adzuna DE (StepStone/Indeed aggregator, 250/month)"},
-    "honeypot":   {"enabled": False, "label": "Honeypot"},
-    "adzuna":     {"enabled": False, "label": "Adzuna DE (needs free API key)"},
+    "remotive":   {"enabled": True, "label": "Remotive (tech remote jobs)"},
+    "jobicy_eu":  {"enabled": True, "label": "Jobicy EU-tagged jobs"},
+    # The following are blocked / require payment:
+    "stepstone":  {"enabled": False, "label": "StepStone direct (Cloudflare captcha)"},
+    "indeed_de":  {"enabled": False, "label": "Indeed DE direct (Cloudflare captcha)"},
+    "xing":       {"enabled": False, "label": "XING (JS-rendered, login required)"},
+    "kimeta":     {"enabled": False, "label": "Kimeta (JS-rendered)"},
+    "honeypot":   {"enabled": False, "label": "Honeypot (premium partner only)"},
+    "linkedin":   {"enabled": False, "label": "LinkedIn (anti-bot, $500/mo API)"},
+    "glassdoor":  {"enabled": False, "label": "Glassdoor (anti-bot)"},
 }
 
 # Greenhouse + Lever: German tech companies that post publicly

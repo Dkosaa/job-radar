@@ -1,14 +1,63 @@
 {
-  "generated_at": "2026-06-26T17:01:47.063726+00:00",
+  "generated_at": "2026-06-26T17:30:57.456624+00:00",
   "window_hours": 168,
   "global_search": false,
   "counts": {
-    "fetched": 2509,
-    "filtered": 530,
-    "fresh": 483,
-    "delivered": 4
+    "fetched": 2543,
+    "filtered": 533,
+    "fresh": 484,
+    "delivered": 10
   },
   "jobs": [
+    {
+      "id": "remotive-2090984",
+      "source": "remotive",
+      "title": "Senior Product Manager",
+      "company": "Lemon.io",
+      "location": "Americas, Europe, Asia, Oceania",
+      "country": "Remote",
+      "remote_ok": true,
+      "url": "https://remotive.com/remote-jobs/product/senior-product-manager-2090984",
+      "description": "<p>Are you a talented Senior Product Manager looking for a remote job where you can showcase your skills and earn competitive compensation? Look no further than <a href=\"https://lemon.io/for-developers/?utm_source=remotive&amp;utm_medium=job_ad&amp;utm_campaign=supply_en_product_manager_jun_2026_job_ad\" rel=\"nofollow\" target=\"_self\">Lemon.io</a> — a marketplace that connects you with hand-picked startups in the US and Europe.</p>\n<p><strong> </strong></p>\n<p><strong>What we offer:</strong></p>\n<ul style=\"\">\n<li style=\"\">Your rate will depend on your seniority level, skills, and experience. We've already paid out over $11M to our engineers and other specialists.</li>\n<li style=\"\">No more hunting for clients or negotiating rates — we’ll handle the business side so you can focus on delivering successful projects.</li>\n<li style=\"\">Choose a schedule that works best for you. Async communication or minimal overlap with team working hours is possible.</li>\n<li style=\"\">We respect your seniority, so you can expect no micromanagement or screen tracking.</li>\n<li style=\"\">Communicate directly with clients and stakeholders. Many of them come from technical or product backgrounds.</li>\n<li style=\"\">We’ll support you from the moment you submit your application throughout all stages of our cooperation.</li>\n<li style=\"\">Most of our projects involve fast-paced startup environments — ideal for proactive and adaptable professionals.<br><br><strong>Requirements:</strong></li>\n</ul>\n<ul style=\"\">\n<li style=\"\">\n<p>8+ years of experience in Product Management</p>\n</li>\n<li style=\"\">\n<p>8+ years of experience in Product Strategy and 5+ years of experience with SDLC/Market &amp; Competitive Analysis<br><strong>OR</strong><br>5+ years of experience in Product Strategy and 8+ years of experience with SDLC/Market &amp; Competitive Analysis</p>\n</li>\n<li style=\"\">\n<p>Experience with Figma and Mixpanel is a must</p>\n</li>\n<li style=\"\">\n<p>Experience leading cross-functional product initiatives.<br><br></p>\n</li>\n<li style=\"\">\n<p>Strong technical understanding: as a Senior Product Manager, you are expected to be able to launch products from scratch.</p>\n</li>\n<li style=\"\">\n<p>Clear and effective communication in English — advanced ability to discuss business tasks, justify decisions, and communicate issues. Good self-presentation is also essential for upcoming client calls.</p>\n</li>\n<li style=\"\">\n<p>Strong self-organizational skills — the ability to work full-time remotely with minimal supervision.</p>\n</li>\n<li style=\"\">\n<p>Reliability — we want to trust you and expect that you won’t let us or the client down.</p>\n</li>\n<li style=\"\">\n<p>Adaptability and flexibility — the ability to onboard onto a project promptly after accepting it and start delivering results quickly.</p>\n</li>\n</ul>\n<p> </p>\n<p><strong>NOT YOUR TECH STACK?</strong></p>\n<!-- notionvc: ba8a6a5a-dcee-4634-a606-8cb3242b1bf7 -->\n<p>We have a variety of projects, so if you have 4+ years of commercial software development experience and are proficient in AI Agent Architecture, AI Automation Architecture, AI Engineering, Site Reliability Engineering, Platform Engineering, React &amp; Python, React &amp; Golang, Golang, React &amp; Java, React &amp; Ruby, Ruby, PHP &amp; Vue, Vue &amp; Node.js, React &amp; .NET, Android &amp; iOS, Flutter, Blockchain (Ethereum/Ethers.js/Wagmi/Viem/Solana), Angular &amp; Node.js, Vue &amp; .NET, Python &amp; Vue, DevOps with Azure DevOps, MLOps, Data Science, Angular &amp; PHP, Angular &amp; .NET, Symfony &amp; React, Symfony &amp; Vue, Symfony &amp; Angular, Python, Symfony &amp; JavaScript &amp; Next.js &amp; TypeScript, Data Analysis, React &amp; PHP, Data Engineering, Project Management, QA Automation, QA Manual, Embedded Software Engineering, React Native &amp; Node, React Native &amp; React, React Native &amp; Ruby, React Native &amp; Python, WordPress, Android, Data Annotation, Angular, Python &amp; Node, React &amp; Node.js, Java &amp; Spring, Svelte &amp; Python, Svelte &amp; Node.js, Svelte &amp; TypeScript, Rust, Shopify &amp; JavaScript, Vue &amp; Nuxt, PHP &amp; Laravel, UI/UX Design, Animation, Graphic Design, React &amp; Node &amp; React Native, .NET &amp; C#, Electron, Scala, C++, Unreal Engine &amp; C++, Python &amp; LLM, Unity, or Machine Learning Engineering, we would be happy to connect with you and match you with a project that fits your experience.<br><br>We do not provide visa assistance, and our cooperation model does not include the benefits typically offered with direct hire.</p>\n<p><!-- notionvc: 1c95b884-c12e-4829-a5ba-2c51b199b0a6 --></p>\n<p>We work with professionals <!-- notionvc: 9fa64ddf-a512-4563-b3de-25551510338d -->from 75+ countries across Europe, Latin America, North America (the U.S. and Canada), selected countries in Asia (Japan, Singapore, South Korea, the Philippines, Indonesia, Malaysia, Vietnam, Thailand, and Israel), Oceania (Australia, New Zealand, and Papua New Guinea), and Africa (including Morocco and South Africa).</p>\n<img src=\"https://remotive.com/job/track/2090984/blank.gif?source=public_api\" alt=\"\"/>",
+      "tags": [
+        "Product Management",
+        "full_time"
+      ],
+      "salary_eur": null,
+      "posted_at": "2026-06-24T09:57:46",
+      "score": 49,
+      "reasons": [
+        "+21 title (ai automation, automation architect, product manager)",
+        "+12 skills (4 matched)",
+        "+4 English OK",
+        "+0 certs (none)",
+        "+12 location — remote (DE-eligible)",
+        "+0 salary — salary not listed"
+      ],
+      "matched_skills": [
+        "python",
+        "java",
+        "c#",
+        "llm"
+      ],
+      "matched_titles": [
+        "ai automation",
+        "automation architect",
+        "product manager"
+      ],
+      "matched_certs": [],
+      "ats_keywords_to_add": [
+        "react",
+        "vue",
+        "angular",
+        "php",
+        "node.js",
+        "svelte",
+        "product manager",
+        "ruby"
+      ],
+      "_age_hours": 55
+    },
     {
       "id": "arbeitnow-staff-ai-backend-engineer-heidelberg-329925",
       "source": "arbeitnow",
@@ -35,27 +84,27 @@
         "+0 salary — salary not listed"
       ],
       "matched_skills": [
-        "python",
-        "llm",
         "mentoring",
-        "agile",
+        "make",
         "docker",
+        "python",
         "ci/cd",
-        "make"
+        "agile",
+        "llm"
       ],
       "matched_titles": [],
       "matched_certs": [],
       "ats_keywords_to_add": [
         "claude",
-        "fastapi",
         "postgresql",
+        "fastapi",
         "rag",
         "terraform",
-        "agentic",
-        "redis",
-        "go"
+        "prompt engineering",
+        "go",
+        "aws"
       ],
-      "_age_hours": 5
+      "_age_hours": 6
     },
     {
       "id": "arbeitnow-senior-iot-cloud-engineer-berlin-476643",
@@ -83,11 +132,11 @@
         "+0 salary — salary not listed"
       ],
       "matched_skills": [
-        "sql",
-        "java",
-        "agile",
-        "ci/cd",
         "make",
+        "java",
+        "sql",
+        "ci/cd",
+        "agile",
         "github actions"
       ],
       "matched_titles": [
@@ -97,12 +146,12 @@
       "ats_keywords_to_add": [
         "kubernetes",
         "google cloud",
-        "terraform",
         "postgresql",
-        "bigquery",
+        "terraform",
         "product manager",
-        "go",
-        "safe"
+        "devops",
+        "typescript",
+        "go"
       ],
       "_age_hours": 19
     },
@@ -132,11 +181,11 @@
         "+0 salary — salary not listed"
       ],
       "matched_skills": [
+        "governance",
+        "jira",
         "confluence",
         "agile",
-        "jira",
-        "stakeholder management",
-        "governance"
+        "stakeholder management"
       ],
       "matched_titles": [
         "digital transformation"
@@ -144,14 +193,14 @@
       "matched_certs": [],
       "ats_keywords_to_add": [
         "azure",
-        "itil",
-        "servicenow",
-        "aws",
-        "devops",
+        "azure devops",
         "google cloud",
-        "azure devops"
+        "devops",
+        "itil",
+        "aws",
+        "servicenow"
       ],
-      "_age_hours": 34
+      "_age_hours": 35
     },
     {
       "id": "arbeitnow-product-owner-digital-products-ai-hamburg-84864",
@@ -179,10 +228,10 @@
         "+0 salary — salary not listed"
       ],
       "matched_skills": [
-        "llm",
-        "scrum",
+        "governance",
         "stakeholder management",
-        "governance"
+        "llm",
+        "scrum"
       ],
       "matched_titles": [
         "product manager",
@@ -191,14 +240,210 @@
       "matched_certs": [],
       "ats_keywords_to_add": [
         "product owner",
-        "azure",
         "kanban",
-        "c2",
-        "deutsch",
+        "azure",
         "copilot",
-        "product manager"
+        "product manager",
+        "deutsch",
+        "c2"
       ],
       "_age_hours": 51
+    },
+    {
+      "id": "arbeitnow-business-systems-ai-automation-manager-munich-309432",
+      "source": "arbeitnow",
+      "title": "Business Systems & AI Automation Manager (m/w/d)",
+      "company": "feld.energy GmbH",
+      "location": "Munich",
+      "country": "Germany",
+      "remote_ok": false,
+      "url": "https://www.arbeitnow.com/jobs/companies/feldenergy-gmbh/business-systems-ai-automation-manager-munich-309432",
+      "description": "<h2>Deine Mission</h2>\n<p>Als Business Systems &#x26; AI Automation Manager (m/w/d) betreibst du unsere „Single Source of Truth“, verantwortest die Weiterentwicklung unserer operativen Systemlandschaft (bsp. Zoho und Wrike) und baust Automatisierung, Datenqualität und den Einsatz von KI in unsere Systeme ein. So sorgst du dafür, dass unsere Unternehmens-Maschine schnell, vorhersehbar und skalierbar läuft.</p>\n<h2>Über uns</h2>\n<p>feld.energy ist mehr als nur ein Unternehmen – wir sind eine Bewegung!<br>\nWir helfen Landwirten und Landeigentümern dabei, Landwirtschaft und Energieerzeugung intelligent miteinander zu verbinden. Mit unseren innovativen Agri-PV-Lösungen schaffen wir die Grundlage für eine nachhaltige und wirtschaftlich erfolgreiche Landwirtschaft.<br>\nUnser Ziel: Die Energiewende dahin bringen, wo sie am meisten Wirkung hat – aufs Land.</p>\n<h2>Deine Aufgaben</h2>\n<ul>\n<li>Als Business Systems &#x26; AI Automation Manager baust du und betreibst unsere „Single Source of Truth“ inklusive Datenqualität, Phasen-Status entlang des EPC-Funnels und konsistenter Datenflüsse zwischen den Teams.</li>\n<li>Manuelle Abläufe automatisierst du systematisch über Schnittstellen zwischen unseren Systemen (CRM, Projektmanagement und weitere Fachtools).</li>\n<li>Du baust KI gezielt in unsere Systeme und Prozesse ein: von KI-gestützten Workflows bis zu Agenten, die wiederkehrende Aufgaben eigenständig übernehmen.</li>\n<li>Unser KPI-Framework setzt du technisch um: Felder, Datenanbindung und Dashboards für operative Steuerung, Management und Investor-Reporting.</li>\n<li>Eng arbeitest du mit dem Head of Operations &#x26; Processes sowie den Teams aus Sales, Permitting, EPC und O&#x26;M zusammen.</li>\n<li>Deine Rolle ist dreigeteilt: du bist Product Manager:in und identifizierst Potenziale für Automatisierungen und KI, du bist technische:r Umsetzer:in und implementierst Lösungen praxisnah und berätst Kolleg:innen bei Fragen zu Tools und KI-Anwendungen.</li>\n</ul>\n<h2>Dein Profil</h2>\n<ul>\n<li>Mehrjährige Erfahrung im Aufbau und Betrieb von CRM- und Automatisierungssystemen sowie fundierte Kenntnisse in Datenmodellierung, Schnittstellenmanagement und Workflow-Automatisierung (z. B. APIs und externe Datenquellen).</li>\n<li>Selbstverständlicher Einsatz von KI-Tools im Arbeitsalltag sowie Erfahrung in der Integration von KI-Funktionen in Systeme und Prozesse (z. B. LLM-APIs oder agentenbasierte Workflows).</li>\n<li>Ausgeprägtes Produktverständnis sowie die Fähigkeit, Nutzeranforderungen zu identifizieren und in belastbare Konzepte zu überführen.</li>\n<li>Fähigkeit, mithilfe von KI, Software und Coding eigene Tools und Lösungen von Grund auf zu entwickeln.</li>\n<li>Ausgeprägte Reporting- und Business-Intelligence-Affinität sowie Erfahrung in der Übersetzung von KPI-Logiken in aussagekräftige Dashboards.</li>\n<li>Analytische Denkweise, pragmatische Umsetzungsstärke und ein hoher Anspruch an Dokumentation und nachhaltige Systemgestaltung.</li>\n<li>Prozessverständnis im EPC-, Bau- oder Energieumfeld von Vorteil</li>\n<li>Sehr gute Deutsch- sowie gute Englischkenntnisse.</li>\n</ul>\n<h2>Warum wir?</h2>\n<ul>\n<li>Option auf Remote-Arbeit (bis zu 60%) und flexible Arbeitszeiten.</li>\n<li>Anteile am Unternehmenserfolg durch Mitarbeiterbeteiligung möglich.</li>\n<li>Donnerstags gibt es im Office gemeinsames Lunch kostenfrei.</li>\n<li>Office in der Münchener Innenstadt (inkl. Parkplätze).</li>\n<li>27 Tage für deine persönliche Erholung.</li>\n<li>Regelmäßige Team-Events und gemeinsame Feiern der Erfolge.</li>\n<li>Kostenlose Getränke und frisches Obst im Büro für deinen Energie-Boost.</li>\n<li>Neueste technische Ausstattung und innovative Software, die deinen Arbeitsalltag erleichtert.</li>\n<li>Top-Weiterbildungsmöglichkeiten im Bereich erneuerbare Energien und nachhaltige Geschäftsführung.</li>\n<li>Eine Unternehmenskultur, die auf Nachhaltigkeit, Innovation und Zusammenarbeit setzt.</li>\n</ul>\n<p>Bist du bereit als Business Systems &#x26; AI Automation Manager, die Energiewende in der Landwirtschaft mitzugestalten?<br>\nDann freuen wir uns auf deine Bewerbung!</p>\n<p>Find more <a href=\"https://www.arbeitnow.com/english-speaking-jobs\">English Speaking Jobs in Germany</a> on Arbeitnow</a>",
+      "tags": [
+        "Project Management"
+      ],
+      "salary_eur": null,
+      "posted_at": 1782485942,
+      "score": 32,
+      "reasons": [
+        "+9 title (ai automation, product manager)",
+        "+3 skills (1 matched)",
+        "+5 EN + DE OK",
+        "+0 certs (none)",
+        "+15 location — hybrid (munich, ~120km from Regensburg)",
+        "+0 salary — salary not listed"
+      ],
+      "matched_skills": [
+        "llm"
+      ],
+      "matched_titles": [
+        "ai automation",
+        "product manager"
+      ],
+      "matched_certs": [],
+      "ats_keywords_to_add": [
+        "product manager",
+        "deutsch"
+      ],
+      "_age_hours": 2
+    },
+    {
+      "id": "arbeitnow-senior-data-analyst-crm-munich-337424",
+      "source": "arbeitnow",
+      "title": "Senior Data Analyst - CRM (m/f/d)",
+      "company": "Flix",
+      "location": "Munich, Bavaria, Germany",
+      "country": "Germany",
+      "remote_ok": false,
+      "url": "https://www.arbeitnow.com/jobs/companies/flix/senior-data-analyst-crm-munich-337424",
+      "description": "<p style=\"line-height: 1.4;\"><span style=\"font-size: 12pt;\">At Flix, we offer a dynamic work environment with competitive pay, strong growth opportunities, and a tech-driven approach to making travel more accessible, sustainable, and affordable. &nbsp;</span></p>\n<p style=\"line-height: 1.4;\"><span style=\"font-size: 12pt;\">As a<strong data-renderer-mark=\"true\"> Senior Data Analyst (m/f/d),</strong> you will join our global CRM team. This is an important role for CRM at Flix as we expand our capabilities, redefine our communication strategy and constantly optimize for maximum growth, as well as scalability and efficiency. We support global market growth with our marketing activities to increase repeated purchases and prevent churn. We always aim for cutting-edge technologies and a high level of innovation. By joining our team, you will be a crucial part of driving the team forward, developing our brands and customer communication throughout the globe.</span></p>\n<p><span style=\"font-size: 24pt;\"><strong data-renderer-mark=\"true\">About the Role</strong></span></p>\n<div>\n<ul>\n<li style=\"font-size: 12pt;\"><span style=\"font-size: 12pt;\">Own CRM analytics and reporting across 45+ markets, delivering clear visibility into performance, customer behavior, and commercial impact</span></li>\n<li style=\"font-size: 12pt;\"><span style=\"font-size: 12pt;\">Build and maintain Power BI dashboards providing real-time tracking of CRM performance, targets, and business trends</span></li>\n<li style=\"font-size: 12pt;\"><span style=\"font-size: 12pt;\">Deliver actionable insights on campaign performance, drivers of customer behavior, value-generating segments, and cross-market differences</span></li>\n<li style=\"font-size: 12pt;\"><span style=\"font-size: 12pt;\">Develop scalable, automated reporting solutions alongside deep-dive analyses and ad hoc business investigations</span></li>\n<li style=\"font-size: 12pt;\"><span style=\"font-size: 12pt;\">Monitor and optimize key CRM KPIs (engagement, conversion, retention, reactivation, communication effectiveness) and customer lifecycle performance</span></li>\n<li style=\"font-size: 12pt;\"><span style=\"font-size: 12pt;\">Partner with CRM, data, and product teams to improve segmentation, personalization, experimentation, tracking quality, and data reliability</span></li>\n<li style=\"font-size: 12pt;\"><span style=\"font-size: 12pt;\">Evaluate A/B tests and proactively identify trends, anomalies, risks, and opportunities, presenting clear recommendations to senior stakeholders</span></li>\n</ul>\n</div>\n<p><span style=\"font-size: 24pt;\"><strong>About You</strong></span></p>\n<div>\n<ul>\n<li style=\"font-size: 12pt;\"><span style=\"font-size: 12pt;\">5+ years of experience in data analytics or BI, ideally within CRM, marketing, or e-commerce environments</span></li>\n<li style=\"font-size: 12pt;\"><span style=\"font-size: 12pt;\">Proven track record of building dashboards and automated reporting solutions for non-technical stakeholders</span></li>\n<li style=\"font-size: 12pt;\"><span style=\"font-size: 12pt;\">Strong SQL expertise (CTEs, window functions, multi-table joins) in a modern cloud data warehouse, preferably Snowflake</span></li>\n<li style=\"font-size: 12pt;\"><span style=\"font-size: 12pt;\">Advanced Power BI skills including data modeling, DAX, and best-practice dashboard design and visualization</span></li>\n<li style=\"font-size: 12pt;\"><span style=\"font-size: 12pt;\">Solid understanding of marketing and CRM KPIs (conversion, engagement, attribution, customer lifetime value)</span></li>\n<li style=\"font-size: 12pt;\"><span style=\"font-size: 12pt;\">Experience working cross-functionally with product, engineering, and marketing/CRM teams; familiarity with marketing automation tools (e.g., Braze is a plus)</span></li>\n<li style=\"font-size: 12pt;\"><span style=\"font-size: 12pt;\">Strong data storytelling, statistical literacy (e.g., significance testing), and a structured, detail-oriented, and autonomous working style</span></li>\n<li style=\"font-size: 12pt;\"><span style=\"font-size: 12pt;\">Proficiency in English</span></li>\n</ul>\n</div>\n<p style=\"line-height: 1.4;\"><span style=\"font-size: 12pt;\">We recognize that everyone carries a unique set of valuable skills and experiences. If you think you could have an impact even though you don't meet 100% of the requirements, we still encourage you to apply. We want to hear from you! &nbsp;</span></p>\n<p><span style=\"font-size: 24pt;\"><strong>What We Offer</strong></span></p>\n<ul>\n<li data-renderer-start-pos=\"11445\"><span style=\"font-size: 12pt;\"><strong data-renderer-mark=\"true\">Travel perks</strong>: 12 free Flix vouchers + 12 discount vouchers for friends &amp; family.&nbsp;</span></li>\n<li data-renderer-start-pos=\"11530\"><span style=\"font-size: 12pt;\"><strong data-renderer-mark=\"true\">Work from (M)Anywhere</strong>: Depending on your role, work from another location for up to 60 days per year.&nbsp;</span></li>\n<li data-renderer-start-pos=\"11636\"><span style=\"font-size: 12pt;\"><strong data-renderer-mark=\"true\">Hybrid work model</strong>: We are an office-first company, but we offer flexibility to balance work and life.&nbsp;</span></li>\n<li data-renderer-start-pos=\"11742\"><span style=\"font-size: 12pt;\"><strong data-renderer-mark=\"true\">Wellbeing support</strong>: Access confidential 1:1 counselling, courses, and stress management for yourself and up to four family members.&nbsp;</span></li>\n<li data-renderer-start-pos=\"11877\"><span style=\"font-size: 12pt;\"><strong data-renderer-mark=\"true\">Learning &amp; Development</strong>: Take advantage of language classes, training courses, and expert-led sessions to grow your skills.&nbsp;</span></li>\n<li data-renderer-start-pos=\"12004\"><span style=\"font-size: 12pt;\"><strong data-renderer-mark=\"true\">Mentoring Program</strong>: Connect with experienced colleagues to gain insights and accelerate your career.&nbsp;</span></li>\n</ul>\n<p style=\"line-height: 1.4;\"><span style=\"font-size: 12pt;\">To view more local benefits specific to each office location, please check out this link:&nbsp;<a href=\"https://flix.careers/locations/\">Locations - Flix Career</a></span></p>\n<hr>\n<p style=\"line-height: 1.4;\"><span style=\"font-size: 18pt;\"><strong>Why Join Flix?</strong></span></p>\n<p style=\"line-height: 1.4;\" data-renderer-start-pos=\"12125\"><span style=\"font-size: 12pt;\">At Flix, you'll find teams that rally together to overcome challenges and spark creativity. We believe in ownership culture - giving you the freedom to take initiative, make an impact, and shape your own career path.</span><br><span style=\"font-size: 12pt;\">As we continue to expand across the globe, you can make a real difference in how we work.</span></p>\n<p data-renderer-start-pos=\"12434\"><span style=\"font-size: 12pt;\">If you're ready to grow and lead your journey, Flix is the place for you!&nbsp;</span></p>\n<p><iframe src=\"https://www.youtube.com/embed/YlHz7TiiRAw\" width=\"560\" height=\"314\"></iframe></p>\n<p>&nbsp;</p><p>Find more <a href=\"https://www.arbeitnow.com/english-speaking-jobs\">English Speaking Jobs in Germany</a> on Arbeitnow</a>",
+      "tags": [],
+      "salary_eur": null,
+      "posted_at": 1782308734,
+      "score": 32,
+      "reasons": [
+        "+0 title (none)",
+        "+12 skills (4 matched)",
+        "+5 EN + DE OK",
+        "+0 certs (none)",
+        "+15 location — hybrid (munich, ~120km from Regensburg)",
+        "+0 salary — salary not listed"
+      ],
+      "matched_skills": [
+        "mentoring",
+        "make",
+        "sql",
+        "power bi"
+      ],
+      "matched_titles": [],
+      "matched_certs": [],
+      "ats_keywords_to_add": [
+        "snowflake"
+      ],
+      "_age_hours": 51
+    },
+    {
+      "id": "arbeitnow-agentic-engineering-expert-munchen-munich-34281",
+      "source": "arbeitnow",
+      "title": "Agentic Engineering Expert (m/w/d), München",
+      "company": "TOWA - the digital growth company",
+      "location": "Munich",
+      "country": "Germany",
+      "remote_ok": false,
+      "url": "https://www.arbeitnow.com/jobs/companies/towa-the-digital-growth-company/agentic-engineering-expert-munchen-munich-34281",
+      "description": "<h2>Wofür wir stehen:</h2>\n<p><strong>„We drive digital transformation end-to-end – from strategy to execution. Creating measurable progress and real impact for our clients.“</strong></p>\n<p>Stillstand? Nicht mit uns. Wir glauben: <strong>Alles ist BETA – und genau darin liegt die Chance für Fortschritt.</strong> Während andere noch über AI-Strategie diskutieren, bauen wir unsere Delivery AI-native um – mit Specs, Verification Gates und Agenten im gesamten Entwicklungsprozess.</p>\n<p><strong>Und jetzt kommst du:</strong> Wir suchen die Person, die diese Transformation in unseren Engineering-Teams beschleunigt. Nicht als Konzeptlieferant, sondern hands-on, als jemand, der es selbst vorlebt und andere mitzieht.</p>\n<h2>Deine Aufgaben:</h2>\n<p><strong>Deine Mission:</strong> Du machst unsere Entwicklungsteams schneller und besser, indem du agentische Workflows aufbaust, Standards setzt und Wissen multiplizierst. Du bist dabei mehr als Techniker:in – du bist Change Agent: Frontrunner und Innovator, der in den Projekten vorangeht, die neue Arbeitsweise vorlebt und die Teams mitnimmt. Klarstellung vorab: Das ist keine AI/ML-Rolle. Du baust keine Modelle – du baust Software schneller, indem du AI-Agenten orchestrierst und die Umgebungen designst, in denen sie zuverlässig arbeiten.</p>\n<h2>Claude-Expertise, Workflows &#x26; Agent Teams</h2>\n<ul>\n<li>Du baust agentische Workflows und Agent Teams auf: Multi-Agent-Setups, die parallel recherchieren, entwickeln und reviewen – und im Projektalltag zuverlässig funktionieren</li>\n<li>Du baust und betreibst MCP-Server, die unsere Tools und Datenquellen für Agenten nutzbar machen</li>\n<li>Du etablierst Spec-driven Development: standardisierte Inputs, klare Verification Gates, auditierbarer Agent-Output</li>\n</ul>\n<h2>Qualität &#x26; Verifikation</h2>\n<ul>\n<li>Du entwickelst Eval-Harnesses und Testverfahren, die AI-generierten Code messbar und vertrauenswürdig machen</li>\n<li>Du behandelst Context Engineering als Disziplin: das kleinste Set an High-Signal-Tokens, nicht der längste Prompt</li>\n<li>Du reviewst AI-Output kritisch – „trust then verify“ ist deine Grundhaltung, kein Slogan</li>\n</ul>\n<h2>Change &#x26; Enablement</h2>\n<ul>\n<li>Du arbeitest als Frontrunner direkt in den Projektteams mit: Du zeigst am echten Kundenprojekt, was agentisch möglich ist und machst die Teams dann selbst dazu fähig</li>\n<li>Du treibst den Wandel als Change Agent: Du begeisterst statt zu missionieren, nimmst Skeptiker:innen mit und räumst Hürden in Prozessen und Köpfen aus dem Weg</li>\n<li>Du baust wiederverwendbare Assets: Plugins, Skill-Bibliotheken, Prompt-Patterns, Runbooks</li>\n<li>Du beobachtest das Ökosystem (Anthropic, MCP-Standard, Tooling) als Innovator, testest Neues früh und übersetzt es in nutzbare Praxis für TOWA</li>\n</ul>\n<h2>Damit kannst Du punkten:</h2>\n<h2>Agentic-Engineering-Erfahrung</h2>\n<ul>\n<li>Du hast produktiv mit LLMs gebaut, nicht nur Tutorials geschaut. Der Lackmustest: Du kannst eine Evaluation beschreiben, die du selbst designt hast</li>\n<li>Tiefe Praxis mit Claude Code oder vergleichbaren agentischen Coding-Tools: Du weißt, wann Agenten brillieren, wann sie scheitern und woran man den Unterschied erkennt</li>\n<li>Erfahrung im Bau von MCP-Servern, Custom Tools oder Agent-Integrationen</li>\n</ul>\n<h2>Software-Engineering-Fundament</h2>\n<ul>\n<li>Solider Engineering-Background (z. B. TypeScript, Python) – du bist Entwickler:in, die agentisch arbeitet, nicht Prompt-Autor:in ohne Codebasis</li>\n<li>Verständnis für CI/CD, Testing und Delivery-Prozesse, in die sich Agenten einfügen müssen</li>\n<li>LLM-Grundlagen sitzen: Tokens, Context Windows, Modell-Tiers, Kosten-/Latenz-Trade-offs</li>\n</ul>\n<h2>Haltung &#x26; Kommunikation</h2>\n<ul>\n<li>Learning Velocity: Die Tools ändern sich monatlich – du entwickelst dich mindestens so schnell</li>\n<li>Ownership: Du stehst für jeden Commit mit deinem Namen ein, auch wenn ihn ein Agent geschrieben hat</li>\n<li>Change-Agent-Qualitäten: Du holst Menschen ab, gehst mit gutem Beispiel voran und hältst durch, wenn Veränderung auf Widerstand trifft</li>\n<li>Du kannst erklären, befähigen und überzeugen – im Team und beim Kunden, auf Deutsch oder Englisch</li>\n</ul>\n<h2>Nice to have</h2>\n<ul>\n<li>Erfahrung im Agentur- oder Beratungsumfeld mit parallelen Projekten</li>\n<li>Praxis mit Eval-Frameworks, LLM-as-a-Judge-Setups oder Agent-Observability</li>\n<li>Beiträge zur Community: Open Source, Talks, Blogposts</li>\n</ul>\n<h2>Was wir von Dir benötigen:</h2>\n<p><strong>Mission started?!</strong> Dann brauchen wir von dir:</p>\n<ul>\n<li>Deinen <strong>CV</strong></li>\n<li>Ein konkretes <strong>Beispiel</strong>, wie du agentisch gearbeitet hast (Setup, Workflow oder Asset – Format egal)</li>\n<li>Welche <strong>Vergütung</strong> du dir für deine Performance vorstellst</li>\n<li>Deine <strong>Kündigungsfrist</strong> bzw. möglicher <strong>Starttermin</strong></li>\n</ul>\n<h2>Warum wir?</h2>\n<p>Wir glauben: <strong>Wer viel gibt, soll auch viel zurückbekommen</strong>. Deshalb erwarten dich bei uns Benefits, die über „Extras“ hinausgehen. Sie geben dir Freiheit, Flexibilität und die Möglichkeit, dich fachlich wie persönlich weiterzuentwickeln, und machen deinen Arbeitsalltag einfach besser.</p>\n<ul>\n<li><strong>T</strong> <strong>eamspirit pur</strong>: Kollegiale Teams mit echtem Zusammenhalt, Hilfsbereitschaft und einer guten Portion Humor.</li>\n<li><strong>Transparente Strukturen</strong>: Flache Hierarchien und eine gelebte Open-Door-Mentalität - Austausch auf Augenhöhe ist selbstverständlich.</li>\n<li><strong>Open Vacation Policy</strong>: Neben deinen gesetzlichen Urlaubstagen kannst du dir mit unserer „Above &#x26; Beyond“-Regelung zusätzliche freie Tage gönnen.</li>\n<li><strong>Work from anywhere</strong>: Ob Home-Office oder temporär im Ausland - du entscheidest, wo du am produktivsten bist.</li>\n<li><strong>Flexible Arbeitszeiten</strong>: Großer Gleitzeitrahmen - du bestimmst deinen Rhythmus mit Verlässlichkeit bei Kunden- und Teammeetings.</li>\n<li><strong>Modelle, die zu deinem Leben passen</strong>: Vollzeit oder Teilzeit, fix oder zeitlich begrenzt – wir finden gemeinsam die passende Lösung.</li>\n<li><strong>Spannende Projekte,</strong> innovativ, abwechslungsreich und mit steiler Lernkurve – bei uns gestaltest du echten Fortschritt mit.</li>\n<li><strong>Wachstum garantiert</strong>: Individuelles Weiterbildungsbudget für Workshops, Zertifizierungen oder Coachings.</li>\n<li><strong>Karrierepfade</strong>: Auch bei flachen Hierarchien sorgen klare Strukturen für deine Weiterentwicklung.</li>\n<li><strong>Mobility &#x26; Events</strong>: Bis zu 467 € fürs Öffi- oder Deutschlandticket, regelmäßige Teamevents und Besuche von Messen &#x26; Conventions.</li>\n<li><strong>Loft-Offices</strong>: Zentral gelegen, modern ausgestattet, kreativ – mit Raum für Austausch, Ideen und natürlich Snacks &#x26; Drinks.</li>\n<li><strong>Rewards</strong>:Prämiensystem für deine persönlichen und unternehmerischen Erfolge.</li>\n</ul>\n<p><em>Diese Position ist im Solution Cluster von TOWA auf Senior Level angesiedelt. Das Gehalt liegt zwischen <strong>€54.000 und €80.000 brutto/Jahr (All-in)</strong>. Die angegebene Range umfasst alle Gehaltsbestandteile und ist als Zielgehalt zu verstehen (z. B. inklusive variabler Anteile oder weiterer Benefits, sofern zutreffend). Im Falle einer Zusammenarbeit erstellen wir dir ein individuelles Angebot – die Einstufung innerhalb der Range richtet sich nach deinen Skills, deinem Verantwortungsbereich und deiner Erfahrung, niemals nach deinem vorherigen Gehalt.</em></p>\n<p><em>Im Einklang mit der EU-Entgelttransparenzrichtlinie (2023/970) und den länderspezifischen Gleichbehandlungsgesetzen veröffentlichen wir für jede Rolle die Gehaltsspanne und fragen Kandidat:innen nicht nach ihrem aktuellen oder vorherigen Gehalt. Unsere Kriterien zur Gehaltsfestlegung – Cluster, Level, Skills, Verantwortungsbereich und Erfahrung – gelten unternehmensweit einheitlich. Du kannst während des gesamten Prozesses jederzeit schriftlich weitere Informationen zur Gehaltsspanne dieser Rolle oder zu unserer Vergütungspolitik anfordern.</em></p>\n<p><strong>Chancengleichheit</strong></p>\n<p><em>TOWA stellt nach Skills und Impact ein. Wir freuen uns über Bewerbungen aller qualifizierten Personen – unabhängig von Geschlecht, Alter, Hintergrund, Herkunft, Religion, sexueller Orientierung oder Behinderung. Die Stellenbezeichnung gilt für alle Geschlechter (m/w/d).</em></p>\n<h2>Vorgesetzter</h2>\n<p>Dein Lead ist Matthias Frank - Klick  um mehr über ihn zu erfahren.</p>\n<p>Find more <a href=\"https://www.arbeitnow.com/english-speaking-jobs\">English Speaking Jobs in Germany</a> on Arbeitnow</a>",
+      "tags": [
+        "Software Development"
+      ],
+      "salary_eur": null,
+      "posted_at": 1782242942,
+      "score": 32,
+      "reasons": [
+        "+3 title (digital transformation)",
+        "+9 skills (3 matched)",
+        "+5 EN + DE OK",
+        "+0 certs (none)",
+        "+15 location — hybrid (munich, ~120km from Regensburg)",
+        "+0 salary — salary not listed"
+      ],
+      "matched_skills": [
+        "python",
+        "ci/cd",
+        "llm"
+      ],
+      "matched_titles": [
+        "digital transformation"
+      ],
+      "matched_certs": [],
+      "ats_keywords_to_add": [
+        "agentic",
+        "claude",
+        "deutsch",
+        "anthropic",
+        "typescript",
+        "nice"
+      ],
+      "_age_hours": 70
+    },
+    {
+      "id": "arbeitnow-automation-engineer-ft-cologne-372102",
+      "source": "arbeitnow",
+      "title": "Automation Engineer (m/w/d, FT)",
+      "company": "Finton Advisors by EFPINAI GmbH",
+      "location": "Cologne",
+      "country": "Germany",
+      "remote_ok": false,
+      "url": "https://www.arbeitnow.com/jobs/companies/finton-advisors-by-efpinai-gmbh/automation-engineer-ft-cologne-372102",
+      "description": "<p>Finton builds AI-powered FP&#x26;A software and services for investor-backed companies. Our platform brings together financial reporting, KPI dashboards, data analysis, and centralized data access in one scalable solution. Combined with AI-driven workflows and hands-on support from experienced finance professionals, we help ambitious businesses gain a clear, reliable view of their performance and make better decisions faster.</p>\n<p>At the core of our work is software we've developed ourselves. It enables data-driven finance teams to spend less time on manual processes and more time generating insights. The same technology powers our own operations and helps our customers automate reporting, improve transparency, and create a single source of truth for their financial data.</p>\n<p>Because we work closely with private equity-backed companies, we're often involved in high-impact situations such as acquisitions, fundraising processes, refinancing projects, and strategic growth initiatives. This gives our team unique exposure to both technology and corporate finance in a fast-moving environment.</p>\n<p>Since founding the company in December 2023, we've grown to support more than 30 clients with a lean, highly capable team. As we continue to scale, we're building our team in Cologne and looking for people who want to help shape the next generation of finance technology.</p>\n<h2>Aufgaben</h2>\n<p>You own the technical health of day-to-day operations, from the annoying one-off to the system that prevents a whole class of them.</p>\n<ul>\n<li>Solve daily technical problems for the operations team: Be the person they come to with a stuck data load, a broken export, or a \"can we automate this?\"</li>\n<li>Build automations: Turn recurring manual processes into durable Temporal workflows: data ingestion, reconciliation, reporting, internal tooling.</li>\n<li>Work with data: Write SQL and Python to investigate issues, validate pipelines, and produce the numbers and checks operations relies on.</li>\n<li>Build what the team needs: Work with operations to add features to the Finton app and internal tools that make their lives easier.</li>\n</ul>\n<h2>Qualifikation</h2>\n<p>We hire pragmatic builders who would rather automate a problem once than handle it ten times. Experience level matters less than the evidence of what you've shipped andside projects absolutely count.</p>\n<p>You'll stand out if you:</p>\n<ul>\n<li>Reach for automation by default: When you see a repeated manual step, your instinct is to script it, schedule it, or wrap it in a workflow.</li>\n<li>Are comfortable in SQL and Python: You can pull the data, reshape it, and reason about what it's telling you.</li>\n<li>Think in durable workflows: You understand (or are eager to learn) how to model long-running, multi-step processes that survive failure and retries.</li>\n<li>Debug with patience: You isolate variables, read logs and error messages, and don't stop at the first symptom.</li>\n<li>Communicate clearly: You can explain a technical problem to both an operator and an engineer, in <strong>English and German</strong>.</li>\n<li>Own the outcome: You follow a problem through to a shipped, working fix rather than handing it off.</li>\n</ul>\n<p><strong>Our Stack:</strong> Fundamentals matter more to us than familiarity with any one tool. If you're strong, you'll pick ours up fast. Here's the setup you'll work with and grow into:</p>\n<ul>\n<li>Temporal (durable workflows)</li>\n<li>Python</li>\n<li>SQL</li>\n<li>Terraform</li>\n<li>AWS</li>\n<li>Dart / Flutter</li>\n<li>React</li>\n<li>Rust</li>\n</ul>\n<h2>Benefits</h2>\n<ul>\n<li>Real ownership: You own the operation's technical health, not a checklist. What you automate sticks.</li>\n<li>A small, technical team where operations and engineering sit close together and ship fast.</li>\n<li>Cologne home base: You work out of our Cologne office, with optional home-office days. Being based in Cologne is a hard requirement — this isn't a remote role.</li>\n<li>Modern tooling, AI-assisted workflows, and a culture that treats internal tooling as first-class engineering.</li>\n<li>Learn, build, and grow: As an early-stage company, we offer maximum ownership and room to shape the future of the business. Together, we're bringing finance into the AI era. You'll be a fully integrated team member from day one, with the opportunity to transition into a full-time role after your studies.</li>\n<li>Growth with purpose: We are growing quickly, but deliberately. You bring ideas; we provide trust, responsibility, and the freedom to execute. Our foundation is built on honesty, reliability, and long-term relationships—with both our customers and our team.</li>\n<li>Great benefits and team culture: Enjoy a competitive salary, Germany-wide public transport ticket, bike leasing, regular team events, and a collaborative, supportive work environment.</li>\n</ul>\n<p>Send us a short note about why this role fits, plus your CV. No cover-letter template needed; tell us about something tedious you automated and the difference it made. Looking forward to receiving your application!</p>\n<p>Find more <a href=\"https://www.arbeitnow.com/english-speaking-jobs\">English Speaking Jobs in Germany</a> on Arbeitnow</a>",
+      "tags": [
+        "IT"
+      ],
+      "salary_eur": null,
+      "posted_at": 1782210632,
+      "score": 31,
+      "reasons": [
+        "+6 title (automation engineer)",
+        "+15 skills (5 matched)",
+        "+5 EN + DE OK",
+        "+0 certs (none)",
+        "+5 location — Germany (city unknown)",
+        "+0 salary — salary not listed"
+      ],
+      "matched_skills": [
+        "sit",
+        "make",
+        "lean",
+        "python",
+        "sql"
+      ],
+      "matched_titles": [
+        "automation engineer"
+      ],
+      "matched_certs": [],
+      "ats_keywords_to_add": [
+        "react",
+        "terraform",
+        "aws",
+        "rust"
+      ],
+      "_age_hours": 79
+    },
+    {
+      "id": "jobicy-147399",
+      "source": "jobicy",
+      "title": "Senior QA Automation Engineer (BDD)",
+      "company": "Zartis",
+      "location": "Remote (Europe)",
+      "country": "Remote",
+      "remote_ok": true,
+      "url": "https://jobicy.com/jobs/147399-senior-qa-automation-engineer-bdd",
+      "description": "The company and our mission: Zartis is a global AI transformation and technology consulting partner where talented engineers and technologists work on cutting edge innovation. We partner with ambitious organizations to design, build, and scale technology solutions that deliver real impact. Our teams bring deep expertise in AI driven platforms, secure API architectures, and cloud&hellip;",
+      "tags": [
+        "QA &amp; Testing",
+        "Full-Time"
+      ],
+      "salary_eur": null,
+      "posted_at": "2026-06-22T13:21:30+00:00",
+      "score": 30,
+      "reasons": [
+        "+18 title (automation engineer, qa automation engineer)",
+        "+0 skills (0 matched)",
+        "+0 language not specified",
+        "+0 certs (none)",
+        "+12 location — remote (DE-eligible)",
+        "+0 salary — salary not listed"
+      ],
+      "matched_skills": [],
+      "matched_titles": [
+        "automation engineer",
+        "qa automation engineer"
+      ],
+      "matched_certs": [],
+      "ats_keywords_to_add": [
+        "qa automation",
+        "bdd"
+      ],
+      "_age_hours": 100
     }
   ]
 }

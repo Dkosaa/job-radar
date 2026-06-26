@@ -70,7 +70,7 @@ def dedupe(jobs: list[dict]) -> list[dict]:
 
 def fetch_all() -> list[dict]:
     """Fetch from all enabled sources. Per-source failures don't break the run."""
-    from sources import arbeitnow, greenhouse, lever, jobicy, adzuna
+    from sources import arbeitnow, greenhouse, lever, jobicy, adzuna, remotive
 
     all_jobs: list[dict] = []
     if SOURCES["arbeitnow"]["enabled"]:
@@ -86,9 +86,13 @@ def fetch_all() -> list[dict]:
             all_jobs.extend(adzuna.fetch(PIPELINE["fetch_timeout_sec"]))
         except Exception as e:
             print(f"[adzuna] skipped: {e}")
+    if SOURCES["remotive"]["enabled"]:
+        try:
+            all_jobs.extend(remotive.fetch(PIPELINE["fetch_timeout_sec"]))
+        except Exception as e:
+            print(f"[remotive] skipped: {e}")
     if SOURCES["stepstone"]["enabled"]:
         try:
-            # lazy import — playwright only needed if stepstone is on
             from sources.stepstone import fetch as ss_fetch
             all_jobs.extend(ss_fetch())
         except Exception as e:
