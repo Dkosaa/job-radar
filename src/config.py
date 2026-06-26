@@ -95,6 +95,10 @@ PIPELINE = {
     "max_age_days": 7,           # last week max
     "seen_resurfacing_days": 3,  # resurface same job after 3 days if still fresh
     "fetch_timeout_sec": 20,
+    # Strict keyword filter (RPA/UiPath/BluePrism/Power Automate must appear
+    # in JD). Apify source applies this automatically. Set to True to also
+    # apply it to free sources (Arbeitnow/Greenhouse/etc).
+    "strict_filter_all": False,
     "user_agent": (
         "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
         "AppleWebKit/537.36 (KHTML, like Gecko) "

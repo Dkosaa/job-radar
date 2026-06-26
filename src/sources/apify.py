@@ -104,15 +104,24 @@ def fetch_indeed_via_apify(queries: list[str] = None,
     Call Apify's Indeed scraper actor and return normalized jobs.
     Actor: valig/indeed-jobs-scraper (or similar)
     Cost: ~$0.50 per 1000 results
+
+    Uses strict keyword filtering — only returns jobs whose JD contains
+    Raj's required keywords (UiPath/BluePrism/Power Automate/RPA etc.).
     """
+    from strict_filter import build_apify_actor_input
     token = _get_token()
     if not token:
         print("[apify] no APIFY_API_TOKEN configured — skipping")
         return []
 
     quota = _load_quota()
-    queries = queries or SEARCH_QUERIES[:4]  # default: 4 queries to stay under budget
-    locations = locations or ["Germany"]
+    queries = queries or [
+        "UiPath", "Blue Prism", "Power Automate",
+        "RPA Developer", "Process Automation",
+        "Orchestrator", "Power BI OCR",
+    ]
+    locations = locations or ["Germany", "Remote Germany"]
+    results_per_query = min(results_per_query, 50)
     estimated_jobs = len(queries) * len(locations) * results_per_query
 
     if not _can_spend(quota, estimated_jobs):
@@ -120,22 +129,20 @@ def fetch_indeed_via_apify(queries: list[str] = None,
               f"(${quota['spent_usd']:.2f}/${quota['limit']}) — skipping")
         return []
 
-    # Apify actor input format for Indeed scraper
-    actor_input = {
-        "queries": [f"{q} {loc}" for q in queries for loc in locations],
-        "maxResults": results_per_query,
-        "country": "DE",
-        "location": "Germany",
-        "language": "en",
-        "remote": False,
-    }
+    # Build actor input with strict keywords built in
+    actor_input = build_apify_actor_input(
+        queries=queries,
+        locations=locations,
+        max_results=results_per_query,
+    )
 
     # Run actor synchronously (wait for finish)
     run_url = f"{APIFY_BASE}/acts/valig~indeed-jobs-scraper/run-sync-get-dataset-items"
     headers = {"Authorization": f"Bearer {token}",
                "Content-Type": "application/json"}
 
-    print(f"[apify] triggering Indeed actor, ~{estimated_jobs} jobs est...")
+    print(f"[apify] triggering Indeed actor with strict filters, "
+          f"~{estimated_jobs} jobs est...")
     try:
         r = requests.post(run_url, json=actor_input, headers=headers,
                           timeout=timeout)
@@ -148,14 +155,17 @@ def fetch_indeed_via_apify(queries: list[str] = None,
         print(f"[apify] Indeed fetch failed: {e}")
         return []
 
-    out = []
-    for j in items:
-        out.append(_normalize_apify_job(j, source="apify_indeed"))
+    # Apply Raj's strict keyword filter on top of actor output
+    out_raw = [_normalize_apify_job(j, source="apify_indeed") for j in items]
+    from strict_filter import apply_strict_filter
+    passed, rejected = apply_strict_filter(out_raw, min_keyword_hits=1)
+    print(f"[apify] raw={len(out_raw)} | passed={len(passed)} | "
+          f"rejected={len(rejected)}")
 
-    _record_spend(quota, len(out))
-    print(f"[apify] got {len(out)} Indeed jobs, "
+    _record_spend(quota, len(passed))
+    print(f"[apify] got {len(passed)} Indeed jobs after strict filter, "
           f"spent ${quota['spent_usd']:.2f}/${quota['limit']} this month")
-    return out
+    return passed
 
 
 def fetch_stepstone_via_apify(queries: list[str] = None,
@@ -165,28 +175,33 @@ def fetch_stepstone_via_apify(queries: list[str] = None,
     """
     Call Apify's StepStone scraper actor.
     Actor: valig/stepstone-jobs-scraper (or similar)
+    Applies strict keyword filtering.
     """
+    from strict_filter import build_apify_actor_input, apply_strict_filter
     token = _get_token()
     if not token:
         return []
     quota = _load_quota()
-    queries = queries or SEARCH_QUERIES[:4]
+    queries = queries or [
+        "UiPath", "Blue Prism", "Power Automate",
+        "RPA", "Process Automation", "Orchestrator",
+    ]
     locations = locations or ["Germany"]
+    results_per_query = min(results_per_query, 50)
     estimated_jobs = len(queries) * len(locations) * results_per_query
     if not _can_spend(quota, estimated_jobs):
         print(f"[apify] budget exhausted — skipping StepStone")
         return []
 
-    actor_input = {
-        "queries": [f"{q} {loc}" for q in queries for loc in locations],
-        "maxResults": results_per_query,
-        "country": "DE",
-        "language": "en",
-    }
+    actor_input = build_apify_actor_input(
+        queries=queries,
+        locations=locations,
+        max_results=results_per_query,
+    )
     run_url = f"{APIFY_BASE}/acts/valig~stepstone-jobs-scraper/run-sync-get-dataset-items"
     headers = {"Authorization": f"Bearer {token}",
                "Content-Type": "application/json"}
-    print(f"[apify] triggering StepStone actor, ~{estimated_jobs} jobs est...")
+    print(f"[apify] triggering StepStone actor with strict filters...")
     try:
         r = requests.post(run_url, json=actor_input, headers=headers,
                           timeout=timeout)
@@ -199,11 +214,15 @@ def fetch_stepstone_via_apify(queries: list[str] = None,
         print(f"[apify] StepStone fetch failed: {e}")
         return []
 
-    out = [_normalize_apify_job(j, source="apify_stepstone") for j in items]
-    _record_spend(quota, len(out))
-    print(f"[apify] got {len(out)} StepStone jobs, "
+    out_raw = [_normalize_apify_job(j, source="apify_stepstone") for j in items]
+    passed, rejected = apply_strict_filter(out_raw, min_keyword_hits=1)
+    print(f"[apify] StepStone raw={len(out_raw)} | passed={len(passed)} | "
+          f"rejected={len(rejected)}")
+
+    _record_spend(quota, len(passed))
+    print(f"[apify] got {len(passed)} StepStone jobs after strict filter, "
           f"spent ${quota['spent_usd']:.2f}/${quota['limit']} this month")
-    return out
+    return passed
 
 
 def _normalize_apify_job(j: dict, source: str = "apify") -> dict:

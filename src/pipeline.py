@@ -100,6 +100,22 @@ def fetch_all() -> list[dict]:
             print(f"[apify] contributed {len(apify_jobs)} jobs")
         except Exception as e:
             print(f"[apify] skipped: {e}")
+    # NOTE: strict keyword filter (RPA/UiPath/BluePrism/Power Automate) is
+    # ALREADY applied inside the Apify source module — to avoid wasting API
+    # credits on jobs that would be rejected. Free sources are kept unfiltered
+    # here because they're abundant and our title-scoring already enforces
+    # relevance. If you want strict filtering on free sources too, change
+    # PIPELINE["strict_filter_all"] to True.
+    if PIPELINE.get("strict_filter_all", False):
+        try:
+            from strict_filter import apply_strict_filter
+            before = len(all_jobs)
+            passed, rejected = apply_strict_filter(all_jobs, min_keyword_hits=1)
+            print(f"[strict] jobs={before} → passed={len(passed)} | "
+                  f"rejected={len(rejected)}")
+            all_jobs = passed
+        except Exception as e:
+            print(f"[strict] skipped: {e}")
     if SOURCES["stepstone"]["enabled"]:
         try:
             from sources.stepstone import fetch as ss_fetch
