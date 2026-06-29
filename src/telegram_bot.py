@@ -33,6 +33,7 @@ async def start(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
         f"Hey {user.first_name} 👋\n\n"
         "I'm your *Job Radar* — daily top-10 jobs matched to your profile.\n\n"
         "*Commands:*\n"
+        "/chalohave — unlock the bot and show help\n"
         "/today — show today's digest\n"
         "/rerun \\<hours\\> — custom window \\(e.g. `/rerun 48`\\)\n"
         "/global — search globally, not just Germany\n"
@@ -46,6 +47,7 @@ async def start(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
         await update.message.reply_text(
             "Hey! I'm Job Radar.\n\n"
             "Commands:\n"
+            "/chalohave — unlock the bot and show help\n"
             "/today — show today's digest\n"
             "/rerun 48 — last 48 hours\n"
             "/global — worldwide search\n"
@@ -423,7 +425,7 @@ def escape_md(text: str) -> str:
 def build_application() -> Application:
     token = DELIVERY["telegram"]["token"]
     app = Application.builder().token(token).build()
-    app.add_handler(CommandHandler("start", start))
+    app.add_handler(CommandHandler("chalohave", start))
     app.add_handler(CommandHandler("help", help_cmd))
     app.add_handler(CommandHandler("today", today))
     app.add_handler(CommandHandler("rerun", rerun))

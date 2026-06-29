@@ -79,7 +79,7 @@ To register for Adzuna: https://developer.adzuna.com/signup (free, no card)
 | `/today` | Show today's top 10 |
 | `/rerun 48` | Rerun with last 48 hours window |
 | `/global` | Search worldwide (not just Germany) |
-| `/start` | Welcome + help |
+| `/chalohave` | Welcome + help |
 | `/help` | Command list |
 
 ## Project Structure
